@@ -1337,6 +1337,24 @@ failure of a computer program could do great harm, either economic or human.
 are applicable to all projects, does this mean that the same work tasks are applied for all projects, regardless of size and complexity? Explain.
 1.8. Umbrella activities occur throughout the software process. Do you think they are applied
 evenly across the process, or are some concentrated in one or more framework activities?
+
+Beizer [Bei90] describes a “software myth” that all testers face. He writes: “There’s
+a myth that if we were really good at programming, there would be no bugs to
+catch . . . There are bugs, the myth says, because we are bad at what we do; and if
+we are bad at it, we should feel guilty about it.”
+Should testing instill guilt? Is testing really destructive? The answer to these
+questions is, No!
+At the beginning of this book, we stressed the fact that software is only one element
+of a larger computer-based system. Ultimately, software is incorporated with other
+system elements (e.g., hardware, people, information), and systems testing (a series of
+system integration and validation tests) is conducted. These tests fall outside the scope
+of the software process and are not conducted solely by software engineers. However,
+steps taken during software design and testing can greatly improve the probability of
+successful software integration in the larger system.
+In this chapter, we discuss techniques for software integration testing strategies
+applicable to most software applications. Specialized software testing strategies are
+discussed in Chapter 21.
+
 Design element: Quick Look icon magnifying glass: © Roger Pressman
 19
 In this part of Software Engineering: A Practitioner’s Approach, you’ll
