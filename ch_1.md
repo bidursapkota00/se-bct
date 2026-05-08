@@ -4,6 +4,8 @@
 
 ## 1.1 Software and Software Engineering
 
+> **Explain how modern software engineering practices helped overcome the software crisis. [3 marks] (2082 Bhadra - IOE - Old Syllabus Relevant)**
+
 **Software** is: (1) instructions (computer programs) that when executed provide desired features, function, and performance; (2) data structures that enable the programs to adequately manipulate information; and (3) descriptive information in both hard copy and virtual forms that describes the operation and use of the programs.
 
 **Software Engineering** (IEEE definition): The application of a systematic, disciplined, quantifiable approach to the development, operation, and maintenance of software; that is, the application of engineering to software.
@@ -20,6 +22,12 @@ Modern software engineering emerged to address recurring problems: late delivery
 ---
 
 ## 1.2 Nature and Characteristics of Software
+
+> **Define software and list typical software characteristics. [4 marks] (2078 Bhadra - IOE - Old Syllabus Relevant)**
+>
+> **What are the characteristics of good software? [2 marks] (2081 Bhadra - IOE - Old Syllabus Relevant)**
+>
+> **Justify: "Software doesn't wear out like hardware components." [5 marks] (2082 Bhadra - IOE - Old Syllabus Relevant)**
 
 Software is a **logical** element, not a physical one. Its key characteristics that distinguish it from hardware:
 
@@ -73,6 +81,10 @@ If a legacy system meets users' needs and runs reliably, it does not need to be 
 ---
 
 ## 1.5 Software Crisis
+
+> **What is software crisis? Explain with an example. [5 marks] (2068 Chaitra - IOE - Old Syllabus Relevant)**
+>
+> **What factors have contributed to the software crisis? Suggest possible solutions. [3+3 marks] (2075 Ashwin - IOE - Old Syllabus Relevant)**
 
 The **software crisis** is a term coined in the late 1960s (at the 1968 NATO conference) to describe the chronic problems in software development — the inability to produce useful, reliable software on time and within budget as systems grew in complexity.
 
