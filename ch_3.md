@@ -4,15 +4,15 @@
 
 ## 3.1 Requirement Engineering Process
 
-> **What is requirement engineering? Explain its steps. [4 marks] (2074 Chaitra)**
+> **What is requirement engineering? Explain its steps. [4 marks] (2074 Chaitra - IOE - Old Syllabus Relevant)**
 >
-> **What do you mean by a software requirements document? [2 marks] (2078 Bhadra)**
+> **What do you mean by a software requirements document? [2 marks] (2078 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **Explain the requirement engineering process in detail. [6 marks] (2078 Bhadra)**
+> **Explain the requirement engineering process in detail. [6 marks] (2078 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **Why is it so difficult to gain a clear understanding of what the customer wants? [3 marks] (2081 Bhadra)**
+> **Why is it so difficult to gain a clear understanding of what the customer wants? [3 marks] (2081 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **What are the different techniques used for requirements gathering and analysis? Explain any three methods in detail. [7 marks] (2070 Ashad)**
+> **What are the different techniques used for requirements gathering and analysis? Explain any three methods in detail. [7 marks] (2070 Ashad - IOE - Old Syllabus Relevant)**
 
 **Requirements engineering (RE)** is the broad spectrum of tasks and techniques that lead to an understanding of requirements. It begins during the communication activity and continues into modeling. RE establishes the solid base for design and construction — without it, the resulting software has a high probability of not meeting customer needs.
 
@@ -64,9 +64,9 @@ A **software requirements document (SRD)** — commonly called the Software Requ
 
 ## 3.2 SRS (Structure, Characteristics, Users)
 
-> **What is the importance of the SRS document in software development? [3 marks] (2082 Baishakh)**
+> **What is the importance of the SRS document in software development? [3 marks] (2082 Baishakh - IOE - Old Syllabus Relevant)**
 >
-> **Identify and document functional as well as non-functional requirements for "issuing a book from a library." [5 marks] (2079 Bhadra)**
+> **Identify and document functional as well as non-functional requirements for "issuing a book from a library." [5 marks] (2079 Bhadra - IOE - Old Syllabus Relevant)**
 
 ### Importance of the SRS
 
@@ -235,21 +235,21 @@ OLMS is a standalone web application. It interfaces with an existing college stu
 
 ## 3.3 Functional and Non-Functional Requirements
 
-> **Explain functional and non-functional requirements with examples. [6 marks] (2069 Ashad)**
+> **Explain functional and non-functional requirements with examples. [6 marks] (2069 Ashad - IOE - Old Syllabus Relevant)**
 >
-> **Differentiate functional and non-functional requirements. [7 marks] (2069 Chaitra)**
+> **Differentiate functional and non-functional requirements. [7 marks] (2069 Chaitra - IOE - Old Syllabus Relevant)**
 >
-> **Distinguish between user and system requirements. [2 marks] (2079 Bhadra)**
+> **Distinguish between user and system requirements. [2 marks] (2079 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **Why should an engineer ensure that functional and non-functional needs are in a requirements specification document? [4 marks] (2079 Bhadra)**
+> **Why should an engineer ensure that functional and non-functional needs are in a requirements specification document? [4 marks] (2079 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **List and explain functional (any two) and non-functional requirements of an airlines reservation system. [6 marks] (2082 Baishakh)**
+> **List and explain functional (any two) and non-functional requirements of an airlines reservation system. [6 marks] (2082 Baishakh - IOE - Old Syllabus Relevant)**
 >
-> **Explain functional (Order Food, Make Payment) and non-functional (all) requirements of an online food ordering system. [6 marks] (2081 Bhadra)**
+> **Explain functional (Order Food, Make Payment) and non-functional (all) requirements of an online food ordering system. [6 marks] (2081 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **Prepare functional requirements for an online ticket booking system for a movie theatre. [4 marks] (2082 Bhadra)**
+> **Prepare functional requirements for an online ticket booking system for a movie theatre. [4 marks] (2082 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **List functional and non-functional requirements for a Restaurant Information System. [5 marks] (2068 Chaitra)**
+> **List functional and non-functional requirements for a Restaurant Information System. [5 marks] (2068 Chaitra - IOE - Old Syllabus Relevant)**
 
 ### Functional Requirements
 
@@ -359,15 +359,15 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 ## 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-> **Prepare a use case diagram for an event management system. [4 marks] (2082 Bhadra)**
+> **Prepare a use case diagram for an event management system. [4 marks] (2082 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **Draw a use case diagram for an online food ordering system. [5 marks] (2082 Baishakh)**
+> **Draw a use case diagram for an online food ordering system. [5 marks] (2082 Baishakh - IOE - Old Syllabus Relevant)**
 >
-> **Draw a use case diagram for an online appointment booking app. [5 marks] (2081 Bhadra)**
+> **Draw a use case diagram for an online appointment booking app. [5 marks] (2081 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **Prepare use case diagrams for an automated ticket issuing system. [5 marks] (2081 Baishakh)**
+> **Prepare use case diagrams for an automated ticket issuing system. [5 marks] (2081 Baishakh - IOE - Old Syllabus Relevant)**
 >
-> **Draw a use case diagram illustrating interactions between a doctor, patients, and prescriptions. [5 marks] (2078 Bhadra)**
+> **Draw a use case diagram illustrating interactions between a doctor, patients, and prescriptions. [5 marks] (2078 Bhadra - IOE - Old Syllabus Relevant)**
 
 ### Use Cases
 

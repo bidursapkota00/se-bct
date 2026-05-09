@@ -4,7 +4,7 @@
 
 ## 2.1 Process Framework and Umbrella Activities
 
-> **Explain fundamental activities of the software process. [3 marks] (2082 Bhadra)**
+> **Explain fundamental activities of the software process. [3 marks] (2082 Bhadra - IOE - Old Syllabus Relevant)**
 
 A software process is a collection of activities, actions, and tasks performed when a work product is to be created. It is not rigid but adaptable to the problem, project, team, and organizational culture.
 
@@ -54,11 +54,11 @@ Traditional (prescriptive) process models define a predefined set of process ele
 
 ### 2.2.1 Waterfall Model and Its Extensions
 
-> **What is SDLC? Discuss the various stages of the waterfall process model. [2+3 marks] (2081 Baishakh)**
+> **What is SDLC? Discuss the various stages of the waterfall process model. [2+3 marks] (2081 Baishakh - IOE - Old Syllabus Relevant)**
 >
-> **Discuss the advantages and disadvantages of the waterfall model. [4 marks] (2079 Bhadra)**
+> **Discuss the advantages and disadvantages of the waterfall model. [4 marks] (2079 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **Explain why the waterfall model is not suitable when important functionalities need to be delivered in a short time period. [4 marks] (2073 Chaitra)**
+> **Explain why the waterfall model is not suitable when important functionalities need to be delivered in a short time period. [4 marks] (2073 Chaitra - IOE - Old Syllabus Relevant)**
 
 The **Software Development Life Cycle (SDLC)** is a structured sequence of stages in software engineering to develop the intended software product. The waterfall model is the oldest and most classical SDLC paradigm.
 
@@ -98,9 +98,9 @@ Each phase must be completed before the next phase begins, and there is little o
 
 ### 2.2.2 Incremental Process Model
 
-> **Explain the incremental model with its advantages and disadvantages. [4+3 marks] (2075 Chaitra)**
+> **Explain the incremental model with its advantages and disadvantages. [4+3 marks] (2075 Chaitra - IOE - Old Syllabus Relevant)**
 >
-> **You are leading development of an e-commerce site using the incremental model. How do you implement it? [4 marks] (2082 Bhadra)**
+> **You are leading development of an e-commerce site using the incremental model. How do you implement it? [4 marks] (2082 Bhadra - IOE - Old Syllabus Relevant)**
 
 The **incremental model** combines elements of linear and iterative flows. It delivers the software in a series of **increments**, each providing a portion of the overall functionality. The first increment is often a **core product** addressing basic requirements; subsequent increments add supplementary features.
 
@@ -140,9 +140,9 @@ Each increment is fully functional, deployed, tested, and reviewed by stakeholde
 
 #### Prototyping Model
 
-> **Explain the prototyping model with its advantages and disadvantages. [5+2 marks] (2076 Chaitra)**
+> **Explain the prototyping model with its advantages and disadvantages. [5+2 marks] (2076 Chaitra - IOE - Old Syllabus Relevant)**
 >
-> **In what types of projects can the prototype process model be used? Explain with an example. [5 marks] (2082 Baishakh)**
+> **In what types of projects can the prototype process model be used? Explain with an example. [5 marks] (2082 Baishakh - IOE - Old Syllabus Relevant)**
 
 The **prototyping model** is used when requirements are fuzzy, incomplete, or poorly understood. A prototype is a preliminary version of the software that is built quickly to help stakeholders visualize and refine their requirements.
 
@@ -181,11 +181,11 @@ The **prototyping model** is used when requirements are fuzzy, incomplete, or po
 
 #### Spiral Model
 
-> **Explain the spiral model with its advantages and disadvantages. [5 marks] (2068 Chaitra)**
+> **Explain the spiral model with its advantages and disadvantages. [5 marks] (2068 Chaitra - IOE - Old Syllabus Relevant)**
 >
-> **How can both the waterfall model and prototyping model be accommodated in the spiral process model? [6 marks] (2078 Kartik)**
+> **How can both the waterfall model and prototyping model be accommodated in the spiral process model? [6 marks] (2078 Kartik - IOE - Old Syllabus Relevant)**
 >
-> **A travel agency needs software but is unsure about the UI. Would it be proper to use the spiral model? Justify. [6 marks] (2075 Ashwin)**
+> **A travel agency needs software but is unsure about the UI. Would it be proper to use the spiral model? Justify. [6 marks] (2075 Ashwin - IOE - Old Syllabus Relevant)**
 
 The **spiral model**, proposed by Barry Boehm (1988), is an evolutionary process model that couples the iterative nature of prototyping with the controlled, systematic aspects of the waterfall model. Its distinguishing feature is **explicit risk analysis** at every iteration.
 
@@ -341,13 +341,13 @@ Lean principles complement other agile methods. Kanban — a lean-originated met
 
 ## 2.4 Model Selection Considerations
 
-> **Why are different process models used in software development? [2 marks] (2080 Bhadra)**
+> **Why are different process models used in software development? [2 marks] (2080 Bhadra - IOE - Old Syllabus Relevant)**
 >
-> **Define software process model. Differentiate the spiral model and incremental model highlighting their advantages and disadvantages. [2+6 marks] (2080 Baishakh)**
+> **Define software process model. Differentiate the spiral model and incremental model highlighting their advantages and disadvantages. [2+6 marks] (2080 Baishakh - IOE - Old Syllabus Relevant)**
 >
-> **A client's problem has uncertainties that could lead to loss if not planned. Which model do you suggest? Justify. [5 marks] (2074 Chaitra)**
+> **A client's problem has uncertainties that could lead to loss if not planned. Which model do you suggest? Justify. [5 marks] (2074 Chaitra - IOE - Old Syllabus Relevant)**
 >
-> **Why do we need to do a feasibility study before accepting any project? [2 marks] (2082 Bhadra)**
+> **Why do we need to do a feasibility study before accepting any project? [2 marks] (2082 Bhadra - IOE - Old Syllabus Relevant)**
 
 A **software process model** is a simplified description of a software process, presented from a specific perspective. It defines the sequence of activities, their interdependencies, and how they interact to transform inputs into outputs. Different process models exist because no single model fits every project.
 
