@@ -369,14 +369,14 @@ A **software process model** is a simplified description of a software process, 
 
 **Spiral vs. Incremental Model:**
 
-| Factor                | Spiral Model                                                     | Incremental Model                                       |
-| --------------------- | ---------------------------------------------------------------- | ------------------------------------------------------- |
-| Risk management       | Formal risk analysis at every iteration                          | Informal; risk managed by prioritizing increments       |
-| Customer involvement  | Continuous, especially in planning and risk assessment           | Periodic feedback after each increment                  |
-| Best suited for       | Large, complex, high-risk projects                               | Medium projects with generally known requirements       |
-| Process flow          | Evolutionary, where each loop revisits all phases with risk analysis  | Iterative, where each increment follows a mini-lifecycle     |
-| Flexibility to change | Changes incorporated after risk assessment in each loop          | Changes easier between increments                       |
-| Documentation         | Moderate documentation including risk reports                    | Varies; can be lightweight                              |
-| Main drawback         | Requires risk assessment expertise; expensive for small projects | Requires complete system understanding for partitioning |
+| Spiral Model                                                                        | Incremental Model                                                            |
+| ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| Performs formal risk analysis at every iteration                                    | Manages risk informally by prioritizing increments                           |
+| Customer is involved continuously, especially in planning and risk assessment       | Customer provides periodic feedback after each increment                     |
+| Best suited for large, complex, high-risk projects                                  | Best suited for medium projects with generally known requirements            |
+| Follows an evolutionary flow where each loop revisits all phases with risk analysis | Follows an iterative flow where each increment goes through a mini-lifecycle |
+| Changes are incorporated after risk assessment in each loop                         | Changes are easier to accommodate between increments                         |
+| Requires moderate documentation including risk reports                              | Documentation varies and can be lightweight                                  |
+| Requires risk assessment expertise and is expensive for small projects              | Requires complete system understanding for proper partitioning               |
 
 ---
