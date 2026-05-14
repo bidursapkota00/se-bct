@@ -103,7 +103,7 @@
 
 ---
 
-**Tutorial (15 hours)**
+**Tutorial**
 
 1. Analyze the project domain, identify challenges, and discuss software myths
 2. Select and justify an appropriate software process model
@@ -120,7 +120,7 @@
 
 ---
 
-**Practical (22.5 hours)**
+**Practical**
 
 1. Preparation and organization of software requirements specification (SRS) using standard templates
 2. Construction of UML diagrams (Use case, activity, class, and sequence) using modeling tools
