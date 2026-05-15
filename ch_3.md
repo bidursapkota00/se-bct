@@ -138,12 +138,14 @@ This SRS describes the functional and non-functional requirements for the Online
 OLMS is a web-based application that automates the core operations of a college library — cataloging books, managing member registrations, issuing and returning books, tracking overdue items, and generating reports. The system will replace the existing manual register-based process. It will not handle inter-library loans or e-book licensing in this version.
 
 **1.3 Definitions, Acronyms, and Abbreviations**
+
 - **OLMS** — Online Library Management System.
 - **Member** — a registered student or faculty who can borrow books.
 - **Librarian** — an authorized staff member who manages the system.
 - **ISBN** — International Standard Book Number.
 
 **1.4 References**
+
 - IEEE Std 830-1998, IEEE Recommended Practice for Software Requirements Specifications.
 - College Library Policy Document, Version 3.2.
 
@@ -158,6 +160,7 @@ Section 2 provides an overall description of the product. Section 3 specifies de
 OLMS is a standalone web application. It interfaces with an existing college student database for member verification. It runs on a web server (Apache/Nginx) with a MySQL database backend and is accessed through standard web browsers.
 
 **2.2 Product Functions (High-Level)**
+
 - Book catalog management (add, update, delete, search).
 - Member registration and profile management.
 - Book issuing and returning.
@@ -166,16 +169,19 @@ OLMS is a standalone web application. It interfaces with an existing college stu
 - Report generation (most borrowed books, overdue list, member activity).
 
 **2.3 User Characteristics**
+
 - **Librarian** — moderate computer literacy; primary user who performs all administrative operations.
 - **Member (Student/Faculty)** — basic computer literacy; uses the system to search the catalog, view their borrowing history, and reserve books.
 - **Administrator** — technical staff responsible for system configuration and user management.
 
 **2.4 Constraints**
+
 - The system must run on the college's existing Linux server infrastructure.
 - The system must comply with the college's data privacy policy.
 - Maximum budget: NPR 5,00,000.
 
 **2.5 Assumptions and Dependencies**
+
 - Members already have valid college IDs for authentication.
 - The college provides a stable internet connection for the server.
 - The student database API is available and documented.
@@ -273,14 +279,14 @@ Non-functional requirements describe **how well** the system must perform — qu
 
 ### Functional vs. Non-Functional Requirements
 
-| Aspect               | Functional Requirements                                      | Non-Functional Requirements                                     |
-| --------------------- | ------------------------------------------------------------ | --------------------------------------------------------------- |
-| Focus                 | What the system does                                         | How well the system performs                                     |
-| Nature                | Specific features and behaviors                              | Quality attributes and constraints                              |
-| Example               | "User can place an order"                                    | "Order confirmation within 2 seconds"                           |
-| Testing               | Tested by executing the function                             | Tested by measuring performance, stress, security, etc.         |
-| Consequence of absence | Missing functionality — system is incomplete                 | Poor quality — system is unreliable, slow, or insecure          |
-| Documentation         | Described as use cases, user stories, or feature lists        | Described as quality metrics, constraints, or SLA targets       |
+| Functional Requirements                                                   | Non-Functional Requirements                                 |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| Describe what the system does                                             | Describe how well the system performs                       |
+| Specify specific features and behaviors                                   | Specify quality attributes and constraints                  |
+| Example: "User can place an order"                                        | Example: "Order confirmation within 2 seconds"              |
+| Tested by executing the function directly                                 | Tested by measuring performance, stress, security, etc.     |
+| If absent, the system is incomplete because required features are missing | If absent, the system becomes unreliable, slow, or insecure |
+| Documented as use cases, user stories, or feature lists                   | Documented as quality metrics, constraints, or SLA targets  |
 
 ### Why Both Must Be in the SRS
 
