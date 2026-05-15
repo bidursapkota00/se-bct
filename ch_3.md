@@ -14,23 +14,23 @@
 >
 > **What are the different techniques used for requirements gathering and analysis? Explain any three methods in detail. [7 marks] (2070 Ashad - IOE - Old Syllabus Relevant)**
 
-**Requirements engineering (RE)** is the broad spectrum of tasks and techniques that lead to an understanding of requirements. It begins during the communication activity and continues into modeling. RE establishes the solid base for design and construction — without it, the resulting software has a high probability of not meeting customer needs.
+**Requirements engineering (RE)** is the broad spectrum of tasks and techniques that lead to an understanding of requirements. It begins during the communication activity and continues into modeling. RE establishes the solid base for design and construction. Without it, the resulting software has a high probability of not meeting customer needs.
 
 ### Seven Tasks of Requirements Engineering
 
-**1. Inception** — establish a basic understanding of the problem, the people who want a solution, and the nature of the desired solution. At inception, stakeholders are identified, project scope is outlined, and initial communication is established.
+**1. Inception.** Establish a basic understanding of the problem, the people who want a solution, and the nature of the desired solution. At inception, stakeholders are identified, project scope is outlined, and initial communication is established.
 
-**2. Elicitation** — actively gather requirements from stakeholders. Ask what the system must accomplish, how it fits into business needs, and how it will be used daily. Elicitation also involves understanding business goals (functional and non-functional) and prioritizing them.
+**2. Elicitation.** Actively gather requirements from stakeholders. Ask what the system must accomplish, how it fits into business needs, and how it will be used daily. Elicitation also involves understanding business goals (functional and non-functional) and prioritizing them.
 
-**3. Elaboration** — develop a refined requirements model that identifies various aspects of software function, behavior, and information. User scenarios from elicitation are parsed to extract analysis classes, attributes, and services. The key is to describe the problem sufficiently for design and then move on — do not obsess over unnecessary detail.
+**3. Elaboration.** Develop a refined requirements model that identifies various aspects of software function, behavior, and information. User scenarios from elicitation are parsed to extract analysis classes, attributes, and services. The key is to describe the problem sufficiently for design and then move on without obsessing over unnecessary detail.
 
-**4. Negotiation** — reconcile conflicting requirements among stakeholders. Customers and users rank requirements and discuss priority conflicts. The goal is a "win-win" result: both sides achieve some measure of satisfaction. Requirements are eliminated, combined, or modified based on cost, risk, and priority assessment.
+**4. Negotiation.** Reconcile conflicting requirements among stakeholders. Customers and users rank requirements and discuss priority conflicts. The goal is a "win-win" result where both sides achieve some measure of satisfaction. Requirements are eliminated, combined, or modified based on cost, risk, and priority assessment.
 
-**5. Specification** — document the agreed-upon requirements. A specification can be a written document, graphical models, a formal mathematical model, a collection of usage scenarios, a prototype, or any combination. For large systems, a formal SRS document is used; for smaller products, user stories or use cases may suffice.
+**5. Specification.** Document the agreed-upon requirements. A specification can be a written document, graphical models, a formal mathematical model, a collection of usage scenarios, a prototype, or any combination. For large systems, a formal SRS document is used; for smaller products, user stories or use cases may suffice.
 
-**6. Validation** — assess the quality of requirements work products. Ensure requirements are stated unambiguously, are consistent, and that omissions and errors are corrected. The primary mechanism is a **technical review** involving software engineers, customers, users, and other stakeholders.
+**6. Validation.** Assess the quality of requirements work products. Ensure requirements are stated unambiguously, are consistent, and that omissions and errors are corrected. The primary mechanism is a **technical review** involving software engineers, customers, users, and other stakeholders.
 
-**7. Management** — identify, control, and track requirements and changes to requirements throughout the project lifecycle. Requirements change constantly, and management activities ensure that changes are handled systematically (closely related to software configuration management).
+**7. Management.** Identify, control, and track requirements and changes to requirements throughout the project lifecycle. Requirements change constantly, and management activities ensure that changes are handled systematically (closely related to software configuration management).
 
 ### Why It Is Difficult to Understand Customer Requirements
 
@@ -44,21 +44,21 @@
 
 ### Requirements Gathering Techniques
 
-**Interviews** — one-on-one or group sessions where the requirements engineer asks structured or unstructured questions to stakeholders. Effective for understanding individual perspectives, uncovering implicit needs, and clarifying details. Best combined with other methods.
+**Interviews** are one-on-one or group sessions where the requirements engineer asks structured or unstructured questions to stakeholders. They are effective for understanding individual perspectives, uncovering implicit needs, and clarifying details. Best combined with other methods.
 
-**Facilitated Meetings (Workshops / JAD Sessions)** — structured meetings attended by both software engineers and stakeholders. A facilitator controls the meeting. Participants develop lists of objects, services, constraints, and performance criteria. Combined lists are refined through discussion to reach consensus. Rules for preparation and participation are established beforehand.
+**Facilitated Meetings (Workshops / JAD Sessions)** are structured meetings attended by both software engineers and stakeholders. A facilitator controls the meeting. Participants develop lists of objects, services, constraints, and performance criteria. Combined lists are refined through discussion to reach consensus. Rules for preparation and participation are established beforehand.
 
-**Prototyping** — build a preliminary version of the system (or part of it) to help stakeholders visualize and refine requirements. Particularly useful when requirements are fuzzy or when the UI is a major concern.
+**Prototyping** involves building a preliminary version of the system (or part of it) to help stakeholders visualize and refine requirements. It is particularly useful when requirements are fuzzy or when the UI is a major concern.
 
-**Observation (Ethnography)** — observe end users performing their actual work to understand how the existing system is used and identify implicit requirements that users may not articulate. Useful for understanding workflows and business processes.
+**Observation (Ethnography)** involves observing end users performing their actual work to understand how the existing system is used and identify implicit requirements that users may not articulate. It is useful for understanding workflows and business processes.
 
-**Questionnaires/Surveys** — collect requirements from a large number of stakeholders simultaneously. Useful for gathering quantitative data on preferences and priorities.
+**Questionnaires/Surveys** are used to collect requirements from a large number of stakeholders simultaneously. They are useful for gathering quantitative data on preferences and priorities.
 
-**Document Analysis** — study existing documentation (manuals, forms, reports, regulations, legacy system specifications) to understand the problem domain and extract requirements.
+**Document Analysis** involves studying existing documentation (manuals, forms, reports, regulations, legacy system specifications) to understand the problem domain and extract requirements.
 
 ### A Software Requirements Document
 
-A **software requirements document (SRD)** — commonly called the Software Requirements Specification (SRS) — is a formal, written understanding of the problem that all parties agree upon. It describes the required informational, functional, and behavioral domains for the system, serves as a contractual basis between customer and developer, and provides the foundation for design, testing, and maintenance.
+A **software requirements document (SRD)**, commonly called the Software Requirements Specification (SRS), is a formal, written understanding of the problem that all parties agree upon. It describes the required informational, functional, and behavioral domains for the system, serves as a contractual basis between customer and developer, and provides the foundation for design, testing, and maintenance.
 
 ---
 
@@ -70,7 +70,7 @@ A **software requirements document (SRD)** — commonly called the Software Requ
 
 ### Importance of the SRS
 
-- Provides a clear, shared understanding of what the software must do — eliminating ambiguity between customers, developers, and testers.
+- Provides a clear, shared understanding of what the software must do, eliminating ambiguity between customers, developers, and testers.
 - Serves as a contractual agreement between the customer and the development team.
 - Acts as the basis for project planning, cost estimation, and scheduling.
 - Provides the foundation for system design, implementation, and testing (traceability).
@@ -79,30 +79,30 @@ A **software requirements document (SRD)** — commonly called the Software Requ
 
 ### SRS Structure (Based on IEEE 830 / ISO/IEC/IEEE 29148)
 
-**Section 1: Introduction** — Purpose of the SRS, scope of the software, definitions/acronyms, references, and document overview.
+**Section 1: Introduction** covers the purpose of the SRS, scope of the software, definitions/acronyms, references, and document overview.
 
-**Section 2: Overall Description** — Product perspective (context within a larger system), product functions (high-level summary), user characteristics (profiles of target users, their expertise), constraints (hardware, software, regulatory), and assumptions/dependencies.
+**Section 2: Overall Description** covers product perspective (context within a larger system), product functions (high-level summary), user characteristics (profiles of target users, their expertise), constraints (hardware, software, regulatory), and assumptions/dependencies.
 
-**Section 3: Specific Requirements** — Functional requirements (detailed descriptions of each function), external interface requirements (user, hardware, software, communication interfaces), performance requirements (response time, throughput), design constraints, and non-functional attributes (reliability, security, maintainability, portability).
+**Section 3: Specific Requirements** covers functional requirements (detailed descriptions of each function), external interface requirements (user, hardware, software, communication interfaces), performance requirements (response time, throughput), design constraints, and non-functional attributes (reliability, security, maintainability, portability).
 
 ### Characteristics of a Good SRS
 
-- **Correct** — accurately represents stakeholder needs.
-- **Unambiguous** — each requirement has only one interpretation.
-- **Complete** — contains all significant requirements; no TBD placeholders.
-- **Consistent** — no requirement conflicts with another.
-- **Verifiable (Testable)** — every requirement can be tested through an objective process.
-- **Modifiable** — structure allows easy changes while maintaining consistency.
-- **Traceable** — each requirement can be traced to its source and to corresponding design/test elements.
-- **Feasible** — achievable within budget, schedule, and technology constraints.
+- **Correct** means it accurately represents stakeholder needs.
+- **Unambiguous** means each requirement has only one interpretation.
+- **Complete** means it contains all significant requirements with no TBD placeholders.
+- **Consistent** means no requirement conflicts with another.
+- **Verifiable (Testable)** means every requirement can be tested through an objective process.
+- **Modifiable** means the structure allows easy changes while maintaining consistency.
+- **Traceable** means each requirement can be traced to its source and to corresponding design/test elements.
+- **Feasible** means it is achievable within budget, schedule, and technology constraints.
 
 ### Users of the SRS
 
-- **Customers/Clients** — verify that the document captures their needs.
-- **Project Managers** — use it for planning, estimation, and tracking.
-- **Developers/Designers** — use it as the basis for design and implementation.
-- **Testers/QA** — derive test cases from requirements to validate the system.
-- **Maintenance Engineers** — reference it for understanding the system during future modifications.
+- **Customers/Clients** verify that the document captures their needs.
+- **Project Managers** use it for planning, estimation, and tracking.
+- **Developers/Designers** use it as the basis for design and implementation.
+- **Testers/QA** derive test cases from requirements to validate the system.
+- **Maintenance Engineers** reference it for understanding the system during future modifications.
 
 ### Example: Requirements for "Issuing a Book from a Library"
 
@@ -117,13 +117,13 @@ A **software requirements document (SRD)** — commonly called the Software Requ
 
 **Non-Functional Requirements:**
 
-- **Performance** — the system shall process a book issue transaction within 3 seconds.
-- **Usability** — the interface shall be simple enough for a librarian with minimal computer training.
-- **Security** — only authorized librarians shall be able to issue books.
-- **Reliability** — the system shall be available during all library operating hours (99.5% uptime).
-- **Maintainability** — the system shall be designed to allow easy addition of new book categories.
+- **Performance:** The system shall process a book issue transaction within 3 seconds.
+- **Usability:** The interface shall be simple enough for a librarian with minimal computer training.
+- **Security:** Only authorized librarians shall be able to issue books.
+- **Reliability:** The system shall be available during all library operating hours (99.5% uptime).
+- **Maintainability:** The system shall be designed to allow easy addition of new book categories.
 
-### Complete SRS Example (IEEE 830 Format) — Online Library Management System
+### Complete SRS Example (IEEE 830 Format) for Online Library Management System
 
 **SOFTWARE REQUIREMENTS SPECIFICATION**
 **Online Library Management System (OLMS)**
@@ -135,14 +135,14 @@ A **software requirements document (SRD)** — commonly called the Software Requ
 This SRS describes the functional and non-functional requirements for the Online Library Management System (OLMS). It is intended for use by the development team, testers, project managers, and the library administration (client).
 
 **1.2 Scope**
-OLMS is a web-based application that automates the core operations of a college library — cataloging books, managing member registrations, issuing and returning books, tracking overdue items, and generating reports. The system will replace the existing manual register-based process. It will not handle inter-library loans or e-book licensing in this version.
+OLMS is a web-based application that automates the core operations of a college library, including cataloging books, managing member registrations, issuing and returning books, tracking overdue items, and generating reports. The system will replace the existing manual register-based process. It will not handle inter-library loans or e-book licensing in this version.
 
 **1.3 Definitions, Acronyms, and Abbreviations**
 
-- **OLMS** — Online Library Management System.
-- **Member** — a registered student or faculty who can borrow books.
-- **Librarian** — an authorized staff member who manages the system.
-- **ISBN** — International Standard Book Number.
+- **OLMS** refers to Online Library Management System.
+- **Member** refers to a registered student or faculty who can borrow books.
+- **Librarian** refers to an authorized staff member who manages the system.
+- **ISBN** refers to International Standard Book Number.
 
 **1.4 References**
 
@@ -170,9 +170,9 @@ OLMS is a standalone web application. It interfaces with an existing college stu
 
 **2.3 User Characteristics**
 
-- **Librarian** — moderate computer literacy; primary user who performs all administrative operations.
-- **Member (Student/Faculty)** — basic computer literacy; uses the system to search the catalog, view their borrowing history, and reserve books.
-- **Administrator** — technical staff responsible for system configuration and user management.
+- **Librarian** has moderate computer literacy and is the primary user who performs all administrative operations.
+- **Member (Student/Faculty)** has basic computer literacy and uses the system to search the catalog, view their borrowing history, and reserve books.
+- **Administrator** is the technical staff responsible for system configuration and user management.
 
 **2.4 Constraints**
 
@@ -192,31 +192,31 @@ OLMS is a standalone web application. It interfaces with an existing college stu
 
 **3.1 Functional Requirements**
 
-**FR-01: Search Book** — The system shall allow members and librarians to search the catalog by title, author, ISBN, or category. Search results shall display book title, author, availability status, and shelf location.
+**FR-01: Search Book.** The system shall allow members and librarians to search the catalog by title, author, ISBN, or category. Search results shall display book title, author, availability status, and shelf location.
 
-**FR-02: Add New Book** — The system shall allow the librarian to add a new book by entering title, author(s), ISBN, publisher, edition, category, quantity, and shelf location.
+**FR-02: Add New Book.** The system shall allow the librarian to add a new book by entering title, author(s), ISBN, publisher, edition, category, quantity, and shelf location.
 
-**FR-03: Register Member** — The system shall allow the librarian to register a new member by entering name, college ID, department, contact number, and email. The system shall verify the college ID against the student database.
+**FR-03: Register Member.** The system shall allow the librarian to register a new member by entering name, college ID, department, contact number, and email. The system shall verify the college ID against the student database.
 
-**FR-04: Issue Book** — The system shall allow the librarian to issue a book to a member. The system shall verify: (a) the member's account is active, (b) the member has not exceeded the borrowing limit (max 3 books), and (c) the book is available. Upon issuing, the system shall record the issue date, set the due date (14 days), and update the book's availability status.
+**FR-04: Issue Book.** The system shall allow the librarian to issue a book to a member. The system shall verify: (a) the member's account is active, (b) the member has not exceeded the borrowing limit (max 3 books), and (c) the book is available. Upon issuing, the system shall record the issue date, set the due date (14 days), and update the book's availability status.
 
-**FR-05: Return Book** — The system shall allow the librarian to process a book return. If the book is overdue, the system shall automatically calculate the fine (NPR 5 per day). The system shall update the book's status to "available."
+**FR-05: Return Book.** The system shall allow the librarian to process a book return. If the book is overdue, the system shall automatically calculate the fine (NPR 5 per day). The system shall update the book's status to "available."
 
-**FR-06: Reserve Book** — The system shall allow a member to reserve a book that is currently issued. When the book is returned, the system shall notify the reserving member via email.
+**FR-06: Reserve Book.** The system shall allow a member to reserve a book that is currently issued. When the book is returned, the system shall notify the reserving member via email.
 
-**FR-07: Generate Reports** — The system shall generate the following reports: (a) list of overdue books with member details, (b) most borrowed books in a given period, (c) member borrowing history.
+**FR-07: Generate Reports.** The system shall generate the following reports: (a) list of overdue books with member details, (b) most borrowed books in a given period, (c) member borrowing history.
 
-**FR-08: User Login** — The system shall authenticate users (librarian, member, admin) using college ID and password. Passwords shall be hashed before storage.
+**FR-08: User Login.** The system shall authenticate users (librarian, member, admin) using college ID and password. Passwords shall be hashed before storage.
 
 **3.2 External Interface Requirements**
 
-**User Interface** — The system shall provide a responsive web interface accessible on desktop browsers (Chrome, Firefox, Edge). The librarian dashboard shall display pending returns and overdue alerts on the home screen.
+**User Interface.** The system shall provide a responsive web interface accessible on desktop browsers (Chrome, Firefox, Edge). The librarian dashboard shall display pending returns and overdue alerts on the home screen.
 
-**Hardware Interface** — The system shall interface with a barcode scanner for reading book ISBNs and member IDs during issue/return operations.
+**Hardware Interface.** The system shall interface with a barcode scanner for reading book ISBNs and member IDs during issue/return operations.
 
-**Software Interface** — The system shall connect to the college student database via a REST API to verify member registration.
+**Software Interface.** The system shall connect to the college student database via a REST API to verify member registration.
 
-**Communication Interface** — The system shall send email notifications (overdue reminders, reservation availability) via SMTP.
+**Communication Interface.** The system shall send email notifications (overdue reminders, reservation availability) via SMTP.
 
 **3.3 Performance Requirements**
 
@@ -231,11 +231,11 @@ OLMS is a standalone web application. It interfaces with an existing college stu
 
 **3.5 Non-Functional Requirements**
 
-- **Reliability** — the system shall have 99% uptime during library operating hours (8 AM – 8 PM).
-- **Security** — only authenticated librarians shall issue/return books. All passwords shall be stored using bcrypt hashing. The system shall enforce session timeout after 15 minutes of inactivity.
-- **Usability** — a new librarian shall be able to issue a book within 2 minutes of first use without external assistance.
-- **Maintainability** — the codebase shall follow MVC architecture with documented APIs to allow future enhancements (e.g., e-book support).
-- **Portability** — the system shall be deployable on any Linux server with Python 3.8+ and MySQL 8.0+.
+- **Reliability:** The system shall have 99% uptime during library operating hours (8 AM to 8 PM).
+- **Security:** Only authenticated librarians shall issue/return books. All passwords shall be stored using bcrypt hashing. The system shall enforce session timeout after 15 minutes of inactivity.
+- **Usability:** A new librarian shall be able to issue a book within 2 minutes of first use without external assistance.
+- **Maintainability:** The codebase shall follow MVC architecture with documented APIs to allow future enhancements (e.g., e-book support).
+- **Portability:** The system shall be deployable on any Linux server with Python 3.8+ and MySQL 8.0+.
 
 ---
 
@@ -259,23 +259,23 @@ OLMS is a standalone web application. It interfaces with an existing college stu
 
 ### Functional Requirements
 
-Functional requirements describe **what** the system must do — the specific functions, features, services, and behaviors the software must provide. They define the system's response to specific inputs under specific conditions.
+Functional requirements describe **what** the system must do, including the specific functions, features, services, and behaviors the software must provide. They define the system's response to specific inputs under specific conditions.
 
 **Example:** "The system shall allow users to search flights by origin, destination, and date."
 
 ### Non-Functional Requirements (NFRs)
 
-Non-functional requirements describe **how well** the system must perform — quality attributes, performance characteristics, security constraints, and general system constraints. They constrain the overall functioning of the system rather than defining specific features.
+Non-functional requirements describe **how well** the system must perform, including quality attributes, performance characteristics, security constraints, and general system constraints. They constrain the overall functioning of the system rather than defining specific features.
 
 **Categories of NFRs:**
 
-- **Performance** — response time, throughput, capacity (e.g., "The page shall load within 2 seconds under 1000 concurrent users").
-- **Reliability** — mean time between failures, availability (e.g., "99.9% uptime").
-- **Usability** — ease of use, learnability (e.g., "A new user shall be able to complete registration within 3 minutes without help").
-- **Security** — authentication, authorization, data encryption (e.g., "All passwords shall be stored using bcrypt hashing").
-- **Maintainability** — ease of modification, modular design.
-- **Portability** — ability to operate across different platforms.
-- **Scalability** — ability to handle growth in users, data, or transactions.
+- **Performance** covers response time, throughput, and capacity (e.g., "The page shall load within 2 seconds under 1000 concurrent users").
+- **Reliability** covers mean time between failures and availability (e.g., "99.9% uptime").
+- **Usability** covers ease of use and learnability (e.g., "A new user shall be able to complete registration within 3 minutes without help").
+- **Security** covers authentication, authorization, and data encryption (e.g., "All passwords shall be stored using bcrypt hashing").
+- **Maintainability** covers ease of modification and modular design.
+- **Portability** covers the ability to operate across different platforms.
+- **Scalability** covers the ability to handle growth in users, data, or transactions.
 
 ### Functional vs. Non-Functional Requirements
 
@@ -292,45 +292,45 @@ Non-functional requirements describe **how well** the system must perform — qu
 
 Functional requirements alone do not guarantee a usable system. A system may perform all required functions but fail if it is too slow, insecure, or difficult to use. Conversely, meeting NFRs without delivering required features is meaningless. Both types are essential for:
 
-- Complete system specification — developers know what to build and to what standard.
-- Testing — testers need both functional test cases and performance/security benchmarks.
-- Contract enforcement — stakeholders need measurable criteria for acceptance.
-- Risk reduction — missing NFRs often lead to costly rework or system rejection.
+- Complete system specification ensures that developers know what to build and to what standard.
+- Testing requires both functional test cases and performance/security benchmarks.
+- Contract enforcement requires stakeholders to have measurable criteria for acceptance.
+- Risk reduction is important because missing NFRs often lead to costly rework or system rejection.
 
 ### User Requirements vs. System Requirements
 
-- **User requirements** — high-level statements written in natural language (possibly with diagrams) describing what the system should provide to users and the constraints under which it operates. Written for customers and managers. Example: "The system should allow customers to book flights."
-- **System requirements** — detailed, precise descriptions of system functions, services, and constraints. Written for developers and testers. Example: "The system shall accept origin (IATA code), destination (IATA code), departure date (YYYY-MM-DD), and number of passengers (1–9) as search parameters and return matching flights sorted by price within 3 seconds."
+- **User requirements** are high-level statements written in natural language (possibly with diagrams) describing what the system should provide to users and the constraints under which it operates. They are written for customers and managers. Example: "The system should allow customers to book flights."
+- **System requirements** are detailed, precise descriptions of system functions, services, and constraints. They are written for developers and testers. Example: "The system shall accept origin (IATA code), destination (IATA code), departure date (YYYY-MM-DD), and number of passengers (1–9) as search parameters and return matching flights sorted by price within 3 seconds."
 
 ### Example: Airlines Reservation System
 
 **Functional Requirements:**
 
-- **Search Flights** — the system shall allow passengers to search for flights by origin, destination, date, and class. Results shall display flight number, departure/arrival times, duration, and price.
-- **Book a Ticket** — the system shall allow passengers to select a flight, enter passenger details, choose a seat, and confirm the booking. A booking confirmation with a PNR number shall be generated.
+- **Search Flights.** The system shall allow passengers to search for flights by origin, destination, date, and class. Results shall display flight number, departure/arrival times, duration, and price.
+- **Book a Ticket.** The system shall allow passengers to select a flight, enter passenger details, choose a seat, and confirm the booking. A booking confirmation with a PNR number shall be generated.
 
 **Non-Functional Requirements:**
 
-- **Performance** — search results shall be returned within 3 seconds.
-- **Availability** — the system shall be available 24/7 with 99.9% uptime.
-- **Security** — payment information shall be encrypted using TLS 1.2 or higher; PCI-DSS compliance is mandatory.
-- **Scalability** — the system shall support at least 10,000 concurrent users.
-- **Usability** — the booking process shall be completable within 5 steps.
+- **Performance:** Search results shall be returned within 3 seconds.
+- **Availability:** The system shall be available 24/7 with 99.9% uptime.
+- **Security:** Payment information shall be encrypted using TLS 1.2 or higher, and PCI-DSS compliance is mandatory.
+- **Scalability:** The system shall support at least 10,000 concurrent users.
+- **Usability:** The booking process shall be completable within 5 steps.
 
 ### Example: Online Food Ordering System
 
 **Functional Requirements:**
 
-- **Order Food** — the customer shall browse the menu, select food items, specify quantity, add customizations (e.g., extra cheese, no onions), and add items to the cart. The cart shall display a summary with item-wise and total prices.
-- **Make Payment** — the system shall support multiple payment methods (credit/debit card, digital wallet, cash on delivery). Upon successful payment, an order confirmation with an estimated delivery time shall be displayed.
+- **Order Food.** The customer shall browse the menu, select food items, specify quantity, add customizations (e.g., extra cheese, no onions), and add items to the cart. The cart shall display a summary with item-wise and total prices.
+- **Make Payment.** The system shall support multiple payment methods (credit/debit card, digital wallet, cash on delivery). Upon successful payment, an order confirmation with an estimated delivery time shall be displayed.
 
 **Non-Functional Requirements:**
 
-- **Performance** — the payment transaction shall complete within 5 seconds.
-- **Security** — all payment data shall be transmitted over encrypted connections; user passwords shall be hashed.
-- **Usability** — the system shall support a mobile-responsive design.
-- **Reliability** — the system shall handle order processing without data loss during peak hours.
-- **Availability** — 99.5% uptime during restaurant operating hours.
+- **Performance:** The payment transaction shall complete within 5 seconds.
+- **Security:** All payment data shall be transmitted over encrypted connections, and user passwords shall be hashed.
+- **Usability:** The system shall support a mobile-responsive design.
+- **Reliability:** The system shall handle order processing without data loss during peak hours.
+- **Availability:** 99.5% uptime during restaurant operating hours.
 
 ### Example: Online Ticket Booking System for a Movie Theatre
 
@@ -355,11 +355,11 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 **Non-Functional Requirements:**
 
-- **Performance** — order placement shall be processed within 2 seconds.
-- **Usability** — the interface shall be operable on tablets used by waitstaff.
-- **Reliability** — the system shall not lose orders during power failures (persistent storage).
-- **Security** — customer payment data shall be handled per PCI-DSS standards.
-- **Scalability** — the system shall handle peak-hour load without degradation.
+- **Performance:** Order placement shall be processed within 2 seconds.
+- **Usability:** The interface shall be operable on tablets used by waitstaff.
+- **Reliability:** The system shall not lose orders during power failures (persistent storage).
+- **Security:** Customer payment data shall be handled per PCI-DSS standards.
+- **Scalability:** The system shall handle peak-hour load without degradation.
 
 ---
 
@@ -381,18 +381,18 @@ A **use case** describes how an end user (playing a specific role) interacts wit
 
 ### Key Elements of a Use Case
 
-- **Actor** — any external entity (person, device, or external system) that communicates with the system. Actors represent roles, not specific individuals. A single user may play multiple roles (and thus be multiple actors).
-- **Primary actor** — directly interacts with and derives benefit from the system.
-- **Secondary actor** — supports the system so primary actors can do their work.
-- **Use case** — a specific function or service provided by the system, described from the actor's perspective.
-- **System boundary** — a rectangle that defines the scope of the system; actors are outside, use cases are inside.
+- **Actor** is any external entity (person, device, or external system) that communicates with the system. Actors represent roles, not specific individuals. A single user may play multiple roles (and thus be multiple actors).
+- **Primary actor** directly interacts with and derives benefit from the system.
+- **Secondary actor** supports the system so primary actors can do their work.
+- **Use case** is a specific function or service provided by the system, described from the actor's perspective.
+- **System boundary** is a rectangle that defines the scope of the system. Actors are outside and use cases are inside.
 
 ### Relationships in Use Case Diagrams
 
-- **Association** — a solid line connecting an actor to a use case, indicating interaction.
-- **Include (<<include>>)** — a dashed arrow from the base use case to the included use case. The included use case is **always** executed as part of the base use case. Used for common, reusable functionality. Example: "Place Order" includes "Verify Login."
-- **Extend (<<extend>>)** — a dashed arrow from the extending use case to the base use case. The extending use case is executed **only under certain conditions**. The base use case is complete on its own. Example: "Checkout" may be extended by "Apply Coupon."
-- **Generalization** — a solid line with a hollow triangle arrowhead, representing inheritance between actors or between use cases.
+- **Association** is a solid line connecting an actor to a use case, indicating interaction.
+- **Include (<<include>>)** is represented by a dashed arrow from the base use case to the included use case. The included use case is **always** executed as part of the base use case. It is used for common, reusable functionality. Example: "Place Order" includes "Verify Login."
+- **Extend (<<extend>>)** is represented by a dashed arrow from the extending use case to the base use case. The extending use case is executed **only under certain conditions**. The base use case is complete on its own. Example: "Checkout" may be extended by "Apply Coupon."
+- **Generalization** is a solid line with a hollow triangle arrowhead, representing inheritance between actors or between use cases.
 
 ### Writing a Use Case (Template-Based Description)
 
@@ -448,12 +448,12 @@ A **user story** is a short, informal description of a feature told from the per
 
 **INVEST Criteria for Good User Stories:**
 
-- **I — Independent** — the story is self-contained and not dependent on other stories.
-- **N — Negotiable** — details are open for discussion; the story is not a rigid contract.
-- **V — Valuable** — it delivers clear value to the user or business.
-- **E — Estimable** — the team can estimate the effort required.
-- **S — Small** — small enough to be completed within a single sprint.
-- **T — Testable** — it has clear criteria that allow verification.
+- **I (Independent)** means the story is self-contained and not dependent on other stories.
+- **N (Negotiable)** means details are open for discussion and the story is not a rigid contract.
+- **V (Valuable)** means it delivers clear value to the user or business.
+- **E (Estimable)** means the team can estimate the effort required.
+- **S (Small)** means it is small enough to be completed within a single sprint.
+- **T (Testable)** means it has clear criteria that allow verification.
 
 **Acceptance Criteria** define the specific conditions that must be satisfied for a user story to be considered complete. They bridge the gap between the user story and the implementation.
 
@@ -473,21 +473,21 @@ A **user story** is a short, informal description of a feature told from the per
 
 ### 3.5.2 Product Backlog Creation and Prioritization
 
-The **product backlog** is an ordered, evolving list of everything needed in the product — features, enhancements, bug fixes, and technical tasks. It is the single source of requirements for the development team. The **Product Owner** is responsible for maintaining and prioritizing the backlog.
+The **product backlog** is an ordered, evolving list of everything needed in the product, including features, enhancements, bug fixes, and technical tasks. It is the single source of requirements for the development team. The **Product Owner** is responsible for maintaining and prioritizing the backlog.
 
 **Creating the Product Backlog:**
 
 - Gather initial user stories from stakeholders through interviews, workshops, and brainstorming.
 - Write each requirement as a user story with acceptance criteria.
 - Estimate effort for each story (using story points or ideal days).
-- Order the backlog by priority — highest-priority items at the top are refined in detail; lower items remain coarser.
+- Order the backlog by priority. Highest-priority items at the top are refined in detail, while lower items remain coarser.
 
 **Prioritization Techniques:**
 
-- **MoSCoW Method** — categorize items as Must Have (essential, non-negotiable), Should Have (important but not critical for current release), Could Have (desirable if time permits), and Won't Have (explicitly out of scope for now).
-- **Business Value vs. Effort** — prioritize items that deliver the highest business value relative to their development effort.
-- **Risk-Based** — address high-risk items early to reduce uncertainty.
-- **Kano Model** — classify features as Basic (expected), Performance (more is better), or Delighters (unexpected positive features).
+- **MoSCoW Method** categorizes items as Must Have (essential, non-negotiable), Should Have (important but not critical for current release), Could Have (desirable if time permits), and Won't Have (explicitly out of scope for now).
+- **Business Value vs. Effort** prioritizes items that deliver the highest business value relative to their development effort.
+- **Risk-Based** prioritization addresses high-risk items early to reduce uncertainty.
+- **Kano Model** classifies features as Basic (expected), Performance (more is better), or Delighters (unexpected positive features).
 
 ### 3.5.3 Story Mapping Basics
 
@@ -495,14 +495,14 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 
 **Structure of a Story Map:**
 
-- **Backbone (horizontal axis)** — the high-level user activities arranged left-to-right following the narrative flow of the user journey (the sequence of steps a user takes to achieve a goal).
-- **Ribs (vertical axis)** — beneath each backbone activity, specific user tasks and stories are stacked vertically in order of priority (most important at top).
-- **Release slices (horizontal lines)** — drawn across the map to group stories into releases. The topmost slice forms the **Minimum Viable Product (MVP)** or "walking skeleton."
+- **Backbone (horizontal axis)** contains the high-level user activities arranged left-to-right following the narrative flow of the user journey (the sequence of steps a user takes to achieve a goal).
+- **Ribs (vertical axis)** are placed beneath each backbone activity. Specific user tasks and stories are stacked vertically in order of priority (most important at top).
+- **Release slices (horizontal lines)** are drawn across the map to group stories into releases. The topmost slice forms the **Minimum Viable Product (MVP)** or "walking skeleton."
 
 **Steps to Create a Story Map:**
 
-- Frame the problem — identify users and their goals.
-- Map the user journey — outline the main activities (backbone).
+- Frame the problem by identifying users and their goals.
+- Map the user journey by outlining the main activities (backbone).
 - Break down activities into user tasks and specific stories (ribs).
 - Prioritize stories vertically under each activity.
 - Slice horizontally for release planning.
@@ -520,12 +520,12 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 
 **Activities during backlog refinement:**
 
-- **Adding detail** — break down large stories (epics) into smaller, implementable user stories.
-- **Re-estimating** — update effort estimates as the team gains more understanding.
-- **Re-prioritizing** — adjust the order of backlog items based on changing business needs, customer feedback, or new information learned from recent sprints.
-- **Removing obsolete items** — delete stories that are no longer relevant.
-- **Adding acceptance criteria** — ensure each story near the top of the backlog has clear, testable acceptance criteria.
-- **Identifying dependencies** — flag stories that depend on others so the team can plan accordingly.
+- **Adding detail** involves breaking down large stories (epics) into smaller, implementable user stories.
+- **Re-estimating** involves updating effort estimates as the team gains more understanding.
+- **Re-prioritizing** involves adjusting the order of backlog items based on changing business needs, customer feedback, or new information learned from recent sprints.
+- **Removing obsolete items** involves deleting stories that are no longer relevant.
+- **Adding acceptance criteria** involves ensuring each story near the top of the backlog has clear, testable acceptance criteria.
+- **Identifying dependencies** involves flagging stories that depend on others so the team can plan accordingly.
 
 **When it happens:**
 
@@ -533,7 +533,7 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 - It can occur during a dedicated refinement meeting (mid-sprint) or informally throughout the sprint.
 - The Product Owner, development team, and Scrum Master participate.
 
-**Goal:** Ensure that items at the top of the backlog are "ready" — small enough, well-understood, estimated, and have clear acceptance criteria — so that sprint planning is efficient and the team can begin work immediately.
+**Goal:** Ensure that items at the top of the backlog are "ready," meaning they are small enough, well-understood, estimated, and have clear acceptance criteria, so that sprint planning is efficient and the team can begin work immediately.
 
 **Refinement vs. Sprint Planning:** Refinement prepares items for future sprints; sprint planning selects and commits to items for the upcoming sprint. Without effective refinement, sprint planning becomes chaotic and time-consuming.
 
