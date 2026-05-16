@@ -1,4 +1,4 @@
-# Software Engineering — Practical Guide
+# Software Engineering: Practical Guide
 
 ---
 
@@ -12,9 +12,9 @@ Prepare a complete Software Requirements Specification (SRS) document for a chos
 
 ### Tool Setup
 
-**Option A — Google Docs / MS Word:** No installation needed. Use heading styles to structure sections. Best for collaborative editing.
+**Option A (Google Docs / MS Word):** No installation needed. Use heading styles to structure sections. Best for collaborative editing.
 
-**Option B — Markdown + VS Code:** Install VS Code from https://code.visualstudio.com. Install the "Markdown All in One" extension. Create a file named `SRS.md`. Markdown is version-control-friendly and can be converted to PDF via extensions.
+**Option B (Markdown + VS Code):** Install VS Code from https://code.visualstudio.com. Install the "Markdown All in One" extension. Create a file named `SRS.md`. Markdown is version-control-friendly and can be converted to PDF via extensions.
 
 Pick a project domain first. Common choices: Library Management System, Online Food Ordering System, Hospital Management System, E-Commerce Platform, Student Attendance System.
 
@@ -24,7 +24,7 @@ Follow these formatting rules when preparing the SRS in Microsoft Word:
 
 **Page Layout:**
 
-- **Margins:** 1 inch (2.54 cm) on all sides — Top, Bottom, Left, Right. Set via Layout > Margins > Normal.
+- **Margins:** 1 inch (2.54 cm) on all sides (Top, Bottom, Left, Right). Set via Layout > Margins > Normal.
 - **Paper size:** A4 (210 × 297 mm).
 - **Orientation:** Portrait.
 - **Line spacing:** 1.15 or 1.5 for body text. Set via Home > Line Spacing.
@@ -36,14 +36,14 @@ Follow these formatting rules when preparing the SRS in Microsoft Word:
 - **Heading 2** (subsections like "1.1 Purpose"): Times New Roman, 14 pt, Bold.
 - **Heading 3** (sub-subsections like "3.1.1 User Interfaces"): Times New Roman, 12 pt, Bold.
 - **Figure/Table captions:** Times New Roman, 10 pt, Centered below figures, above tables.
-- Apply these using the **Styles gallery** on the Home tab — do not manually bold/resize each heading individually. Using Styles allows auto-generation of Table of Contents.
+- Apply these using the **Styles gallery** on the Home tab. Do not manually bold/resize each heading individually. Using Styles allows auto-generation of Table of Contents.
 
 **Page Numbering (Roman + Arabic):**
 
 The SRS uses two numbering schemes, separated by a **section break**:
 
-- **Front matter** (Title Page, Table of Contents, List of Figures) — lowercase Roman numerals: i, ii, iii, iv...
-- **Main body** (from "1. Introduction" onward) — Arabic numerals starting from 1: 1, 2, 3, 4...
+- **Front matter** (Title Page, Table of Contents, List of Figures) uses lowercase Roman numerals: i, ii, iii, iv...
+- **Main body** (from "1. Introduction" onward) uses Arabic numerals starting from 1: 1, 2, 3, 4...
 - **Title page** has no page number.
 
 **How to set up in Word:**
@@ -72,7 +72,7 @@ After formatting all headings with Styles, go to References > Table of Contents 
 
 - Number all figures and tables sequentially: Figure 1, Figure 2, Table 1, Table 2.
 - Use consistent bullet styles (disc for level 1, circle for level 2).
-- Start each major section (1, 2, 3, 4) on a new page — insert a page break before each.
+- Start each major section (1, 2, 3, 4) on a new page. Insert a page break before each.
 - Include a **Revision History** table on the page after the title page.
 
 | Version | Date       | Author | Description                       |
@@ -84,39 +84,39 @@ After formatting all headings with Styles, go to References > Table of Contents 
 
 ### SRS Template (IEEE 830-Based)
 
-Use the following structure. Every section must be filled — leave nothing blank. If a section is genuinely not applicable, write "N/A" with a brief justification.
+Use the following structure. Every section must be filled. Leave nothing blank. If a section is genuinely not applicable, write "N/A" with a brief justification.
 
 ---
 
 **1. Introduction**
 
-**1.1 Purpose** — State the purpose of this SRS document and the intended software product. Example: "This document specifies the functional and non-functional requirements for a Library Management System (LMS) to be developed for XYZ College."
+**1.1 Purpose.** State the purpose of this SRS document and the intended software product. Example: "This document specifies the functional and non-functional requirements for a Library Management System (LMS) to be developed for XYZ College."
 
-**1.2 Document Conventions** — Describe any notation, formatting, or priority conventions used. Example: "Requirements are numbered as REQ-F-xx for functional and REQ-NF-xx for non-functional. Priority levels: High, Medium, Low."
+**1.2 Document Conventions.** Describe any notation, formatting, or priority conventions used. Example: "Requirements are numbered as REQ-F-xx for functional and REQ-NF-xx for non-functional. Priority levels: High, Medium, Low."
 
-**1.3 Intended Audience** — List who will read this document: developers, testers, project managers, instructors. Briefly describe what each audience should focus on.
+**1.3 Intended Audience.** List who will read this document: developers, testers, project managers, instructors. Briefly describe what each audience should focus on.
 
-**1.4 Product Scope** — A concise description (3-5 sentences) of what the software does, its goals, and its boundaries (what it will NOT do).
+**1.4 Product Scope.** A concise description (3-5 sentences) of what the software does, its goals, and its boundaries (what it will NOT do).
 
-**1.5 References** — List all referenced documents, standards, URLs. At minimum, cite the IEEE 830 standard and any domain-specific material.
+**1.5 References.** List all referenced documents, standards, URLs. At minimum, cite the IEEE 830 standard and any domain-specific material.
 
 ---
 
 **2. Overall Description**
 
-**2.1 Product Perspective** — Is this a standalone system or part of a larger system? Include a simple context diagram or block diagram showing the system and its external interfaces.
+**2.1 Product Perspective.** Is this a standalone system or part of a larger system? Include a simple context diagram or block diagram showing the system and its external interfaces.
 
-**2.2 Product Functions** — A bulleted summary of the major functions. Do not go into detail — just list the high-level features (5-10 bullets). Example for LMS: Issue book, Return book, Search catalog, Manage members, Generate reports, Send overdue notifications.
+**2.2 Product Functions.** A bulleted summary of the major functions. Do not go into detail. Just list the high-level features (5-10 bullets). Example for LMS: Issue book, Return book, Search catalog, Manage members, Generate reports, Send overdue notifications.
 
-**2.3 User Classes and Characteristics** — Define all user types and their technical expertise. Example: Admin (full access, technically proficient), Librarian (moderate access, trained), Student (limited access, minimal training expected).
+**2.3 User Classes and Characteristics.** Define all user types and their technical expertise. Example: Admin (full access, technically proficient), Librarian (moderate access, trained), Student (limited access, minimal training expected).
 
-**2.4 Operating Environment** — Specify: OS (Windows/Linux/macOS), browser requirements (if web-based), database (MySQL/PostgreSQL/SQLite), server (Apache/Nginx), programming language/framework.
+**2.4 Operating Environment.** Specify: OS (Windows/Linux/macOS), browser requirements (if web-based), database (MySQL/PostgreSQL/SQLite), server (Apache/Nginx), programming language/framework.
 
-**2.5 Design and Implementation Constraints** — List any constraints: specific language required, database choice, regulatory requirements (e.g., data privacy), hardware limitations.
+**2.5 Design and Implementation Constraints.** List any constraints: specific language required, database choice, regulatory requirements (e.g., data privacy), hardware limitations.
 
-**2.6 User Documentation** — What documentation will be provided? User manual, inline help, FAQ, video tutorial.
+**2.6 User Documentation.** What documentation will be provided? User manual, inline help, FAQ, video tutorial.
 
-**2.7 Assumptions and Dependencies** — List assumptions (e.g., "Users have reliable internet access") and dependencies (e.g., "System depends on a third-party payment gateway").
+**2.7 Assumptions and Dependencies.** List assumptions (e.g., "Users have reliable internet access") and dependencies (e.g., "System depends on a third-party payment gateway").
 
 ---
 
@@ -124,12 +124,12 @@ Use the following structure. Every section must be filled — leave nothing blan
 
 **3.1 External Interface Requirements**
 
-- **User Interfaces** — Describe the UI approach: web-based forms, mobile app screens, CLI. Mention any UI standards or frameworks (e.g., responsive design, Bootstrap).
-- **Hardware Interfaces** — Barcode scanner, printer, biometric device, etc. Write "N/A" if none.
-- **Software Interfaces** — APIs, external databases, third-party services (e.g., email service, payment gateway). Specify name, version, and purpose.
-- **Communication Interfaces** — Network protocols (HTTP/HTTPS, SMTP for email), data formats (JSON, XML).
+- **User Interfaces.** Describe the UI approach: web-based forms, mobile app screens, CLI. Mention any UI standards or frameworks (e.g., responsive design, Bootstrap).
+- **Hardware Interfaces.** Barcode scanner, printer, biometric device, etc. Write "N/A" if none.
+- **Software Interfaces.** APIs, external databases, third-party services (e.g., email service, payment gateway). Specify name, version, and purpose.
+- **Communication Interfaces.** Network protocols (HTTP/HTTPS, SMTP for email), data formats (JSON, XML).
 
-**3.2 Functional Requirements** — This is the core section. Write each requirement as a separate entry with:
+**3.2 Functional Requirements.** This is the core section. Write each requirement as a separate entry with:
 
 - **ID** (e.g., REQ-F-01)
 - **Title** (e.g., "User Registration")
@@ -148,7 +148,7 @@ Priority: High
 
 Write at least 10-15 functional requirements for a meaningful SRS.
 
-**3.3 Non-Functional Requirements** — Cover the following categories with specific, measurable statements:
+**3.3 Non-Functional Requirements.** Cover the following categories with specific, measurable statements:
 
 - **Performance:** "The system shall load any page within 2 seconds under normal load (up to 100 concurrent users)."
 - **Security:** "All passwords shall be stored using bcrypt hashing. All data transmission shall use HTTPS."
@@ -157,14 +157,14 @@ Write at least 10-15 functional requirements for a meaningful SRS.
 - **Scalability:** "The system shall support up to 10,000 registered users without degradation."
 - **Maintainability:** "The codebase shall follow MVC architecture to allow independent modification of layers."
 
-**3.4 Design Constraints** — Reiterate any technical restrictions that affect design choices.
+**3.4 Design Constraints.** Reiterate any technical restrictions that affect design choices.
 
 ---
 
 **4. Appendices**
 
-- **Glossary** — Define all domain-specific terms and acronyms used in the document.
-- **Analysis Models** — Attach or reference any diagrams: Use Case Diagram, Context-Level DFD, ER Diagram. (These will be developed in Practical 2.)
+- **Glossary.** Define all domain-specific terms and acronyms used in the document.
+- **Analysis Models.** Attach or reference any diagrams: Use Case Diagram, Context-Level DFD, ER Diagram. (These will be developed in Practical 2.)
 
 ---
 
@@ -275,7 +275,7 @@ The system provides a responsive web interface built with HTML, CSS, and JavaScr
 **3.1.2 Hardware Interfaces**
 
 - Barcode scanner (optional): For scanning book ISBN during issue/return. Connected via USB; input is treated as keyboard input.
-- Standard printer: For printing reports. No special driver integration required — uses browser print functionality.
+- Standard printer: For printing reports. No special driver integration is required. The system uses browser print functionality.
 
 **3.1.3 Software Interfaces**
 
@@ -385,9 +385,9 @@ The system shall run on any platform that supports Python 3.10+ and Docker. No p
 | ---- | ---------------------------------------------------------------------------------------------------- |
 | LMS  | Library Management System                                                                            |
 | ISBN | International Standard Book Number (13-digit unique book identifier)                                 |
-| CRUD | Create, Read, Update, Delete — basic database operations                                             |
+| CRUD | Create, Read, Update, Delete. These are the basic database operations                                |
 | SRS  | Software Requirements Specification                                                                  |
-| ORM  | Object-Relational Mapping — technique for converting between database tables and programming objects |
+| ORM  | Object-Relational Mapping. A technique for converting between database tables and programming objects |
 
 **4.2 Analysis Models**
 
@@ -407,7 +407,7 @@ The system shall run on any platform that supports Python 3.10+ and Docker. No p
 - [ ] Table of Contents is auto-generated from heading styles.
 - [ ] Front matter uses Roman numeral page numbers (i, ii, iii); main body uses Arabic (1, 2, 3).
 - [ ] Margins are 1 inch on all sides; body font is Times New Roman 12 pt.
-- [ ] Headings use the Styles gallery (Heading 1/2/3) — not manually formatted.
+- [ ] Headings use the Styles gallery (Heading 1/2/3) and are not manually formatted.
 - [ ] Revision History table is included.
 - [ ] Each major section starts on a new page.
 
@@ -419,11 +419,11 @@ The system shall run on any platform that supports Python 3.10+ and Docker. No p
 
 ### Objective
 
-Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for the project chosen in Practical 1, using a UML modeling tool.
+Construct four UML diagrams (Use Case, Activity, Class, and Sequence) for the project chosen in Practical 1, using a UML modeling tool.
 
 ### Tool Setup
 
-**Recommended: draw.io (diagrams.net)** — Free, no installation required for web version.
+**Recommended: draw.io (diagrams.net).** Free, no installation required for web version.
 
 1. Open https://app.diagrams.net in a browser.
 2. Choose storage location (Device, Google Drive, or GitHub).
@@ -431,9 +431,9 @@ Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for 
 4. Under the **Software** category, enable **UML** and **UML 2.5**. Click **Apply**.
 5. The left sidebar now shows UML shapes: actors, use case ovals, class boxes, lifelines, etc.
 
-**Alternative: StarUML** — Download from https://staruml.io. More rigorous UML enforcement. File > New Project > right-click model > Add Diagram > select diagram type. The toolbox updates automatically for each diagram type.
+**Alternative: StarUML.** Download from https://staruml.io. More rigorous UML enforcement. File > New Project > right-click model > Add Diagram > select diagram type. The toolbox updates automatically for each diagram type.
 
-**Alternative: Lucidchart** — Free tier at https://lucid.app. Web-based, collaborative, has UML templates.
+**Alternative: Lucidchart.** Free tier at https://lucid.app. Web-based, collaborative, has UML templates.
 
 ---
 
@@ -450,13 +450,13 @@ Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for 
 5. **Place actors outside the boundary.** Use stick figures for human actors, labeled rectangles for systems.
 6. **Draw associations.** Connect each actor to the use cases they participate in using solid lines.
 7. **Add relationships (if applicable):**
-   - **<<include>>** — dashed arrow from base use case to included use case. Example: "Issue Book" <<include>> "Authenticate User."
-   - **<<extend>>** — dashed arrow from extending use case to base use case. Example: "Apply Fine" <<extend>> "Return Book."
-   - **Generalization** — solid line with hollow triangle from child actor/use case to parent.
+   - **<<include>>** is drawn as a dashed arrow from base use case to included use case. Example: "Issue Book" <<include>> "Authenticate User."
+   - **<<extend>>** is drawn as a dashed arrow from extending use case to base use case. Example: "Apply Fine" <<extend>> "Return Book."
+   - **Generalization** is drawn as a solid line with hollow triangle from child actor/use case to parent.
 
 **Deliverable:** A single use case diagram with 4-8 use cases, 2-4 actors, and at least one <<include>> or <<extend>> relationship.
 
-#### Example: Use Case Diagram — Library Management System
+#### Example: Use Case Diagram for Library Management System
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -510,7 +510,7 @@ Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for 
 
 ### Diagram 2: Activity Diagram
 
-**Purpose:** Model the flow of control for one specific use case — showing steps, decisions, and parallel activities.
+**Purpose:** Model the flow of control for one specific use case, showing steps, decisions, and parallel activities.
 
 **Steps:**
 
@@ -520,13 +520,13 @@ Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for 
 4. **Connect with arrows** showing the sequence of steps.
 5. **Add decision nodes** (diamonds) where the flow branches. Label outgoing arrows with guard conditions in square brackets: [book available], [book not available].
 6. **Add merge nodes** (diamonds) to bring alternative paths back together.
-7. **Add fork/join bars** (thick horizontal lines) if any activities happen in parallel. Example: After "Approve Issue," two parallel activities: "Update Database" and "Print Receipt" — use a fork to split and a join to synchronize.
-8. **Draw the final node** (bullseye — filled circle inside a hollow circle) at the bottom.
+7. **Add fork/join bars** (thick horizontal lines) if any activities happen in parallel. Example: After "Approve Issue," two parallel activities: "Update Database" and "Print Receipt." Use a fork to split and a join to synchronize.
+8. **Draw the final node** (bullseye, which is a filled circle inside a hollow circle) at the bottom.
 9. **(Optional) Add swimlanes.** Divide the diagram into vertical columns labeled with the responsible actor/component (e.g., "Student," "Librarian," "System"). Place each activity in the appropriate lane.
 
 **Deliverable:** An activity diagram for one use case with at least one decision node and the complete flow from initial to final node.
 
-#### Example: Activity Diagram — "Issue Book" Use Case
+#### Example: Activity Diagram for "Issue Book" Use Case
 
 ```
                          ● (Initial Node)
@@ -610,25 +610,25 @@ Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for 
 
 ### Diagram 3: Class Diagram
 
-**Purpose:** Show the static structure — classes, their attributes, operations, and relationships.
+**Purpose:** Show the static structure of the system, including classes, their attributes, operations, and relationships.
 
 **Steps:**
 
 1. **Identify classes.** Use the grammatical parse: extract nouns from your use cases and SRS. Typical classes for LMS: `Book`, `Member`, `Librarian`, `Transaction`, `Fine`, `Category`.
-2. **Define attributes.** For each class, list data properties. Example: `Book` — bookID, title, author, ISBN, quantity, status.
-3. **Define operations.** For each class, list behaviors. Example: `Book` — addBook(), removeBook(), searchBook(), updateDetails().
+2. **Define attributes.** For each class, list data properties. Example: `Book` has bookID, title, author, ISBN, quantity, status.
+3. **Define operations.** For each class, list behaviors. Example: `Book` has addBook(), removeBook(), searchBook(), updateDetails().
 4. **Draw class boxes.** Each class is a rectangle with three compartments: name (top), attributes (middle), operations (bottom).
 5. **Draw relationships:**
-   - **Association** (solid line): `Member` — `Transaction` (a member makes transactions).
-   - **Multiplicity** at both ends: `Member` 1 ——— 0..\* `Transaction`.
-   - **Aggregation** (hollow diamond): `Library` ◇——— `Book` (library has books, but books can exist independently).
-   - **Composition** (filled diamond): `Order` ◆——— `OrderItem` (items cannot exist without the order).
+   - **Association** (solid line): `Member` to `Transaction` (a member makes transactions).
+   - **Multiplicity** at both ends: `Member` 1 to 0..\* `Transaction`.
+   - **Aggregation** (hollow diamond): `Library` to `Book` (library has books, but books can exist independently).
+   - **Composition** (filled diamond): `Order` to `OrderItem` (items cannot exist without the order).
    - **Generalization** (hollow triangle arrow): `Student` and `Faculty` inherit from `Member`.
 6. **Add multiplicity labels** at both ends of every association.
 
 **Deliverable:** A class diagram with 4-6 classes, each having at least 3 attributes and 2 operations, with associations and multiplicity labels.
 
-#### Example: Class Diagram — Library Management System
+#### Example: Class Diagram for Library Management System
 
 ```
 ┌──────────────────────────┐          ┌──────────────────────────┐
@@ -683,11 +683,11 @@ Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for 
 
 | Relationship | Type | Multiplicity | Meaning |
 | --- | --- | --- | --- |
-| Member — Transaction | Association | 1 Member to 0..* Transactions | A member can have zero or many transactions |
-| Transaction — Book | Association | 0..* Transactions to 1 Book | Each transaction involves exactly one book; a book can appear in many transactions |
-| Transaction — Fine | Association | 1 Transaction to 0..1 Fine | A transaction may or may not have a fine |
-| Member ◁— Student | Generalization | — | Student inherits all attributes/operations of Member |
-| Member ◁— Librarian | Generalization | — | Librarian inherits all attributes/operations of Member |
+| Member to Transaction | Association | 1 Member to 0..* Transactions | A member can have zero or many transactions |
+| Transaction to Book | Association | 0..* Transactions to 1 Book | Each transaction involves exactly one book; a book can appear in many transactions |
+| Transaction to Fine | Association | 1 Transaction to 0..1 Fine | A transaction may or may not have a fine |
+| Member to Student | Generalization | N/A | Student inherits all attributes/operations of Member |
+| Member to Librarian | Generalization | N/A | Librarian inherits all attributes/operations of Member |
 
 **Visibility notation:** `-` means private, `+` means public. Use these prefixes before attribute/operation names.
 
@@ -695,7 +695,7 @@ Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for 
 
 ### Diagram 4: Sequence Diagram
 
-**Purpose:** Show how objects interact over time for a specific scenario — the order of messages exchanged.
+**Purpose:** Show how objects interact over time for a specific scenario, illustrating the order of messages exchanged.
 
 **Steps:**
 
@@ -703,19 +703,19 @@ Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for 
 2. **Identify participating objects.** These come from your class diagram. Example: `:Student`, `:Librarian`, `:System`, `:BookDB`, `:TransactionDB`.
 3. **Draw lifelines.** Place objects as labeled rectangles across the top. Drop a dashed vertical line (lifeline) below each one, extending downward.
 4. **Draw messages as horizontal arrows** between lifelines, numbered in sequence:
-   - `1: requestIssue(bookID)` — Student to Librarian
-   - `2: verifyMembership(memberID)` — Librarian to System
-   - `3: checkAvailability(bookID)` — System to BookDB
-   - `4: return(status)` — BookDB to System
-   - `5: issueBook(bookID, memberID)` — System to TransactionDB
-   - `6: confirmation()` — System to Librarian
-   - `7: issueConfirmation()` — Librarian to Student
+   - `1: requestIssue(bookID)` from Student to Librarian
+   - `2: verifyMembership(memberID)` from Librarian to System
+   - `3: checkAvailability(bookID)` from System to BookDB
+   - `4: return(status)` from BookDB to System
+   - `5: issueBook(bookID, memberID)` from System to TransactionDB
+   - `6: confirmation()` from System to Librarian
+   - `7: issueConfirmation()` from Librarian to Student
 5. **Add activation bars** (narrow rectangles on lifelines) to show when an object is actively processing.
 6. **Add alt/opt fragments** (rectangles labeled `alt` or `opt`) if the flow involves conditional logic. Example: `alt [book available]` / `[book not available]`.
 
 **Deliverable:** A sequence diagram with 4-6 objects, at least 6 messages in sequence, and activation bars.
 
-#### Example: Sequence Diagram — "Issue Book" Scenario
+#### Example: Sequence Diagram for "Issue Book" Scenario
 
 ```
   :Student        :Librarian         :System         :BookDB      :TransactionDB
@@ -786,7 +786,7 @@ Construct four UML diagrams — Use Case, Activity, Class, and Sequence — for 
 | 12 | System | Librarian | (alt) Notifies book is not available |
 | 13 | Librarian | Student | (alt) Displays error message |
 
-**Key elements:** The `alt` fragment shows two alternative paths — one for when the book is available (messages 5-11) and one for when it is not (messages 12-13). Return messages (dashed arrows going back) are numbered sequentially. Activation bars should be drawn on each lifeline during the time the object is processing.
+**Key elements:** The `alt` fragment shows two alternative paths. One path is for when the book is available (messages 5-11) and the other is for when it is not (messages 12-13). Return messages (dashed arrows going back) are numbered sequentially. Activation bars should be drawn on each lifeline during the time the object is processing.
 
 ---
 
@@ -813,13 +813,13 @@ Design the system architecture (selecting and diagramming an architectural style
 
 ### Tool Setup
 
-**Recommended: draw.io (diagrams.net)** — Same tool as Practical 2.
+**Recommended: draw.io (diagrams.net).** Same tool as Practical 2.
 
 1. Ensure **UML** and **UML 2.5** shape libraries are enabled (done in Practical 2).
 2. Also enable **General** and **Advanced** shape libraries for boxes, containers, and connectors useful in architecture diagrams.
 3. For cloud-based projects, enable **AWS / Azure / GCP** icon libraries under the **Networking** category.
 
-**Alternative: Visual Paradigm Community Edition** — Free. Download from https://www.visual-paradigm.com/download/community.php. Supports UML component diagrams, package diagrams, and deployment diagrams with proper notation.
+**Alternative: Visual Paradigm Community Edition.** Free. Download from https://www.visual-paradigm.com/download/community.php. Supports UML component diagrams, package diagrams, and deployment diagrams with proper notation.
 
 ---
 
@@ -827,21 +827,21 @@ Design the system architecture (selecting and diagramming an architectural style
 
 **Step 1: Choose an architectural style.** Based on the nature of your project, select one (or a combination):
 
-- **Layered architecture** — best for most web/desktop applications. Organize into: Presentation Layer, Business Logic Layer, Data Access Layer, Database Layer.
-- **Client-Server** — best for systems with a clear separation between user-facing clients and back-end servers.
-- **MVC (Model-View-Controller)** — best for web applications where UI changes frequently.
-- **Repository/Data-centered** — best for systems where multiple components access a shared data store (e.g., IDE, CASE tools).
-- **Pipe-and-Filter** — best for data transformation pipelines (e.g., compiler, ETL systems).
+- **Layered architecture** is best for most web/desktop applications. Organize into: Presentation Layer, Business Logic Layer, Data Access Layer, Database Layer.
+- **Client-Server** is best for systems with a clear separation between user-facing clients and back-end servers.
+- **MVC (Model-View-Controller)** is best for web applications where UI changes frequently.
+- **Repository/Data-centered** is best for systems where multiple components access a shared data store (e.g., IDE, CASE tools).
+- **Pipe-and-Filter** is best for data transformation pipelines (e.g., compiler, ETL systems).
 
 **Step 2: Draw the architectural diagram.**
 
 For a **layered architecture** (most common for student projects):
 
 1. Create 3-4 stacked horizontal rectangles (containers), each representing a layer. Label them top to bottom:
-   - **Presentation Layer** — UI components (web pages, forms, API endpoints)
-   - **Business Logic Layer** — core processing (validation, calculations, rules)
-   - **Data Access Layer** — database queries, ORM, API clients
-   - **Database Layer** — the actual database (MySQL, PostgreSQL, MongoDB)
+   - **Presentation Layer** contains UI components (web pages, forms, API endpoints).
+   - **Business Logic Layer** contains core processing (validation, calculations, rules).
+   - **Data Access Layer** contains database queries, ORM, and API clients.
+   - **Database Layer** contains the actual database (MySQL, PostgreSQL, MongoDB).
 2. Inside each layer rectangle, place smaller boxes representing the key components in that layer.
 3. Draw downward arrows between layers to show the direction of dependency (upper layers depend on lower layers, not vice versa).
 4. Add labels on arrows to describe the nature of interaction (e.g., "HTTP requests," "SQL queries," "method calls").
@@ -863,7 +863,7 @@ For **MVC:**
 
 **Step 3: Annotate the diagram.** Add a brief note explaining why this style was chosen. Example: "Layered architecture was chosen because the LMS is a web application where the UI, business logic, and data access have distinct responsibilities and may evolve independently."
 
-#### Example: Layered Architecture Diagram — Library Management System
+#### Example: Layered Architecture Diagram for Library Management System
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -927,7 +927,7 @@ For **MVC:**
 └─────────────────────────────────────────────────────────────────────┘
 ```
 
-**Justification:** "Layered architecture is chosen because the LMS is a web application where the user interface, business rules, data access logic, and database storage have distinct responsibilities. Each layer can be modified independently — for example, the database can be changed from SQLite to PostgreSQL without modifying the business logic or UI. Upper layers depend on lower layers, but lower layers have no knowledge of upper layers, ensuring loose coupling."
+**Justification:** "Layered architecture is chosen because the LMS is a web application where the user interface, business rules, data access logic, and database storage have distinct responsibilities. Each layer can be modified independently. For example, the database can be changed from SQLite to PostgreSQL without modifying the business logic or UI. Upper layers depend on lower layers, but lower layers have no knowledge of upper layers, ensuring loose coupling."
 
 **Layer-to-layer interaction summary:**
 
@@ -953,7 +953,7 @@ For **MVC:**
 
 **Step 2: Draw a UML Component Diagram.**
 
-1. For each component, drag a **component** shape from the UML library (rectangle with the component icon — two small rectangles on the left edge).
+1. For each component, drag a **component** shape from the UML library (rectangle with the component icon, which is two small rectangles on the left edge).
 2. Label each component clearly.
 3. Draw **interfaces** using the lollipop notation (small circle on a line extending from the component). Label the interface with the service it provides. Example: The Book Management component provides an `IBookSearch` interface.
 4. Draw **dependency arrows** (dashed arrows) from one component to another to show which components depend on which. Example: Transaction Module depends on Book Management (to check availability) and Member Management (to verify membership).
@@ -970,7 +970,7 @@ For each component, document:
 | Fine Calculation   | IFineCalc               | IReturnBook, IDatabase                | Calculates fines based on return date             |
 | Notification       | ISendAlert              | IMemberInfo                           | Sends email/SMS notifications for overdue books   |
 
-#### Example: UML Component Diagram — Library Management System
+#### Example: UML Component Diagram for Library Management System
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────┐
@@ -1046,7 +1046,7 @@ DEPENDENCY ARROWS (draw as dashed arrows - - - -▶ in the tool):
 
 - The `┌─┐ │ │ └─┘` symbol represents the UML component icon (two small rectangles on the left edge of the component box). In draw.io, use the "Component" shape from the UML library.
 - The `○─` symbol represents a **provided interface** (lollipop notation). In draw.io, use a small circle connected to the component edge with a short line.
-- Dashed arrows (`- - -▶`) represent **dependency** — the arrow points toward the component being depended upon.
+- Dashed arrows (`- - ->`) represent **dependency**. The arrow points toward the component being depended upon.
 - Components are grouped into **packages** (Core Services, Support Services, Data Access) to show subsystem boundaries.
 
 **Complete Interface Specification Table:**
@@ -1060,7 +1060,7 @@ DEPENDENCY ARROWS (draw as dashed arrows - - - -▶ in the tool):
 | Fine Calculation | IFineCalc | IReturnBook, IDatabase | Calculates overdue fines based on return date vs. due date |
 | Report Generation | IGenerateReport, IExportPDF | IBookSearch, IIssueBook, IReturnBook, IDatabase | Generates overdue lists, popular books, and member activity reports |
 | Notification Module | ISendAlert, IEmailService | IMemberInfo, IDatabase | Sends email notifications for overdue books and account updates |
-| Database Access Layer | IDatabase | — (external: PostgreSQL/SQLite) | Provides ORM-based CRUD operations to all other modules |
+| Database Access Layer | IDatabase | N/A (external: PostgreSQL/SQLite) | Provides ORM-based CRUD operations to all other modules |
 
 ---
 
@@ -1068,30 +1068,30 @@ DEPENDENCY ARROWS (draw as dashed arrows - - - -▶ in the tool):
 
 For each component identified above, briefly document how you applied modular design principles:
 
-**Cohesion:** State the type of cohesion each module exhibits. Example: "Book Management Module exhibits functional cohesion — all its operations (add, search, update, delete) are focused on managing book data."
+**Cohesion:** State the type of cohesion each module exhibits. Example: "Book Management Module exhibits functional cohesion. All its operations (add, search, update, delete) are focused on managing book data."
 
 **Coupling:** State how coupling is minimized. Example: "The Transaction Module accesses Book data only through the IBookSearch interface, not by directly accessing the Book database. This is data coupling (only needed parameters are passed)."
 
 **Information Hiding:** State what is hidden. Example: "The internal database schema and SQL queries are hidden inside the Data Access Layer. Other components interact only through defined interfaces."
 
-#### Example: Modular Design Principles — Library Management System
+#### Example: Modular Design Principles for Library Management System
 
 | Module | Cohesion Type | Cohesion Justification | Coupling Type | Coupling Justification | Information Hidden |
 | --- | --- | --- | --- | --- | --- |
 | User Authentication | Functional | All operations (login, register, validate token) serve the single purpose of user identity management | Data coupling | Receives only username/password; returns only a token. No shared data structures with other modules | Password hashing algorithm, token generation logic, session storage mechanism |
 | Book Management | Functional | All operations (add, search, update, delete, check availability) are focused on managing the book catalog | Data coupling | Exposes only IBookSearch and IBookCRUD interfaces; other modules pass only bookID or search parameters | Internal SQL queries, database table schema, indexing strategy |
 | Member Management | Functional | All operations (create, update, verify, activate/deactivate) relate to managing member records | Data coupling | Provides IMemberVerify that accepts memberID and returns a boolean; no internal state is shared | Member password storage, internal validation rules, activation workflow |
-| Transaction Module | Functional | All operations (issue, return, check limit) relate to managing borrowing transactions | Stamp coupling | Receives BookCreate and MemberInfo objects from other modules — passes structured data, not primitive values | Internal transaction state machine, due date calculation logic, limit enforcement rules |
-| Fine Calculation | Functional | Single purpose — calculate fine amount based on overdue days | Data coupling | Receives only returnDate and dueDate; returns only fineAmount (a float). Minimal interface | Fine rate (Rs. 2/day), maximum fine cap, waiver rules |
+| Transaction Module | Functional | All operations (issue, return, check limit) relate to managing borrowing transactions | Stamp coupling | Receives BookCreate and MemberInfo objects from other modules. Passes structured data, not primitive values | Internal transaction state machine, due date calculation logic, limit enforcement rules |
+| Fine Calculation | Functional | Single purpose: calculate fine amount based on overdue days | Data coupling | Receives only returnDate and dueDate; returns only fineAmount (a float). Minimal interface | Fine rate (Rs. 2/day), maximum fine cap, waiver rules |
 | Report Generation | Communicational | Multiple operations (overdue report, popular books, member activity) work on the same data set (transactions, books) | Data coupling | Queries other modules via read-only interfaces; passes only date ranges and filter parameters | Report formatting logic, PDF generation library, chart rendering |
-| Notification Module | Functional | Single purpose — send notifications to members | Data coupling | Receives only email address and message content; no access to internal member records | SMTP configuration, email template engine, retry logic |
-| Database Access Layer | Functional | Single purpose — provide ORM-based database operations to all modules | Data coupling | Accepts model objects and query parameters; returns result sets. No knowledge of business rules | Connection string, connection pooling, SQL dialect, migration scripts |
+| Notification Module | Functional | Single purpose: send notifications to members | Data coupling | Receives only email address and message content; no access to internal member records | SMTP configuration, email template engine, retry logic |
+| Database Access Layer | Functional | Single purpose: provide ORM-based database operations to all modules | Data coupling | Accepts model objects and query parameters; returns result sets. No knowledge of business rules | Connection string, connection pooling, SQL dialect, migration scripts |
 
 **Key observations from the table:**
 
-- **All modules achieve functional cohesion** — each module's operations serve a single, well-defined purpose. The only exception is Report Generation, which exhibits communicational cohesion (multiple functions operating on the same data set).
-- **Data coupling is dominant** — modules communicate by passing only the minimum required parameters (IDs, simple values). No module shares global variables or internal data structures with another.
-- **Information hiding is enforced** — every module hides its implementation details behind interfaces. The Database Access Layer hides SQL; Authentication hides password hashing; Fine Calculation hides the rate formula.
+- **All modules achieve functional cohesion.** Each module's operations serve a single, well-defined purpose. The only exception is Report Generation, which exhibits communicational cohesion (multiple functions operating on the same data set).
+- **Data coupling is dominant.** Modules communicate by passing only the minimum required parameters (IDs, simple values). No module shares global variables or internal data structures with another.
+- **Information hiding is enforced.** Every module hides its implementation details behind interfaces. The Database Access Layer hides SQL; Authentication hides password hashing; Fine Calculation hides the rate formula.
 
 ---
 
@@ -1185,7 +1185,7 @@ library_api/
 
 ### Step-by-Step Implementation
 
-#### File 1: `app/database.py` — Database Connection
+#### File 1: `app/database.py` (Database Connection)
 
 ```python
 from sqlalchemy import create_engine
@@ -1210,7 +1210,7 @@ def get_db():
         db.close()
 ```
 
-#### File 2: `app/models.py` — ORM Models
+#### File 2: `app/models.py` (ORM Models)
 
 ```python
 from sqlalchemy import Column, Integer, String
@@ -1227,7 +1227,7 @@ class Book(Base):
     quantity = Column(Integer, default=1)
 ```
 
-#### File 3: `app/schemas.py` — Pydantic Schemas
+#### File 3: `app/schemas.py` (Pydantic Schemas)
 
 Schemas define what data the API accepts and returns. Never expose ORM models directly.
 
@@ -1254,7 +1254,7 @@ class BookResponse(BaseModel):
     model_config = ConfigDict(from_attributes=True)
 ```
 
-#### File 4: `app/crud.py` — CRUD Operations
+#### File 4: `app/crud.py` (CRUD Operations)
 
 All database operations are isolated here. Routers never write raw queries.
 
@@ -1293,9 +1293,9 @@ def delete_book(db: Session, book_id: int) -> bool:
     return True
 ```
 
-#### File 5: `app/routers/books.py` — API Router
+#### File 5: `app/routers/books.py` (API Router)
 
-Routers are thin — they parse input, call CRUD functions, and return responses.
+Routers are thin. They parse input, call CRUD functions, and return responses.
 
 ```python
 from fastapi import APIRouter, Depends, HTTPException
@@ -1335,7 +1335,7 @@ def remove_book(book_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Book not found")
 ```
 
-#### File 6: `app/main.py` — Application Entry Point
+#### File 6: `app/main.py` (Application Entry Point)
 
 ```python
 from fastapi import FastAPI
@@ -1363,7 +1363,7 @@ def root():
 uvicorn app.main:app --reload
 ```
 
-Open the browser at http://127.0.0.1:8000/docs — FastAPI automatically generates interactive Swagger UI documentation. Test all endpoints directly from the browser.
+Open the browser at http://127.0.0.1:8000/docs. FastAPI automatically generates interactive Swagger UI documentation. Test all endpoints directly from the browser.
 
 ---
 
@@ -1371,11 +1371,11 @@ Open the browser at http://127.0.0.1:8000/docs — FastAPI automatically generat
 
 **Naming conventions:** Functions and variables use `snake_case`. Classes use `PascalCase`. Constants use `UPPER_SNAKE_CASE`. File names use `snake_case`.
 
-**Single Responsibility Principle:** Each file has one job — `models.py` defines tables, `schemas.py` defines data shapes, `crud.py` handles queries, routers handle HTTP.
+**Single Responsibility Principle:** Each file has one job. `models.py` defines tables, `schemas.py` defines data shapes, `crud.py` handles queries, and routers handle HTTP.
 
 **Separation of Concerns:** Routers never contain SQL queries. Database logic never handles HTTP status codes.
 
-**Dependency Injection:** `get_db()` is injected via `Depends()` — this makes the database session swappable for testing.
+**Dependency Injection:** `get_db()` is injected via `Depends()`. This makes the database session swappable for testing.
 
 **Type Hints:** All function parameters and return types are annotated. Pydantic enforces input validation automatically.
 
@@ -1391,7 +1391,7 @@ Open the browser at http://127.0.0.1:8000/docs — FastAPI automatically generat
 - [ ] ORM models and Pydantic schemas are separate.
 - [ ] All functions have type hints and docstrings.
 - [ ] `requirements.txt` is present and complete.
-- [ ] No business logic inside routers — all logic is in `crud.py`.
+- [ ] No business logic inside routers. All logic is in `crud.py`.
 
 ---
 
@@ -1412,8 +1412,8 @@ pip install pytest httpx
 pip freeze > requirements.txt
 ```
 
-- **pytest** — the testing framework. Discovers and runs test files automatically.
-- **httpx** — required by FastAPI's `TestClient` for sending HTTP requests in tests.
+- **pytest** is the testing framework. It discovers and runs test files automatically.
+- **httpx** is required by FastAPI's `TestClient` for sending HTTP requests in tests.
 
 ---
 
@@ -1433,7 +1433,7 @@ library_api/
 
 ---
 
-### Step 1: Test Configuration — `tests/conftest.py`
+### Step 1: Test Configuration (`tests/conftest.py`)
 
 This file creates an isolated test database (in-memory SQLite) so tests never touch the real database.
 
@@ -1491,9 +1491,9 @@ def db_session():
 
 ---
 
-### Step 2: Unit Tests — `tests/test_crud.py`
+### Step 2: Unit Tests (`tests/test_crud.py`)
 
-Unit tests test individual functions in isolation (the `crud.py` functions). They call the function directly with a test DB session — no HTTP involved.
+Unit tests test individual functions in isolation (the `crud.py` functions). They call the function directly with a test DB session. No HTTP is involved.
 
 ```python
 from app.crud import create_book, get_all_books, get_book_by_id, delete_book
@@ -1556,9 +1556,9 @@ def test_delete_book_not_found(db_session):
 
 ---
 
-### Step 3: Integration Tests — `tests/test_books.py`
+### Step 3: Integration Tests (`tests/test_books.py`)
 
-Integration tests test the full HTTP request-response cycle through the API — routing, validation, database, and response serialization all working together.
+Integration tests test the full HTTP request-response cycle through the API. They test routing, validation, CRUD, database operations, and response serialization all working together.
 
 ```python
 def test_root_endpoint(client):
@@ -1683,13 +1683,13 @@ Fill this table with actual results from your `pytest -v` output. Include all te
 
 ### Key Testing Concepts Applied
 
-**Unit test vs. Integration test:** Unit tests call `crud.py` functions directly with a raw DB session — they test business logic in isolation. Integration tests use `TestClient` to send real HTTP requests — they test the full stack (routing + validation + CRUD + DB + serialization).
+**Unit test vs. Integration test:** Unit tests call `crud.py` functions directly with a raw DB session. They test business logic in isolation. Integration tests use `TestClient` to send real HTTP requests. They test the full stack (routing + validation + CRUD + DB + serialization).
 
 **Test isolation:** The `setup_database` fixture creates fresh tables before each test and drops them after. No test data leaks between tests.
 
 **Dependency override:** `app.dependency_overrides[get_db]` swaps the production database for a test database without changing any application code.
 
-**Black-box testing (integration):** Tests only interact with the API through its public HTTP interface. They don't know about internal implementation — they only verify inputs and outputs.
+**Black-box testing (integration):** Tests only interact with the API through its public HTTP interface. They do not know about internal implementation. They only verify inputs and outputs.
 
 **White-box testing (unit):** Tests directly call internal functions and verify internal state (database records).
 
@@ -1913,7 +1913,7 @@ docker run -d -p 8000:8000 --name library-container library-api
 docker ps
 ```
 
-Open http://localhost:8000/docs in a browser — the Swagger UI should appear, served from inside the container.
+Open http://localhost:8000/docs in a browser. The Swagger UI should appear, served from inside the container.
 
 #### Useful Docker Commands
 
@@ -1933,7 +1933,7 @@ Open http://localhost:8000/docs in a browser — the Swagger UI should appear, s
 
 #### What Is CI/CD?
 
-**Continuous Integration (CI):** Every time code is pushed to GitHub, automated checks run — linting, tests, builds. If any check fails, the team is notified before the broken code reaches production.
+**Continuous Integration (CI):** Every time code is pushed to GitHub, automated checks run, including linting, tests, and builds. If any check fails, the team is notified before the broken code reaches production.
 
 **Continuous Deployment (CD):** After CI passes, the application is automatically built into a Docker image and pushed to a container registry (e.g., Docker Hub), ready for deployment.
 
@@ -1947,7 +1947,7 @@ Create the directory structure and file:
     └── ci.yml
 ```
 
-#### Write the CI Workflow — `.github/workflows/ci.yml`
+#### Write the CI Workflow (`.github/workflows/ci.yml`)
 
 ```yaml
 name: CI Pipeline
@@ -2006,8 +2006,8 @@ jobs:
 
 #### How It Works
 
-1. Every time you `git push` to the `main` branch, GitHub Actions automatically runs the `test` job — installs dependencies, runs all pytest tests.
-2. If all tests pass, the `docker` job runs — builds the Docker image and verifies the container starts successfully.
+1. Every time you `git push` to the `main` branch, GitHub Actions automatically runs the `test` job, which installs dependencies and runs all pytest tests.
+2. If all tests pass, the `docker` job runs. It builds the Docker image and verifies the container starts successfully.
 3. If any step fails, the pipeline stops and GitHub shows a red ❌ on the commit. If all pass, a green ✅ appears.
 
 #### Commit and Push the Workflow
