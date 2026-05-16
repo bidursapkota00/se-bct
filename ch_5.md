@@ -8,23 +8,23 @@
 
 ### What Is System Modeling?
 
-**System modeling** is the process of developing abstract representations (models) of a system. Each model presents a different view or perspective of that system — its data, its functions, its behavior, or its structure. Models are typically expressed using a standardized graphical notation, most commonly the **Unified Modeling Language (UML)**.
+**System modeling** is the process of developing abstract representations (models) of a system. Each model presents a different view or perspective of that system, including its data, its functions, its behavior, or its structure. Models are typically expressed using a standardized graphical notation, most commonly the **Unified Modeling Language (UML)**.
 
-System models are used during requirements analysis to help understand the existing system and the requirements for the new system. They are also used during design to describe the system to engineers implementing it. Because models are abstractions, they deliberately omit detail — they are simpler than the reality they represent, allowing stakeholders to focus on specific aspects of the system without being overwhelmed by complexity.
+System models are used during requirements analysis to help understand the existing system and the requirements for the new system. They are also used during design to describe the system to engineers implementing it. Because models are abstractions, they deliberately omit detail. They are simpler than the reality they represent, allowing stakeholders to focus on specific aspects of the system without being overwhelmed by complexity.
 
 ### 5.1.1 Need for System Modeling
 
 - **Clarifies understanding.** Models force stakeholders and developers to think carefully about system requirements, exposing ambiguities, inconsistencies, and gaps that text descriptions alone may hide.
 - **Facilitates communication.** Graphical models serve as a common language between developers, customers, managers, and testers. A well-drawn diagram often conveys structure and flow more effectively than pages of text.
 - **Bridges requirements to design.** The requirements model establishes a foundation upon which architectural, interface, and component-level designs are built. It provides traceability from customer needs through design to implementation.
-- **Supports analysis and validation.** Models can be reviewed, checked against requirements, and validated before any code is written — catching errors when they are least expensive to fix.
+- **Supports analysis and validation.** Models can be reviewed, checked against requirements, and validated before any code is written, catching errors when they are least expensive to fix.
 - **Documents the system.** Models serve as long-term documentation that supports maintenance and evolution of the software.
 
 The requirements model must achieve three primary objectives: (1) describe what the customer requires, (2) establish a basis for creating the software design, and (3) define a set of requirements that can be validated once the software is built.
 
 ### 5.1.2 Role of Abstractions in Managing Complexity
 
-**Abstraction** is the fundamental mechanism used to manage complexity in system modeling. Complex real-world systems involve thousands of interacting elements — users, devices, data, rules, and functions. Attempting to model everything simultaneously is impossible. Abstraction works by:
+**Abstraction** is the fundamental mechanism used to manage complexity in system modeling. Complex real-world systems involve thousands of interacting elements such as users, devices, data, rules, and functions. Attempting to model everything simultaneously is impossible. Abstraction works by:
 
 - **Hiding unnecessary detail.** At each level of modeling, only the information relevant to that level's purpose is shown. For example, a context diagram hides internal processes; a class diagram hides algorithmic detail.
 - **Separating concerns.** Different models address different concerns: use cases capture functional interactions, class diagrams capture data structures, activity diagrams capture flow of control, and state diagrams capture behavior. No single model attempts to capture everything.
@@ -35,7 +35,7 @@ The five key principles of requirements modeling (Pressman):
 
 **Principle 1:** The information domain (data flowing in, out, and stored within the system) must be represented and understood.
 
-**Principle 2:** The functions the software performs must be defined — both user-visible functions and internal processing.
+**Principle 2:** The functions the software performs must be defined, including both user-visible functions and internal processing.
 
 **Principle 3:** The software's behavior (as a consequence of external events) must be represented.
 
@@ -65,30 +65,30 @@ A **Data Flow Diagram (DFD)** is a graphical representation that models how data
 
 There are two common notations. The **Yourdon-DeMarco** notation is most commonly used in academic settings:
 
-**Process** — represented as a circle (Yourdon-DeMarco) or a rounded rectangle (Gane-Sarson). A process transforms incoming data flows into outgoing data flows. Processes are named with verbs (e.g., "Validate Order," "Calculate Total").
+A **Process** is represented as a circle (Yourdon-DeMarco) or a rounded rectangle (Gane-Sarson). A process transforms incoming data flows into outgoing data flows. Processes are named with verbs (e.g., "Validate Order," "Calculate Total").
 
-**Data Flow** — represented as a named arrow. Shows the direction and path of data movement between processes, data stores, and external entities. Data flows are named with nouns (e.g., "order details," "payment confirmation").
+A **Data Flow** is represented as a named arrow. It shows the direction and path of data movement between processes, data stores, and external entities. Data flows are named with nouns (e.g., "order details," "payment confirmation").
 
-**Data Store** — represented as two parallel horizontal lines (Yourdon-DeMarco) or an open-ended rectangle (Gane-Sarson). Represents data at rest — a file, a database table, or any repository where data is stored for later use. Named with nouns (e.g., "Customer Database," "Order File").
+A **Data Store** is represented as two parallel horizontal lines (Yourdon-DeMarco) or an open-ended rectangle (Gane-Sarson). It represents data at rest, such as a file, a database table, or any repository where data is stored for later use. Data stores are named with nouns (e.g., "Customer Database," "Order File").
 
-**External Entity** — represented as a rectangle. Represents a source or destination of data that is outside the system boundary. External entities are people, organizations, devices, or other systems that interact with the system. Named with nouns (e.g., "Customer," "Bank," "Sensor").
+An **External Entity** is represented as a rectangle. It represents a source or destination of data that is outside the system boundary. External entities are people, organizations, devices, or other systems that interact with the system. They are named with nouns (e.g., "Customer," "Bank," "Sensor").
 
 ### Levels of DFD
 
 DFDs are organized hierarchically into levels, each providing progressively more detail:
 
-**Context Diagram (Level-0 DFD):** The highest-level view of the system. The entire system is represented as a single process (a single circle or rounded rectangle). External entities are shown around it, and data flows between the system and external entities are drawn as labeled arrows. No internal processes or data stores are shown. The context diagram establishes the system boundary — what is inside the system and what is outside.
+**Context Diagram (Level-0 DFD):** The highest-level view of the system. The entire system is represented as a single process (a single circle or rounded rectangle). External entities are shown around it, and data flows between the system and external entities are drawn as labeled arrows. No internal processes or data stores are shown. The context diagram establishes the system boundary, defining what is inside the system and what is outside.
 
 **Level-1 DFD:** Decomposes the single process from the context diagram into its major sub-processes. Shows the main functional areas of the system, the data flows between them, the data stores used to hold information, and the interactions with external entities. Each sub-process in a Level-1 DFD can be further decomposed into a Level-2 DFD, and so on, until each process represents a single, simple, atomic function.
 
-**Level-2+ DFDs:** Further decompose individual processes from Level-1 into more granular detail. Not always necessary — decomposition stops when each process is simple enough to be described in a short process specification (minispec).
+**Level-2+ DFDs:** Further decompose individual processes from Level-1 into more granular detail. They are not always necessary. Decomposition stops when each process is simple enough to be described in a short process specification (minispec).
 
 ### Rules for Drawing DFDs
 
 - Every process must have at least one input data flow and at least one output data flow (no "black holes" or "miracles").
-- Data cannot flow directly between two external entities — it must pass through at least one process.
-- Data cannot flow directly between two data stores — it must pass through at least one process.
-- Data cannot flow directly from an external entity to a data store (or vice versa) — it must pass through a process.
+- Data cannot flow directly between two external entities. It must pass through at least one process.
+- Data cannot flow directly between two data stores. It must pass through at least one process.
+- Data cannot flow directly from an external entity to a data store (or vice versa). It must pass through a process.
 - Each process, data flow, data store, and external entity must be named.
 - **Balancing rule:** All data flows entering/leaving a parent process must also appear in its child (decomposed) diagram. The parent and child diagrams must be consistent.
 
@@ -100,12 +100,12 @@ The system is represented as a single process: "Online Food Ordering System." Ex
 
 **Level-1 DFD (major processes):**
 
-- **P1: Manage User Account** — handles registration, login, profile updates. Reads/writes to D1: User Database.
-- **P2: Browse Menu** — retrieves menu items from D2: Menu Database, displays to Customer.
-- **P3: Place Order** — receives order request from Customer, validates items, creates order record in D3: Order Database.
-- **P4: Process Payment** — sends payment request to Payment Gateway, receives confirmation, updates D3: Order Database.
-- **P5: Assign Delivery** — assigns order to Delivery Personnel, updates D3: Order Database, sends delivery assignment.
-- **P6: Track Delivery** — receives delivery updates from Delivery Personnel, sends delivery status to Customer.
+- **P1: Manage User Account** handles registration, login, and profile updates. It reads from and writes to D1: User Database.
+- **P2: Browse Menu** retrieves menu items from D2: Menu Database and displays them to the Customer.
+- **P3: Place Order** receives the order request from the Customer, validates items, and creates an order record in D3: Order Database.
+- **P4: Process Payment** sends a payment request to the Payment Gateway, receives confirmation, and updates D3: Order Database.
+- **P5: Assign Delivery** assigns the order to Delivery Personnel, updates D3: Order Database, and sends the delivery assignment.
+- **P6: Track Delivery** receives delivery updates from Delivery Personnel and sends delivery status to the Customer.
 
 ---
 
@@ -125,7 +125,7 @@ The system is represented as a single process: "Online Food Ordering System." Ex
 
 A **scenario** is a specific sequence of actions and interactions between an actor and a system that accomplishes a particular goal. Scenarios describe the system from the user's point of view and answer the question: "How will the system be used?"
 
-Scenarios are the foundation of **scenario-based modeling**. The primary tool for capturing scenarios is the **use case**. A use case describes a specific usage scenario — a "contract for behavior" — in straightforward language from the perspective of a defined actor. Use cases are often the first part of the requirements model to be developed because they directly capture user expectations.
+Scenarios are the foundation of **scenario-based modeling**. The primary tool for capturing scenarios is the **use case**. A use case describes a specific usage scenario, serving as a "contract for behavior," in straightforward language from the perspective of a defined actor. Use cases are often the first part of the requirements model to be developed because they directly capture user expectations.
 
 Scenarios serve multiple purposes: they help stakeholders validate that the system will meet their needs, they provide developers with clear functional expectations, they drive the identification of classes and objects, and they form the basis for test case development.
 
@@ -138,7 +138,7 @@ An **actor** represents an entity that interacts with the system. Actors may be:
 - **Human users** playing a specific role (e.g., Customer, Administrator, Manager). A single physical person can play multiple roles and thus be represented by multiple actors.
 - **External systems** or devices that communicate with the system (e.g., Payment Gateway, Sensor, Email Server).
 
-Actors are classified as **primary actors** (directly use the system to achieve a goal — e.g., a Customer placing an order) or **secondary actors** (support the system so that primary actors can do their work — e.g., a System Administrator configuring the system).
+Actors are classified as **primary actors**, who directly use the system to achieve a goal (e.g., a Customer placing an order), or **secondary actors**, who support the system so that primary actors can do their work (e.g., a System Administrator configuring the system).
 
 #### Writing Use Cases
 
@@ -152,7 +152,7 @@ Use cases can be written at different levels of detail:
 
 #### Primary and Secondary Scenarios
 
-A **primary scenario** describes the main success path — the "happy path" where everything goes as expected. For example, the steps for a successful login and order placement.
+A **primary scenario** describes the main success path, also known as the "happy path," where everything goes as expected. For example, the steps for a successful login and order placement.
 
 A **secondary scenario** (exception) describes an alternative path triggered by an error condition, an alternative choice by the actor, or an external event. For each step in the primary scenario, the analyst should ask: (1) Can the actor take some other action at this point? (2) Is it possible the actor will encounter an error condition? (3) Could external behavior interrupt at this point?
 
@@ -162,10 +162,10 @@ A **use case diagram** provides a graphical overview of a system's functional re
 
 **Elements of a use case diagram:**
 
-- **System boundary** — a rectangle representing the scope of the system. The system name is written at the top.
-- **Use cases** — ovals inside the system boundary, each labeled with a verb phrase describing the function (e.g., "Place Order," "Generate Report").
-- **Actors** — stick figures (for humans) or labeled rectangles (for systems/devices) placed outside the system boundary.
-- **Associations** — solid lines connecting actors to the use cases they participate in.
+- The **system boundary** is a rectangle representing the scope of the system. The system name is written at the top.
+- **Use cases** are ovals inside the system boundary, each labeled with a verb phrase describing the function (e.g., "Place Order," "Generate Report").
+- **Actors** are stick figures (for humans) or labeled rectangles (for systems/devices) placed outside the system boundary.
+- **Associations** are solid lines connecting actors to the use cases they participate in.
 
 **Relationships between use cases:**
 
@@ -200,21 +200,21 @@ A **UML activity diagram** models the flow of control or data from one activity 
 
 #### Elements of an Activity Diagram
 
-**Initial node** — a filled black circle. Represents the starting point of the activity flow. Every activity diagram has exactly one initial node.
+The **initial node** is a filled black circle. It represents the starting point of the activity flow. Every activity diagram has exactly one initial node.
 
-**Activity (action) node** — a rounded rectangle containing the name of the activity/action. Represents a single step in the process. Named with a verb phrase (e.g., "Validate Password," "Send Notification").
+An **activity (action) node** is a rounded rectangle containing the name of the activity or action. It represents a single step in the process and is named with a verb phrase (e.g., "Validate Password," "Send Notification").
 
-**Flow (edge)** — an arrow connecting activity nodes. Shows the sequence in which activities are performed. Control flows from one activity to the next along the arrow.
+A **flow (edge)** is an arrow connecting activity nodes. It shows the sequence in which activities are performed. Control flows from one activity to the next along the arrow.
 
-**Decision node** — a diamond with one incoming flow and two or more outgoing flows. Each outgoing flow has a **guard condition** (written in square brackets, e.g., [password valid], [password invalid]) that determines which path the control follows. Exactly one guard condition must be true at any decision point.
+A **decision node** is a diamond with one incoming flow and two or more outgoing flows. Each outgoing flow has a **guard condition** (written in square brackets, e.g., [password valid], [password invalid]) that determines which path the control follows. Exactly one guard condition must be true at any decision point.
 
-**Merge node** — a diamond with two or more incoming flows and one outgoing flow. Brings together alternative paths that were separated by a previous decision node. Does not synchronize — simply passes through whatever flow arrives.
+A **merge node** is a diamond with two or more incoming flows and one outgoing flow. It brings together alternative paths that were separated by a previous decision node. It does not synchronize and simply passes through whatever flow arrives.
 
-**Fork node** — a thick horizontal (or vertical) bar with one incoming flow and multiple outgoing flows. Splits the control flow into two or more **concurrent (parallel)** activities that execute simultaneously.
+A **fork node** is a thick horizontal (or vertical) bar with one incoming flow and multiple outgoing flows. It splits the control flow into two or more **concurrent (parallel)** activities that execute simultaneously.
 
-**Join node** — a thick horizontal (or vertical) bar with multiple incoming flows and one outgoing flow. Synchronizes concurrent activities — the outgoing flow is not triggered until **all** incoming parallel flows have completed.
+A **join node** is a thick horizontal (or vertical) bar with multiple incoming flows and one outgoing flow. It synchronizes concurrent activities. The outgoing flow is not triggered until **all** incoming parallel flows have completed.
 
-**Final node** — a filled black circle inside a hollow circle (bullseye). Represents the end of the activity flow.
+The **final node** is a filled black circle inside a hollow circle (bullseye). It represents the end of the activity flow.
 
 #### Swimlane Diagrams (Activity Partitions)
 
@@ -237,7 +237,7 @@ Class-based modeling represents the objects (things) that the system will manipu
 
 #### Identifying Analysis Classes
 
-The primary technique for identifying classes is the **grammatical parse** — examining use cases or processing narratives and extracting nouns and noun phrases as candidate classes. The process:
+The primary technique for identifying classes is the **grammatical parse**, which involves examining use cases or processing narratives and extracting nouns and noun phrases as candidate classes. The process:
 
 1. Underline every noun and noun phrase in the use case or processing narrative.
 2. List all nouns as potential classes.
@@ -257,38 +257,38 @@ The primary technique for identifying classes is the **grammatical parse** — e
 
 #### Attributes and Operations
 
-**Attributes** describe the properties of a class — the data items that define the class in the context of the problem. Attributes are identified by asking: "What data items fully define this class?" For example, a `Sensor` class might have attributes: `sensorID`, `sensorType`, `location`, `status`.
+**Attributes** describe the properties of a class. They are the data items that define the class in the context of the problem. Attributes are identified by asking: "What data items fully define this class?" For example, a `Sensor` class might have attributes: `sensorID`, `sensorType`, `location`, `status`.
 
-**Operations** define the behavior of a class — the actions that can be performed on or by instances of the class. Operations are identified by extracting verbs from use cases and processing narratives. Operations generally fall into four categories: (1) data manipulation (add, delete, format, select), (2) computation, (3) state inquiry, and (4) event monitoring.
+**Operations** define the behavior of a class. They are the actions that can be performed on or by instances of the class. Operations are identified by extracting verbs from use cases and processing narratives. Operations generally fall into four categories: (1) data manipulation (add, delete, format, select), (2) computation, (3) state inquiry, and (4) event monitoring.
 
 #### UML Class Diagrams
 
 A **UML class diagram** shows classes, their attributes and operations, and the relationships between classes. Each class is represented as a rectangle divided into three compartments:
 
-- **Top compartment** — class name (capitalized, e.g., `Customer`)
-- **Middle compartment** — attributes (e.g., `customerID: int`, `name: String`, `email: String`)
-- **Bottom compartment** — operations (e.g., `placeOrder()`, `getProfile()`, `updateAddress()`)
+- The **top compartment** contains the class name (capitalized, e.g., `Customer`).
+- The **middle compartment** contains the attributes (e.g., `customerID: int`, `name: String`, `email: String`).
+- The **bottom compartment** contains the operations (e.g., `placeOrder()`, `getProfile()`, `updateAddress()`).
 
 #### Relationships Between Classes
 
-**Association** — the most general relationship. A structural connection between two classes indicating they collaborate or hold references to each other. Drawn as a solid line between classes. Can be labeled with a role name and **multiplicity** (e.g., `1`, `0..1`, `1..*`, `0..*`).
+**Association** is the most general relationship. It is a structural connection between two classes indicating they collaborate or hold references to each other. It is drawn as a solid line between classes and can be labeled with a role name and **multiplicity** (e.g., `1`, `0..1`, `1..*`, `0..*`).
 
-**Aggregation** — a "whole-part" relationship where the part can exist independently of the whole. Drawn as a solid line with a **hollow diamond** at the "whole" end. Example: A `Department` has `Employees`, but employees can exist without the department.
+**Aggregation** is a "whole-part" relationship where the part can exist independently of the whole. It is drawn as a solid line with a **hollow diamond** at the "whole" end. Example: A `Department` has `Employees`, but employees can exist without the department.
 
-**Composition** — a stronger form of aggregation where the part cannot exist without the whole. If the whole is destroyed, its parts are also destroyed. Drawn as a solid line with a **filled (solid) diamond** at the "whole" end. Example: A `House` is composed of `Rooms` — if the house is demolished, the rooms cease to exist.
+**Composition** is a stronger form of aggregation where the part cannot exist without the whole. If the whole is destroyed, its parts are also destroyed. It is drawn as a solid line with a **filled (solid) diamond** at the "whole" end. Example: A `House` is composed of `Rooms`. If the house is demolished, the rooms cease to exist.
 
-**Generalization (Inheritance)** — an "is-a" relationship where a subclass inherits attributes and operations from a superclass. The subclass is a specialized version of the superclass. Drawn as a solid line with an **unfilled (hollow) triangular arrowhead** pointing from subclass to superclass. Example: `SavingsAccount` and `CheckingAccount` are subclasses of `BankAccount`.
+**Generalization (Inheritance)** is an "is-a" relationship where a subclass inherits attributes and operations from a superclass. The subclass is a specialized version of the superclass. It is drawn as a solid line with an **unfilled (hollow) triangular arrowhead** pointing from subclass to superclass. Example: `SavingsAccount` and `CheckingAccount` are subclasses of `BankAccount`.
 
-**Dependency** — a weaker relationship where one class depends on another (e.g., uses it as a parameter in an operation). Drawn as a dashed arrow from the dependent class to the class it depends on.
+**Dependency** is a weaker relationship where one class depends on another (e.g., uses it as a parameter in an operation). It is drawn as a dashed arrow from the dependent class to the class it depends on.
 
 #### Multiplicity
 
 Multiplicity specifies how many instances of one class can be associated with a single instance of another class:
 
-- `1` — exactly one
-- `0..1` — zero or one (optional)
-- `1..*` — one or more (at least one)
-- `0..*` or `*` — zero or more (any number)
+- `1` means exactly one.
+- `0..1` means zero or one (optional).
+- `1..*` means one or more (at least one).
+- `0..*` or `*` means zero or more (any number).
 
 Example: A `Customer` places `0..*` Orders (a customer may have no orders or many orders). Each `Order` belongs to exactly `1` Customer.
 
@@ -297,9 +297,9 @@ Example: A `Customer` places `0..*` Orders (a customer may have no orders or man
 **CRC modeling** is a simple technique for identifying and organizing classes. Each class is represented on an index card with three sections:
 
 - **Class name** (top)
-- **Responsibilities** (left side) — the attributes the class maintains and the operations it performs
-- **Collaborators** (right side) — other classes that provide information or actions needed to fulfill a responsibility
+- **Responsibilities** (left side) list the attributes the class maintains and the operations it performs.
+- **Collaborators** (right side) list other classes that provide information or actions needed to fulfill a responsibility.
 
-CRC cards are useful for brainstorming classes and for **role-playing reviews** — a group of reviewers each holds cards for different classes and walks through use cases to verify that all responsibilities are assigned and all collaborations work correctly.
+CRC cards are useful for brainstorming classes and for **role-playing reviews**. In a role-playing review, a group of reviewers each holds cards for different classes and walks through use cases to verify that all responsibilities are assigned and all collaborations work correctly.
 
 ---
