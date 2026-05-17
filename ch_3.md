@@ -87,22 +87,22 @@ A **software requirements document (SRD)**, commonly called the Software Require
 
 ### Characteristics of a Good SRS
 
-- **Correct** means it accurately represents stakeholder needs.
-- **Unambiguous** means each requirement has only one interpretation.
-- **Complete** means it contains all significant requirements with no TBD placeholders.
-- **Consistent** means no requirement conflicts with another.
-- **Verifiable (Testable)** means every requirement can be tested through an objective process.
-- **Modifiable** means the structure allows easy changes while maintaining consistency.
-- **Traceable** means each requirement can be traced to its source and to corresponding design/test elements.
-- **Feasible** means it is achievable within budget, schedule, and technology constraints.
+- **Correct:** It accurately represents stakeholder needs.
+- **Unambiguous:** Each requirement has only one interpretation.
+- **Complete:** It contains all significant requirements with no TBD placeholders.
+- **Consistent:** No requirement conflicts with another.
+- **Verifiable (Testable):** Every requirement can be tested through an objective process.
+- **Modifiable:** The structure allows easy changes while maintaining consistency.
+- **Traceable:** Each requirement can be traced to its source and to corresponding design/test elements.
+- **Feasible:** It is achievable within budget, schedule, and technology constraints.
 
 ### Users of the SRS
 
-- **Customers/Clients** verify that the document captures their needs.
-- **Project Managers** use it for planning, estimation, and tracking.
-- **Developers/Designers** use it as the basis for design and implementation.
-- **Testers/QA** derive test cases from requirements to validate the system.
-- **Maintenance Engineers** reference it for understanding the system during future modifications.
+- **Customers/Clients:** They verify that the document captures their needs.
+- **Project Managers:** They use it for planning, estimation, and tracking.
+- **Developers/Designers:** They use it as the basis for design and implementation.
+- **Testers/QA:** They derive test cases from requirements to validate the system.
+- **Maintenance Engineers:** They reference it for understanding the system during future modifications.
 
 ### Example: Requirements for "Issuing a Book from a Library"
 
@@ -120,7 +120,7 @@ A **software requirements document (SRD)**, commonly called the Software Require
 - **Performance:** The system shall process a book issue transaction within 3 seconds.
 - **Usability:** The interface shall be simple enough for a librarian with minimal computer training.
 - **Security:** Only authorized librarians shall be able to issue books.
-- **Reliability:** The system shall be available during all library operating hours (99.5% uptime).
+- **Reliability:** The system shall be available during all library operating hours with 99.5% uptime.
 - **Maintainability:** The system shall be designed to allow easy addition of new book categories.
 
 ### Complete SRS Example (IEEE 830 Format) for Online Library Management System
@@ -139,10 +139,10 @@ OLMS is a web-based application that automates the core operations of a college 
 
 **1.3 Definitions, Acronyms, and Abbreviations**
 
-- **OLMS** refers to Online Library Management System.
-- **Member** refers to a registered student or faculty who can borrow books.
-- **Librarian** refers to an authorized staff member who manages the system.
-- **ISBN** refers to International Standard Book Number.
+- **OLMS:** It refers to the Online Library Management System.
+- **Member:** It refers to a registered student or faculty member who can borrow books.
+- **Librarian:** It refers to an authorized staff member who manages the system.
+- **ISBN:** It refers to International Standard Book Number.
 
 **1.4 References**
 
@@ -170,9 +170,9 @@ OLMS is a standalone web application. It interfaces with an existing college stu
 
 **2.3 User Characteristics**
 
-- **Librarian** has moderate computer literacy and is the primary user who performs all administrative operations.
-- **Member (Student/Faculty)** has basic computer literacy and uses the system to search the catalog, view their borrowing history, and reserve books.
-- **Administrator** is the technical staff responsible for system configuration and user management.
+- **Librarian:** This user has moderate computer literacy and is the primary user who performs all administrative operations.
+- **Member (Student/Faculty):** This user has basic computer literacy and uses the system to search the catalog, view their borrowing history, and reserve books.
+- **Administrator:** This user is the technical staff responsible for system configuration and user management.
 
 **2.4 Constraints**
 
@@ -231,10 +231,10 @@ OLMS is a standalone web application. It interfaces with an existing college stu
 
 **3.5 Non-Functional Requirements**
 
-- **Reliability:** The system shall have 99% uptime during library operating hours (8 AM to 8 PM).
-- **Security:** Only authenticated librarians shall issue/return books. All passwords shall be stored using bcrypt hashing. The system shall enforce session timeout after 15 minutes of inactivity.
+- **Reliability:** The system shall have 99% uptime during library operating hours from 8 AM to 8 PM.
+- **Security:** Only authenticated librarians shall issue or return books. All passwords shall be stored using bcrypt hashing. The system shall enforce session timeout after 15 minutes of inactivity.
 - **Usability:** A new librarian shall be able to issue a book within 2 minutes of first use without external assistance.
-- **Maintainability:** The codebase shall follow MVC architecture with documented APIs to allow future enhancements (e.g., e-book support).
+- **Maintainability:** The codebase shall follow MVC architecture with documented APIs to allow future enhancements such as e-book support.
 - **Portability:** The system shall be deployable on any Linux server with Python 3.8+ and MySQL 8.0+.
 
 ---
@@ -269,13 +269,13 @@ Non-functional requirements describe **how well** the system must perform, inclu
 
 **Categories of NFRs:**
 
-- **Performance** covers response time, throughput, and capacity (e.g., "The page shall load within 2 seconds under 1000 concurrent users").
-- **Reliability** covers mean time between failures and availability (e.g., "99.9% uptime").
-- **Usability** covers ease of use and learnability (e.g., "A new user shall be able to complete registration within 3 minutes without help").
-- **Security** covers authentication, authorization, and data encryption (e.g., "All passwords shall be stored using bcrypt hashing").
-- **Maintainability** covers ease of modification and modular design.
-- **Portability** covers the ability to operate across different platforms.
-- **Scalability** covers the ability to handle growth in users, data, or transactions.
+- **Performance:** It covers response time, throughput, and capacity (e.g., "The page shall load within 2 seconds under 1000 concurrent users").
+- **Reliability:** It covers mean time between failures and availability (e.g., "99.9% uptime").
+- **Usability:** It covers ease of use and learnability (e.g., "A new user shall be able to complete registration within 3 minutes without help").
+- **Security:** It covers authentication, authorization, and data encryption (e.g., "All passwords shall be stored using bcrypt hashing").
+- **Maintainability:** It covers ease of modification and modular design.
+- **Portability:** It covers the ability to operate across different platforms.
+- **Scalability:** It covers the ability to handle growth in users, data, or transactions.
 
 ### Functional vs. Non-Functional Requirements
 
@@ -299,15 +299,15 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 ### User Requirements vs. System Requirements
 
-- **User requirements** are high-level statements written in natural language (possibly with diagrams) describing what the system should provide to users and the constraints under which it operates. They are written for customers and managers. Example: "The system should allow customers to book flights."
-- **System requirements** are detailed, precise descriptions of system functions, services, and constraints. They are written for developers and testers. Example: "The system shall accept origin (IATA code), destination (IATA code), departure date (YYYY-MM-DD), and number of passengers (1–9) as search parameters and return matching flights sorted by price within 3 seconds."
+- **User requirements:** They are high-level statements written in natural language (possibly with diagrams) describing what the system should provide to users and the constraints under which it operates. They are written for customers and managers. Example: "The system should allow customers to book flights."
+- **System requirements:** They are detailed, precise descriptions of system functions, services, and constraints. They are written for developers and testers. Example: "The system shall accept origin (IATA code), destination (IATA code), departure date (YYYY-MM-DD), and number of passengers (1–9) as search parameters and return matching flights sorted by price within 3 seconds."
 
 ### Example: Airlines Reservation System
 
 **Functional Requirements:**
 
-- **Search Flights.** The system shall allow passengers to search for flights by origin, destination, date, and class. Results shall display flight number, departure/arrival times, duration, and price.
-- **Book a Ticket.** The system shall allow passengers to select a flight, enter passenger details, choose a seat, and confirm the booking. A booking confirmation with a PNR number shall be generated.
+- **Search Flights:** The system shall allow passengers to search for flights by origin, destination, date, and class. Results shall display flight number, departure/arrival times, duration, and price.
+- **Book a Ticket:** The system shall allow passengers to select a flight, enter passenger details, choose a seat, and confirm the booking. A booking confirmation with a PNR number shall be generated.
 
 **Non-Functional Requirements:**
 
@@ -321,8 +321,8 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 **Functional Requirements:**
 
-- **Order Food.** The customer shall browse the menu, select food items, specify quantity, add customizations (e.g., extra cheese, no onions), and add items to the cart. The cart shall display a summary with item-wise and total prices.
-- **Make Payment.** The system shall support multiple payment methods (credit/debit card, digital wallet, cash on delivery). Upon successful payment, an order confirmation with an estimated delivery time shall be displayed.
+- **Order Food:** The customer shall browse the menu, select food items, specify quantity, add customizations (e.g., extra cheese, no onions), and add items to the cart. The cart shall display a summary with item-wise and total prices.
+- **Make Payment:** The system shall support multiple payment methods (credit/debit card, digital wallet, cash on delivery). Upon successful payment, an order confirmation with an estimated delivery time shall be displayed.
 
 **Non-Functional Requirements:**
 
@@ -381,18 +381,18 @@ A **use case** describes how an end user (playing a specific role) interacts wit
 
 ### Key Elements of a Use Case
 
-- **Actor** is any external entity (person, device, or external system) that communicates with the system. Actors represent roles, not specific individuals. A single user may play multiple roles (and thus be multiple actors).
-- **Primary actor** directly interacts with and derives benefit from the system.
-- **Secondary actor** supports the system so primary actors can do their work.
-- **Use case** is a specific function or service provided by the system, described from the actor's perspective.
-- **System boundary** is a rectangle that defines the scope of the system. Actors are outside and use cases are inside.
+- **Actor:** It is any external entity (person, device, or external system) that communicates with the system. Actors represent roles, not specific individuals. A single user may play multiple roles (and thus be multiple actors).
+- **Primary actor:** It directly interacts with and derives benefit from the system.
+- **Secondary actor:** It supports the system so primary actors can do their work.
+- **Use case:** It is a specific function or service provided by the system, described from the actor's perspective.
+- **System boundary:** It is a rectangle that defines the scope of the system. Actors are outside and use cases are inside.
 
 ### Relationships in Use Case Diagrams
 
-- **Association** is a solid line connecting an actor to a use case, indicating interaction.
-- **Include (<<include>>)** is represented by a dashed arrow from the base use case to the included use case. The included use case is **always** executed as part of the base use case. It is used for common, reusable functionality. Example: "Place Order" includes "Verify Login."
-- **Extend (<<extend>>)** is represented by a dashed arrow from the extending use case to the base use case. The extending use case is executed **only under certain conditions**. The base use case is complete on its own. Example: "Checkout" may be extended by "Apply Coupon."
-- **Generalization** is a solid line with a hollow triangle arrowhead, representing inheritance between actors or between use cases.
+- **Association:** It is a solid line connecting an actor to a use case, indicating interaction.
+- **Include (<<include>>):** It is represented by a dashed arrow from the base use case to the included use case. The included use case is **always** executed as part of the base use case. It is used for common, reusable functionality. Example: "Place Order" includes "Verify Login."
+- **Extend (<<extend>>):** It is represented by a dashed arrow from the extending use case to the base use case. The extending use case is executed **only under certain conditions**. The base use case is complete on its own. Example: "Checkout" may be extended by "Apply Coupon."
+- **Generalization:** It is a solid line with a hollow triangle arrowhead, representing inheritance between actors or between use cases.
 
 ### Writing a Use Case (Template-Based Description)
 
@@ -404,32 +404,32 @@ A formal use case includes: use case name, primary actor, goal, preconditions, t
 
 **Event Management System:**
 
-- **Actors:** Organizer, Attendee, Admin.
-- **Use Cases:** Create Event, Edit Event, Delete Event, Register for Event, View Event Details, Search Events, Cancel Registration, Generate Reports, Manage Venues, Send Notifications.
+- **Actors:** The actors are Organizer, Attendee, and Admin.
+- **Use Cases:** The use cases include Create Event, Edit Event, Delete Event, Register for Event, View Event Details, Search Events, Cancel Registration, Generate Reports, Manage Venues, and Send Notifications.
 - **Relationships:** "Create Event" includes "Verify Organizer Login." "Register for Event" includes "Make Payment." "Register for Event" may extend "Apply Discount Code."
 
 **Online Food Ordering System:**
 
-- **Actors:** Customer, Restaurant Admin, Delivery Personnel.
-- **Use Cases:** Browse Menu, Search Items, Add to Cart, Place Order, Make Payment, Track Order, Rate/Review, Manage Menu, Update Order Status, Assign Delivery.
+- **Actors:** The actors are Customer, Restaurant Admin, and Delivery Personnel.
+- **Use Cases:** The use cases include Browse Menu, Search Items, Add to Cart, Place Order, Make Payment, Track Order, Rate/Review, Manage Menu, Update Order Status, and Assign Delivery.
 - **Relationships:** "Place Order" includes "Make Payment." "Place Order" may extend "Apply Coupon."
 
 **Online Appointment Booking App:**
 
-- **Actors:** Patient, Doctor, Admin.
-- **Use Cases:** Register/Login, Search Doctor, View Available Slots, Book Appointment, Cancel Appointment, View Appointment History, Manage Schedule, Send Reminder Notification.
+- **Actors:** The actors are Patient, Doctor, and Admin.
+- **Use Cases:** The use cases include Register/Login, Search Doctor, View Available Slots, Book Appointment, Cancel Appointment, View Appointment History, Manage Schedule, and Send Reminder Notification.
 - **Relationships:** "Book Appointment" includes "Verify Patient Login." "Book Appointment" may extend "Send Reminder Notification."
 
 **Automated Ticket Issuing System:**
 
-- **Actors:** Passenger, Admin, Payment Gateway.
-- **Use Cases:** Select Route, Select Seat, Make Payment, Issue Ticket, Cancel Ticket, View Schedule, Generate Reports.
+- **Actors:** The actors are Passenger, Admin, and Payment Gateway.
+- **Use Cases:** The use cases include Select Route, Select Seat, Make Payment, Issue Ticket, Cancel Ticket, View Schedule, and Generate Reports.
 - **Relationships:** "Issue Ticket" includes "Make Payment." "Cancel Ticket" may extend "Process Refund."
 
 **Doctor-Patient-Prescription System:**
 
-- **Actors:** Doctor, Patient, Pharmacist.
-- **Use Cases:** Register Patient, View Patient History, Diagnose, Write Prescription, View Prescription, Dispense Medicine, Schedule Follow-Up.
+- **Actors:** The actors are Doctor, Patient, and Pharmacist.
+- **Use Cases:** The use cases include Register Patient, View Patient History, Diagnose, Write Prescription, View Prescription, Dispense Medicine, and Schedule Follow-Up.
 - **Relationships:** "Diagnose" includes "View Patient History." "Write Prescription" is associated with Doctor. "View Prescription" and "Dispense Medicine" are associated with Pharmacist.
 
 ---
@@ -448,12 +448,12 @@ A **user story** is a short, informal description of a feature told from the per
 
 **INVEST Criteria for Good User Stories:**
 
-- **I (Independent)** means the story is self-contained and not dependent on other stories.
-- **N (Negotiable)** means details are open for discussion and the story is not a rigid contract.
-- **V (Valuable)** means it delivers clear value to the user or business.
-- **E (Estimable)** means the team can estimate the effort required.
-- **S (Small)** means it is small enough to be completed within a single sprint.
-- **T (Testable)** means it has clear criteria that allow verification.
+- **I (Independent):** The story is self-contained and not dependent on other stories.
+- **N (Negotiable):** Details are open for discussion and the story is not a rigid contract.
+- **V (Valuable):** It delivers clear value to the user or business.
+- **E (Estimable):** The team can estimate the effort required.
+- **S (Small):** It is small enough to be completed within a single sprint.
+- **T (Testable):** It has clear criteria that allow verification.
 
 **Acceptance Criteria** define the specific conditions that must be satisfied for a user story to be considered complete. They bridge the gap between the user story and the implementation.
 
@@ -484,10 +484,10 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 
 **Prioritization Techniques:**
 
-- **MoSCoW Method** categorizes items as Must Have (essential, non-negotiable), Should Have (important but not critical for current release), Could Have (desirable if time permits), and Won't Have (explicitly out of scope for now).
-- **Business Value vs. Effort** prioritizes items that deliver the highest business value relative to their development effort.
-- **Risk-Based** prioritization addresses high-risk items early to reduce uncertainty.
-- **Kano Model** classifies features as Basic (expected), Performance (more is better), or Delighters (unexpected positive features).
+- **MoSCoW Method:** It categorizes items as Must Have (essential, non-negotiable), Should Have (important but not critical for current release), Could Have (desirable if time permits), and Won't Have (explicitly out of scope for now).
+- **Business Value vs. Effort:** It prioritizes items that deliver the highest business value relative to their development effort.
+- **Risk-Based:** This prioritization addresses high-risk items early to reduce uncertainty.
+- **Kano Model:** It classifies features as Basic (expected), Performance (more is better), or Delighters (unexpected positive features).
 
 ### 3.5.3 Story Mapping Basics
 
@@ -495,9 +495,9 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 
 **Structure of a Story Map:**
 
-- **Backbone (horizontal axis)** contains the high-level user activities arranged left-to-right following the narrative flow of the user journey (the sequence of steps a user takes to achieve a goal).
-- **Ribs (vertical axis)** are placed beneath each backbone activity. Specific user tasks and stories are stacked vertically in order of priority (most important at top).
-- **Release slices (horizontal lines)** are drawn across the map to group stories into releases. The topmost slice forms the **Minimum Viable Product (MVP)** or "walking skeleton."
+- **Backbone (horizontal axis):** It contains the high-level user activities arranged left-to-right following the narrative flow of the user journey (the sequence of steps a user takes to achieve a goal).
+- **Ribs (vertical axis):** They are placed beneath each backbone activity. Specific user tasks and stories are stacked vertically in order of priority (most important at top).
+- **Release slices (horizontal lines):** They are drawn across the map to group stories into releases. The topmost slice forms the **Minimum Viable Product (MVP)** or "walking skeleton."
 
 **Steps to Create a Story Map:**
 
@@ -520,12 +520,12 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 
 **Activities during backlog refinement:**
 
-- **Adding detail** involves breaking down large stories (epics) into smaller, implementable user stories.
-- **Re-estimating** involves updating effort estimates as the team gains more understanding.
-- **Re-prioritizing** involves adjusting the order of backlog items based on changing business needs, customer feedback, or new information learned from recent sprints.
-- **Removing obsolete items** involves deleting stories that are no longer relevant.
-- **Adding acceptance criteria** involves ensuring each story near the top of the backlog has clear, testable acceptance criteria.
-- **Identifying dependencies** involves flagging stories that depend on others so the team can plan accordingly.
+- **Adding detail:** It involves breaking down large stories (epics) into smaller, implementable user stories.
+- **Re-estimating:** It involves updating effort estimates as the team gains more understanding.
+- **Re-prioritizing:** It involves adjusting the order of backlog items based on changing business needs, customer feedback, or new information learned from recent sprints.
+- **Removing obsolete items:** It involves deleting stories that are no longer relevant.
+- **Adding acceptance criteria:** It involves ensuring each story near the top of the backlog has clear, testable acceptance criteria.
+- **Identifying dependencies:** It involves flagging stories that depend on others so the team can plan accordingly.
 
 **When it happens:**
 
