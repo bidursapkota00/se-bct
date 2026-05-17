@@ -12,11 +12,11 @@ A software process is a collection of activities, actions, and tasks performed w
 
 A generic process framework defines **five framework activities** applicable to all software projects regardless of size or complexity:
 
-- **Communication** involves collaborating with stakeholders to understand their objectives and gather requirements that define software features and functions.
-- **Planning** involves creating a software project plan that describes technical tasks, risks, resources, work products, and schedule (the project "road map").
-- **Modeling** involves creating models (sketches, diagrams, architectural representations) to understand requirements and the design that will achieve them.
-- **Construction** involves code generation (manual or automated) combined with testing to uncover errors in the code.
-- **Deployment** involves delivering the software (complete or as an increment) to the customer, who evaluates it and provides feedback.
+- **Communication:** It involves collaborating with stakeholders to understand their objectives and gather requirements that define software features and functions.
+- **Planning:** It involves creating a software project plan that describes technical tasks, risks, resources, work products, and schedule (the project "road map").
+- **Modeling:** It involves creating models (sketches, diagrams, architectural representations) to understand requirements and the design that will achieve them.
+- **Construction:** It involves code generation (manual or automated) combined with testing to uncover errors in the code.
+- **Deployment:** It involves delivering the software (complete or as an increment) to the customer, who evaluates it and provides feedback.
 
 These activities are applied **iteratively**. Each iteration produces a **software increment** that provides stakeholders with a subset of overall features until the software is complete.
 
@@ -24,23 +24,23 @@ These activities are applied **iteratively**. Each iteration produces a **softwa
 
 Process flow describes how framework activities are organized with respect to sequence and time. Four types of process flow exist:
 
-- **Linear process flow** executes each activity in sequence (communication → planning → modeling → construction → deployment).
-- **Iterative process flow** repeats one or more activities before proceeding to the next.
-- **Evolutionary process flow** executes activities in a "circular" manner. Each circuit leads to a more complete version of the software.
-- **Parallel process flow** executes one or more activities concurrently with others (e.g., modeling for one aspect while constructing another).
+- **Linear process flow:** It executes each activity in sequence (communication → planning → modeling → construction → deployment).
+- **Iterative process flow:** It repeats one or more activities before proceeding to the next.
+- **Evolutionary process flow:** It executes activities in a "circular" manner. Each circuit leads to a more complete version of the software.
+- **Parallel process flow:** It executes one or more activities concurrently with others (e.g., modeling for one aspect while constructing another).
 
 ### Umbrella Activities
 
 Umbrella activities are applied **throughout** the software process to manage and control progress, quality, change, and risk:
 
-- **Software project tracking and control** is used to assess progress against the project plan and take corrective action.
-- **Risk management** is used to assess risks that may affect the project outcome or product quality.
-- **Software quality assurance** involves defining and conducting activities to ensure software quality.
-- **Technical reviews** help uncover and remove errors before they propagate to the next activity.
-- **Measurement** involves collecting process, project, and product measures to help deliver software that meets stakeholders' needs.
-- **Software configuration management** is used to manage the effects of change throughout the process.
-- **Reusability management** involves defining criteria for work product reuse and establishing mechanisms for reusable components.
-- **Work product preparation and production** involves creating models, documents, logs, forms, and lists.
+- **Software project tracking and control:** It is used to assess progress against the project plan and take corrective action.
+- **Risk management:** It is used to assess risks that may affect the project outcome or product quality.
+- **Software quality assurance:** It involves defining and conducting activities to ensure software quality.
+- **Technical reviews:** They help uncover and remove errors before they propagate to the next activity.
+- **Measurement:** It involves collecting process, project, and product measures to help deliver software that meets stakeholders' needs.
+- **Software configuration management:** It is used to manage the effects of change throughout the process.
+- **Reusability management:** It involves defining criteria for work product reuse and establishing mechanisms for reusable components.
+- **Work product preparation and production:** It involves creating models, documents, logs, forms, and lists.
 
 ### Task Sets
 
@@ -64,11 +64,11 @@ The **Software Development Life Cycle (SDLC)** is a structured sequence of stage
 
 The **waterfall model** (also called the linear sequential model), originally proposed by Winston Royce (1970), suggests a systematic, sequential approach to software development flowing through these stages:
 
-- **Communication** covers project initiation and requirements gathering from the customer.
-- **Planning** covers estimating, scheduling, and tracking the project.
-- **Modeling** covers analysis and design, including creating representations of the system.
-- **Construction** covers code generation and testing.
-- **Deployment** covers delivery, support, and feedback.
+- **Communication:** It covers project initiation and requirements gathering from the customer.
+- **Planning:** It covers estimating, scheduling, and tracking the project.
+- **Modeling:** It covers analysis and design, including creating representations of the system.
+- **Construction:** It covers code generation and testing.
+- **Deployment:** It covers delivery, support, and feedback.
 
 Each phase must be completed before the next phase begins, and there is little opportunity to revisit earlier phases.
 
@@ -93,8 +93,8 @@ Each phase must be completed before the next phase begins, and there is little o
 
 **Extensions of the Waterfall Model:**
 
-- The **V-Model** associates a testing phase with each development phase (e.g., unit testing validates construction, system testing validates design).
-- **Waterfall with feedback** allows limited iteration between adjacent phases, partially addressing the rigidity of the pure waterfall.
+- **V-Model:** It associates a testing phase with each development phase (e.g., unit testing validates construction, system testing validates design).
+- **Waterfall with feedback:** It allows limited iteration between adjacent phases, partially addressing the rigidity of the pure waterfall.
 
 ### 2.2.2 Incremental Process Model
 
@@ -113,10 +113,10 @@ The **incremental model** combines elements of linear and iterative flows. It de
 
 **Example of E-Commerce Site (Incremental Approach):**
 
-- **Increment 1** covers core functionality including user registration, product catalog browsing, and basic search.
-- **Increment 2** adds shopping cart, checkout process, and online payment integration.
-- **Increment 3** adds user reviews, recommendation engine, and order tracking.
-- **Increment 4** adds admin dashboard, analytics, inventory management, and promotional tools.
+- **Increment 1:** It covers core functionality including user registration, product catalog browsing, and basic search.
+- **Increment 2:** It adds shopping cart, checkout process, and online payment integration.
+- **Increment 3:** It adds user reviews, recommendation engine, and order tracking.
+- **Increment 4:** It adds admin dashboard, analytics, inventory management, and promotional tools.
 
 Each increment is fully functional, deployed, tested, and reviewed by stakeholders before proceeding to the next.
 
@@ -148,12 +148,12 @@ The **prototyping model** is used when requirements are fuzzy, incomplete, or po
 
 **Process:**
 
-- **Communication** involves meeting stakeholders to define overall objectives and identify known requirements, and outlining areas needing further definition.
-- **Quick Plan** involves planning a rapid prototyping iteration.
-- **Modeling (Quick Design)** focuses on aspects visible to end users (e.g., UI layout, output formats).
-- **Construction of Prototype** involves building a working prototype quickly, possibly using existing program fragments or rapid application tools.
-- **Deployment and Feedback** involves delivering the prototype to stakeholders for evaluation and gathering feedback to refine requirements.
-- **Iteration** involves tuning the prototype based on feedback and repeating until requirements are sufficiently understood.
+- **Communication:** It involves meeting stakeholders to define overall objectives and identify known requirements, and outlining areas needing further definition.
+- **Quick Plan:** It involves planning a rapid prototyping iteration.
+- **Modeling (Quick Design):** It focuses on aspects visible to end users (e.g., UI layout, output formats).
+- **Construction of Prototype:** It involves building a working prototype quickly, possibly using existing program fragments or rapid application tools.
+- **Deployment and Feedback:** It involves delivering the prototype to stakeholders for evaluation and gathering feedback to refine requirements.
+- **Iteration:** It involves tuning the prototype based on feedback and repeating until requirements are sufficiently understood.
 
 **When to use prototyping:**
 
@@ -193,10 +193,10 @@ The **spiral model**, proposed by Barry Boehm (1988), is an evolutionary process
 
 Software is developed in a series of evolutionary releases by traversing a spiral path in four quadrants:
 
-- **Planning** involves determining objectives, alternatives, and constraints, estimating costs and schedule, and conducting risk analysis.
-- **Risk Analysis** involves identifying and resolving risks and creating prototypes to reduce uncertainty.
-- **Construction** involves developing and verifying the software (code + test).
-- **Evaluation** involves assessing results, obtaining customer feedback, and planning the next iteration.
+- **Planning:** It involves determining objectives, alternatives, and constraints, estimating costs and schedule, and conducting risk analysis.
+- **Risk Analysis:** It involves identifying and resolving risks and creating prototypes to reduce uncertainty.
+- **Construction:** It involves developing and verifying the software (code + test).
+- **Evaluation:** It involves assessing results, obtaining customer feedback, and planning the next iteration.
 
 Each circuit (loop) around the spiral produces a progressively more complete version of the software. The first circuit might produce a product specification or proof-of-concept prototype; subsequent circuits produce increasingly refined and complete versions.
 
@@ -232,10 +232,10 @@ In 2001, seventeen software developers signed the **Manifesto for Agile Software
 
 **The Four Core Values of the Agile Manifesto:**
 
-1. **Individuals and interactions** over processes and tools.
-2. **Working software** over comprehensive documentation.
-3. **Customer collaboration** over contract negotiation.
-4. **Responding to change** over following a plan.
+1. **Individuals and interactions:** They are valued over processes and tools.
+2. **Working software:** It is valued over comprehensive documentation.
+3. **Customer collaboration:** It is valued over contract negotiation.
+4. **Responding to change:** It is valued over following a plan.
 
 The manifesto does not reject the items on the right but values the items on the left **more**.
 
@@ -282,44 +282,44 @@ The manifesto does not reject the items on the right but values the items on the
 
 **Scrum Roles:**
 
-- **Product Owner** represents the customer and stakeholders. This role manages and prioritizes the Product Backlog, defines the goals for each sprint, and is the sole person who decides whether to accept or reject an increment. The Product Owner maximizes the value of the product.
-- **Scrum Master** serves as a facilitator and coach. This role ensures the team follows Scrum practices, removes impediments that block the team's progress, leads the Daily Scrum, and helps the Product Owner manage the backlog effectively. The Scrum Master is not a project manager but a servant-leader.
-- **Development Team** is a small (3–9 people), self-organizing, cross-functional team that does the actual work of designing, building, and testing the software increment. The team collectively decides how to implement the selected backlog items.
+- **Product Owner:** This role represents the customer and stakeholders. The Product Owner manages and prioritizes the Product Backlog, defines the goals for each sprint, and is the sole person who decides whether to accept or reject an increment. The Product Owner maximizes the value of the product.
+- **Scrum Master:** This role serves as a facilitator and coach. The Scrum Master ensures the team follows Scrum practices, removes impediments that block the team's progress, leads the Daily Scrum, and helps the Product Owner manage the backlog effectively. The Scrum Master is not a project manager but a servant-leader.
+- **Development Team:** It is a small (3–9 people), self-organizing, cross-functional team that does the actual work of designing, building, and testing the software increment. The team collectively decides how to implement the selected backlog items.
 
 **Scrum Artifacts:**
 
-- **Product Backlog** is a prioritized, evolving list of all features, functions, requirements, enhancements, and fixes needed in the product. The Product Owner orders items by business value. It is never complete while the product exists.
-- **Sprint Backlog** is the subset of Product Backlog items selected for the current sprint, plus the development team's plan for delivering them as a working increment. No new items are added once the sprint begins (unless the sprint is cancelled).
-- **Increment** is the sum of all completed Product Backlog items from the current sprint and all previous sprints. It must be in a usable, potentially releasable condition and meet the team's **Definition of Done**.
+- **Product Backlog:** It is a prioritized, evolving list of all features, functions, requirements, enhancements, and fixes needed in the product. The Product Owner orders items by business value. It is never complete while the product exists.
+- **Sprint Backlog:** It is the subset of Product Backlog items selected for the current sprint, plus the development team's plan for delivering them as a working increment. No new items are added once the sprint begins (unless the sprint is cancelled).
+- **Increment:** It is the sum of all completed Product Backlog items from the current sprint and all previous sprints. It must be in a usable, potentially releasable condition and meet the team's **Definition of Done**.
 
 **Scrum Ceremonies (Events):**
 
-- **Sprint Planning** is held at the start of each sprint. The Product Owner presents the sprint goal and desired features. The development team selects items from the Product Backlog, estimates effort, and creates the Sprint Backlog. The team decides what can be delivered within the sprint time-box.
-- **Daily Scrum (Daily Stand-up)** is a 15-minute daily meeting where each team member answers: (1) What did I do since the last meeting? (2) What will I do before the next meeting? (3) What obstacles am I facing? The Scrum Master facilitates and works to remove reported impediments.
-- **Sprint Review** is held at the end of the sprint (typically 4 hours for a 4-week sprint). The team demonstrates the completed increment to the Product Owner and stakeholders. The Product Owner accepts or rejects the increment. Feedback may result in new backlog items or reprioritization.
-- **Sprint Retrospective** is held after the Sprint Review and before the next Sprint Planning (typically 3 hours for a 4-week sprint). The team reflects on what went well, what could be improved, and commits to specific improvements for the next sprint. This drives continuous process improvement.
+- **Sprint Planning:** It is held at the start of each sprint. The Product Owner presents the sprint goal and desired features. The development team selects items from the Product Backlog, estimates effort, and creates the Sprint Backlog. The team decides what can be delivered within the sprint time-box.
+- **Daily Scrum (Daily Stand-up):** It is a 15-minute daily meeting where each team member answers: (1) What did I do since the last meeting? (2) What will I do before the next meeting? (3) What obstacles am I facing? The Scrum Master facilitates and works to remove reported impediments.
+- **Sprint Review:** It is held at the end of the sprint (typically 4 hours for a 4-week sprint). The team demonstrates the completed increment to the Product Owner and stakeholders. The Product Owner accepts or rejects the increment. Feedback may result in new backlog items or reprioritization.
+- **Sprint Retrospective:** It is held after the Sprint Review and before the next Sprint Planning (typically 3 hours for a 4-week sprint). The team reflects on what went well, what could be improved, and commits to specific improvements for the next sprint. This drives continuous process improvement.
 
 ### 2.3.4 Extreme Programming (XP) Practices
 
 **Extreme Programming (XP)**, created by Kent Beck, is an agile methodology that takes proven software development practices to "extreme" levels. XP is organized around four framework activities: **planning, design, coding, and testing**.
 
-**XP Core Values:** Communication, Simplicity, Feedback, Courage, and Respect.
+**XP Core Values:** The five core values are Communication, Simplicity, Feedback, Courage, and Respect.
 
 **Key XP Practices:**
 
-- **User Stories** are requirements captured as short, customer-written narratives describing desired features. Each story is assigned a business value (priority) by the customer and a cost estimate (in development weeks) by the team.
-- **Planning Game** is where customers and developers collaborate to decide which stories to include in the next release and in what order. Stories may be ordered by business value or by risk.
-- **Small Releases** means software is released in small, frequent increments so that customers can evaluate working software early and often.
-- **Simple Design** follows the KIS (Keep It Simple) principle. Developers do not add functionality based on speculation about future needs.
-- **Pair Programming** means two developers work together at one workstation. One writes code (driver), the other reviews each line in real-time (navigator). This provides continuous code review, facilitates knowledge sharing, and improves code quality.
-- **Test-Driven Development (TDD)** means unit tests are written **before** the code. The cycle is: (1) Red, write a failing test; (2) Green, write just enough code to pass the test; (3) Refactor, improve the code structure while keeping tests passing. This ensures the code is always testable and that developers focus on what must be implemented.
-- **Refactoring** means continuously improving the internal structure of existing code without changing its external behavior. This prevents code deterioration, reduces technical debt, and keeps the system maintainable.
-- **Continuous Integration** means developers integrate their code into the shared repository frequently (multiple times a day). Automated builds and tests run immediately to detect integration errors early.
-- **Collective Code Ownership** means any developer can change any part of the codebase, preventing knowledge silos and bottlenecks.
-- **Coding Standards** means the team follows agreed-upon coding conventions so the codebase reads as if written by a single person.
-- **Sustainable Pace (40-Hour Week)** means XP discourages overtime because a rested team produces higher-quality work.
-- **On-Site Customer** means a customer representative is embedded with the team to answer questions, set priorities, and provide immediate feedback.
-- **Project Velocity** is the number of user stories completed per iteration, and it is used to estimate delivery dates for subsequent releases.
+- **User Stories:** They are requirements captured as short, customer-written narratives describing desired features. Each story is assigned a business value (priority) by the customer and a cost estimate (in development weeks) by the team.
+- **Planning Game:** It is where customers and developers collaborate to decide which stories to include in the next release and in what order. Stories may be ordered by business value or by risk.
+- **Small Releases:** Software is released in small, frequent increments so that customers can evaluate working software early and often.
+- **Simple Design:** It follows the KIS (Keep It Simple) principle. Developers do not add functionality based on speculation about future needs.
+- **Pair Programming:** Two developers work together at one workstation. One writes code (driver), the other reviews each line in real-time (navigator). This provides continuous code review, facilitates knowledge sharing, and improves code quality.
+- **Test-Driven Development (TDD):** Unit tests are written **before** the code. The cycle is: (1) Red, write a failing test; (2) Green, write just enough code to pass the test; (3) Refactor, improve the code structure while keeping tests passing. This ensures the code is always testable and that developers focus on what must be implemented.
+- **Refactoring:** It means continuously improving the internal structure of existing code without changing its external behavior. This prevents code deterioration, reduces technical debt, and keeps the system maintainable.
+- **Continuous Integration:** Developers integrate their code into the shared repository frequently (multiple times a day). Automated builds and tests run immediately to detect integration errors early.
+- **Collective Code Ownership:** Any developer can change any part of the codebase, preventing knowledge silos and bottlenecks.
+- **Coding Standards:** The team follows agreed-upon coding conventions so the codebase reads as if written by a single person.
+- **Sustainable Pace (40-Hour Week):** XP discourages overtime because a rested team produces higher-quality work.
+- **On-Site Customer:** A customer representative is embedded with the team to answer questions, set priorities, and provide immediate feedback.
+- **Project Velocity:** It is the number of user stories completed per iteration, and it is used to estimate delivery dates for subsequent releases.
 
 ### 2.3.5 Lean Software Development
 
@@ -327,13 +327,13 @@ The manifesto does not reject the items on the right but values the items on the
 
 **The Seven Principles of Lean Software Development:**
 
-1. **Eliminate Waste.** Remove anything that does not add value to the customer. In software, waste includes partially done work, unnecessary features, task switching, waiting, handoffs, unnecessary meetings, and defects.
-2. **Amplify Learning.** Software development is a discovery process. Use short iterations, frequent feedback loops, and experiments to continuously build knowledge rather than relying on rigid upfront plans.
-3. **Decide as Late as Possible.** Delay irreversible decisions until you have the maximum information available. This keeps options open and avoids costly changes based on incomplete knowledge.
-4. **Deliver as Fast as Possible.** Reduce the time between identifying a customer need and delivering working software. Rapid delivery provides faster feedback, quicker market response, and lower risk.
-5. **Empower the Team.** Trust the people closest to the work to make decisions. Provide them with the tools, authority, and environment to solve problems effectively. Avoid micro-management.
-6. **Build Integrity In.** Ensure both **conceptual integrity** (components work as a cohesive whole) and **perceived integrity** (the product meets customer expectations). Achieve this through automated testing, continuous integration, and refactoring.
-7. **Optimize the Whole.** Focus on improving the entire value stream from concept to delivery, not just individual parts. Avoid sub-optimization where improving one part degrades the overall system.
+1. **Eliminate Waste:** Remove anything that does not add value to the customer. In software, waste includes partially done work, unnecessary features, task switching, waiting, handoffs, unnecessary meetings, and defects.
+2. **Amplify Learning:** Software development is a discovery process. Use short iterations, frequent feedback loops, and experiments to continuously build knowledge rather than relying on rigid upfront plans.
+3. **Decide as Late as Possible:** Delay irreversible decisions until you have the maximum information available. This keeps options open and avoids costly changes based on incomplete knowledge.
+4. **Deliver as Fast as Possible:** Reduce the time between identifying a customer need and delivering working software. Rapid delivery provides faster feedback, quicker market response, and lower risk.
+5. **Empower the Team:** Trust the people closest to the work to make decisions. Provide them with the tools, authority, and environment to solve problems effectively. Avoid micro-management.
+6. **Build Integrity In:** Ensure both **conceptual integrity** (components work as a cohesive whole) and **perceived integrity** (the product meets customer expectations). Achieve this through automated testing, continuous integration, and refactoring.
+7. **Optimize the Whole:** Focus on improving the entire value stream from concept to delivery, not just individual parts. Avoid sub-optimization where improving one part degrades the overall system.
 
 Lean principles complement other agile methods. Kanban, a lean-originated method, visualizes workflow on a board, limits work in progress (WIP), manages flow, makes process policies explicit, creates feedback loops, and encourages collaborative process evolution.
 
@@ -355,13 +355,13 @@ A **software process model** is a simplified description of a software process, 
 
 **Factors for selecting a process model:**
 
-- **Requirements clarity and stability:** If requirements are well-defined and unlikely to change, plan-driven models (waterfall) work. If requirements are volatile or unclear, agile or evolutionary models are better.
-- **Project size and complexity:** Large, complex projects with high risk favor the spiral model. Small to medium projects favor agile methods (Scrum, XP).
-- **Risk level:** High-risk projects benefit from the spiral model's explicit risk analysis. Low-risk projects can use simpler models.
+- **Requirements clarity and stability:** If requirements are well-defined and unlikely to change, plan-driven models such as waterfall work well. If requirements are volatile or unclear, agile or evolutionary models are better suited.
+- **Project size and complexity:** Large, complex projects with high risk favor the spiral model, while small to medium projects favor agile methods such as Scrum and XP.
+- **Risk level:** High-risk projects benefit from the spiral model's explicit risk analysis, whereas low-risk projects can use simpler models.
 - **Customer involvement:** If the customer is available and willing to participate continuously, agile methods excel. If customer interaction is limited, plan-driven methods with formal documentation may be necessary.
-- **Time-to-market pressure:** If rapid delivery is critical, incremental or agile models deliver working software early.
-- **Team expertise:** Agile and spiral models require experienced, self-organizing teams. Plan-driven models can work with less experienced teams given strong management.
-- **Regulatory and compliance needs:** Safety-critical or regulated domains (avionics, medical devices) may require the documentation rigor of plan-driven models.
+- **Time-to-market pressure:** If rapid delivery is critical, incremental or agile models are preferred because they deliver working software early.
+- **Team expertise:** Agile and spiral models require experienced, self-organizing teams, while plan-driven models can work with less experienced teams given strong management.
+- **Regulatory and compliance needs:** Safety-critical or regulated domains such as avionics and medical devices may require the documentation rigor of plan-driven models.
 
 **For a project with significant uncertainties and risk of loss:** The **spiral model** is most appropriate. Its risk-driven nature ensures that uncertainties are identified and resolved early through prototyping and risk analysis before committing significant resources. Each iteration includes formal risk assessment, and the project can be terminated at any point if the risk is deemed too high, thus limiting potential losses.
 
