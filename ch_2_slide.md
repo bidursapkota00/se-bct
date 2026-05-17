@@ -796,7 +796,7 @@ Scrum is the most widely used agile framework, conceived by Jeff Sutherland in t
 
 **Scrum Artifacts:**
 
-3. **Increment:** It is the sum of all completed Product Backlog items from the current sprint and all previous sprints. It must be in a usable, potentially releasable condition and meet the team's **Definition of Done**.
+3. **Increment:** It is the sum of all completed Product Backlog items from the current sprint and all previous sprints. It must be in a usable, potentially releasable condition and meet the team's Definition of Done.
 
 ---
 
@@ -859,7 +859,7 @@ Extreme Programming (XP), created by Kent Beck, is an agile methodology that tak
 
 ### 2.3.4 Extreme Programming (XP) Practices
 
-6. **Test-Driven Development (TDD):** Unit tests are written **before** the code. The cycle is: (1) Red, write a failing test; (2) Green, write just enough code to pass the test; (3) Refactor, improve the code structure while keeping tests passing. This ensures the code is always testable and that developers focus on what must be implemented.
+6. **Test-Driven Development (TDD):** Unit tests are written before the code. The cycle is: (1) Red, write a failing test; (2) Green, write just enough code to pass the test; (3) Refactor, improve the code structure while keeping tests passing. This ensures the code is always testable and that developers focus on what must be implemented.
 7. **Refactoring:** It means continuously improving the internal structure of existing code without changing its external behavior. This prevents code deterioration, reduces technical debt, and keeps the system maintainable.
 
 ---
