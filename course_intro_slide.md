@@ -386,7 +386,7 @@ The objective of this course is to provide students with a foundation in softwar
 
 ---
 
-# Tutorials
+# Tutorials (15 hours)
 
 1. Analyze the project domain, identify challenges, and discuss software myths
 2. Select and justify an appropriate software process model
@@ -398,7 +398,7 @@ The objective of this course is to provide students with a foundation in softwar
 
 ---
 
-# Tutorials
+# Tutorials (15 hours)
 
 8. Prepare user stories and product backlog; Conduct a mock sprint planning session
 9. Define coding standards and perform basic code review/refactoring
@@ -408,7 +408,7 @@ The objective of this course is to provide students with a foundation in softwar
 
 ---
 
-# Practical
+# Practical (22.5 hours)
 
 1. Preparation and organization of software requirements specification (SRS) using standard templates
 2. Construction of UML diagrams (Use case, activity, class, and sequence) using modeling tools
@@ -418,7 +418,7 @@ The objective of this course is to provide students with a foundation in softwar
 
 ---
 
-# Practical
+# Practical (22.5 hours)
 
 6. Application of version control (Git), CI/CD workflow setup, and containerization using docker
 7. Term project
