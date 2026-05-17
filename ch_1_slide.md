@@ -177,6 +177,24 @@ Modern software engineering emerged to address recurring problems: late delivery
 
 ---
 
+# 1.1 Software and Software Engineering
+
+**Software Engineering vs. Computer Science**
+
+<br>
+
+1. **Computer Science:**
+
+Focuses on the theories, algorithms, and fundamentals of how computers and programming languages work, often independent of business constraints.
+
+<br>
+
+2. **Software Engineering:**
+
+Focuses on the practicalities of developing, delivering, and maintaining useful software systems within constraints (e.g., time, budget, customer needs).
+
+---
+
 # 1.2 Nature and Characteristics of Software
 
 > **Define software and list typical software characteristics. [4 marks] (2078 Bhadra - IOE - Old Syllabus Relevant)**
@@ -308,6 +326,24 @@ Legacy software refers to older programs, often developed decades ago, that have
 <br>
 
 If a legacy system meets users' needs and runs reliably, it does not need to be fixed. But when evolution is needed, it must be reengineered for future viability.
+
+---
+
+# 1.4 Legacy Software
+
+**Lehman’s Laws of Software Evolution:**
+
+When maintaining or evolving legacy systems (or any software), Lehman's laws describe how the system behaves:
+
+<br>
+
+1. **Law of Continuing Change:**
+
+A system must be continually adapted, or it becomes progressively less useful.
+
+2. **Law of Increasing Complexity:**
+
+As a system evolves, its structure degrades and complexity increases unless work is done to maintain or simplify it.
 
 ---
 
@@ -472,6 +508,7 @@ Based on George Polya's problem-solving approach (_How to Solve It_, 1945), soft
 
 **1. Understand the problem** (communication and analysis)
 
+- Collaborate with stakeholders to extract and analyze true requirements
 - Who are the stakeholders?
 - What are the unknowns? What data, functions, and features are required?
 - Can the problem be decomposed into smaller, more manageable problems?
