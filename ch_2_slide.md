@@ -195,7 +195,7 @@ These activities are applied iteratively. Each iteration produces a software inc
 
 ### Process Flow
 
-Process flow describes how framework activities are organized with respect to sequence and time. Four types of process flow exist:
+Process flow describes how framework activities are organized with respect to sequence and time. The choice of which process flow to adopt depends heavily on the project's specific requirements, their stability, and the development team's familiarity with the domain. Four types of process flow exist:
 
 <br>
 
@@ -927,7 +927,7 @@ Extreme Programming (XP), created by Kent Beck, is an agile methodology that tak
 **The Seven Principles of Lean Software Development:**
 
 6. **Build Integrity In:** Ensure both **conceptual integrity** (components work as a cohesive whole) and **perceived integrity** (the product meets customer expectations). Achieve this through automated testing, continuous integration, and refactoring.
-7. **Optimize the Whole:** Focus on improving the entire value stream from concept to delivery, not just individual parts. Avoid sub-optimization where improving one part degrades the overall system.
+7. **Optimize the Whole:** Focus on improving the entire value stream (the complete sequence of activities required to design, produce, and deliver a product) from concept to delivery, not just individual parts. Avoid sub-optimization where improving one part degrades the overall system.
 
 ---
 
