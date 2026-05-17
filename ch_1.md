@@ -12,10 +12,10 @@
 
 Software engineering is a **layered technology** built on four layers (bottom to top):
 
-- **Quality focus** is the bedrock that represents an organizational commitment to continuous quality improvement (e.g., TQM, Six Sigma).
-- **Process** is the foundation that defines a framework for management control, milestones, and change management.
-- **Methods** provide the technical how-to's, including communication, requirements analysis, design modeling, construction, testing, and support.
-- **Tools** provide automated or semi-automated support for process and methods (CASE tools).
+- **Quality focus:** It is the bedrock that represents an organizational commitment to continuous quality improvement (e.g., TQM, Six Sigma).
+- **Process:** It is the foundation that defines a framework for management control, milestones, and change management.
+- **Methods:** They provide the technical how-to's, including communication, requirements analysis, design modeling, construction, testing, and support.
+- **Tools:** They provide automated or semi-automated support for process and methods (CASE tools).
 
 Modern software engineering emerged to address recurring problems: late delivery, cost overruns, unreliable software, and difficulty maintaining existing systems.
 
@@ -31,19 +31,19 @@ Modern software engineering emerged to address recurring problems: late delivery
 
 Software is a **logical** element, not a physical one. Its key characteristics that distinguish it from hardware:
 
-- **Software is developed or engineered; it is not manufactured** in the classical sense. Although similarities exist between software development and hardware manufacturing, the two activities are fundamentally different. Software quality is achieved through good design, not through production control.
-- **Software doesn't "wear out."** Hardware follows a "bathtub curve" with a high early failure rate (infant mortality), then a steady-state, then increasing failures due to wear. Software has no physical wear. Its failure curve is idealized as a high initial failure rate (undiscovered defects) that drops and flattens as defects are corrected. However, software **deteriorates** because each change introduces new errors, causing failure rate spikes. Over time, the baseline failure rate rises.
-- **Software has no spare parts.** Every failure indicates a design error. Unlike hardware where a worn-out component is replaced with a spare, software maintenance involves fixing design flaws, which is inherently more complex.
-- **Most software is custom-built** rather than assembled from standard components, although the industry is moving toward component-based construction and reuse.
+- **Software is developed or engineered; it is not manufactured:** Software is not manufactured in the classical sense. Although similarities exist between software development and hardware manufacturing, the two activities are fundamentally different. Software quality is achieved through good design, not through production control.
+- **Software doesn't "wear out":** Hardware follows a "bathtub curve" with a high early failure rate (infant mortality), then a steady-state, then increasing failures due to wear. Software has no physical wear. Its failure curve is idealized as a high initial failure rate (undiscovered defects) that drops and flattens as defects are corrected. However, software **deteriorates** because each change introduces new errors, causing failure rate spikes. Over time, the baseline failure rate rises.
+- **Software has no spare parts:** Every failure indicates a design error. Unlike hardware where a worn-out component is replaced with a spare, software maintenance involves fixing design flaws, which is inherently more complex.
+- **Most software is custom-built:** It is not assembled from standard components, although the industry is moving toward component-based construction and reuse.
 
 **Characteristics of good software** (quality attributes):
 
-- **Functionality** means the software delivers the required features.
-- **Reliability** means the software performs without failure under stated conditions.
-- **Usability** means the software is easy for the intended users.
-- **Efficiency** means the software makes optimal use of system resources.
-- **Maintainability** means the software is easy to modify, correct, and improve.
-- **Portability** means the software can operate across different environments.
+- **Functionality:** The software delivers the required features.
+- **Reliability:** The software performs without failure under stated conditions.
+- **Usability:** The software is easy for the intended users to learn and operate.
+- **Efficiency:** The software makes optimal use of system resources.
+- **Maintainability:** The software is easy to modify, correct, and improve.
+- **Portability:** The software can operate across different environments.
 
 ---
 
@@ -51,13 +51,13 @@ Software is a **logical** element, not a physical one. Its key characteristics t
 
 Seven broad categories of computer software:
 
-- **System software** consists of programs that service other programs (e.g., compilers, editors, OS components, drivers, networking software). It processes complex information structures, often with indeterminate input/output.
-- **Application software** consists of standalone programs that solve specific business needs (e.g., payroll, inventory). It processes business or technical data for decision making.
-- **Engineering/scientific software** consists of "number-crunching" programs for scientific computation (e.g., CAD, weather forecasting, stress analysis, data science applications).
-- **Embedded software** resides within a product or system to control features and functions (e.g., fuel control in automobiles, microwave oven key pad, braking systems).
-- **Product-line software** is composed of reusable components, designed for use by many customers (e.g., word processors, spreadsheets, inventory control products).
-- **Web/mobile applications** are network-centric software spanning browser-based apps, cloud computing, service-based computing, and mobile device software.
-- **Artificial intelligence software** uses heuristics to solve complex problems not amenable to regular computation (e.g., robotics, machine learning, pattern recognition, game playing, decision-making systems).
+- **System software:** It consists of programs that service other programs (e.g., compilers, editors, OS components, drivers, networking software). It processes complex information structures, often with indeterminate input/output.
+- **Application software:** It consists of standalone programs that solve specific business needs (e.g., payroll, inventory). It processes business or technical data for decision making.
+- **Engineering/scientific software:** It consists of "number-crunching" programs for scientific computation (e.g., CAD, weather forecasting, stress analysis, data science applications).
+- **Embedded software:** It resides within a product or system to control features and functions (e.g., fuel control in automobiles, microwave oven key pad, braking systems).
+- **Product-line software:** It is composed of reusable components, designed for use by many customers (e.g., word processors, spreadsheets, inventory control products).
+- **Web/mobile applications:** They are network-centric software spanning browser-based apps, cloud computing, service-based computing, and mobile device software.
+- **Artificial intelligence software:** It uses heuristics to solve complex problems not amenable to regular computation (e.g., robotics, machine learning, pattern recognition, game playing, decision-making systems).
 
 ---
 
@@ -66,11 +66,13 @@ Seven broad categories of computer software:
 **Legacy software** refers to older programs, often developed decades ago, that have been continually modified to meet changing business requirements and computing platforms.
 
 **Why legacy software matters:**
-- Often supports core business functions and is indispensable.
-- Costly to maintain and risky to evolve.
-- May have poor quality by modern standards: inextensible designs, convoluted code, poor/absent documentation, no archived test cases, and poorly managed change history.
+
+- It often supports core business functions and is indispensable.
+- It is costly to maintain and risky to evolve.
+- It may have poor quality by modern standards, including inextensible designs, convoluted code, poor or absent documentation, no archived test cases, and poorly managed change history.
 
 **When legacy systems must evolve:**
+
 - Must be **adapted** to new computing environments or technology.
 - Must be **enhanced** to meet new business requirements.
 - Must be **extended** to work with modern systems or databases.
@@ -89,26 +91,30 @@ If a legacy system meets users' needs and runs reliably, it does not need to be 
 The **software crisis** is a term coined in the late 1960s (at the 1968 NATO conference) to describe the chronic problems in software development, specifically the inability to produce useful, reliable software on time and within budget as systems grew in complexity.
 
 **Causes of the software crisis:**
-- Rapidly increasing complexity of software requirements while tools and techniques remained primitive.
-- Rising demand for new software outpacing the industry's ability to produce it.
-- Inadequate, informal development techniques that could not scale to large systems.
-- Poor project management and lack of standardized engineering methodologies.
-- Maintenance challenges: cost of maintenance often exceeded initial development cost.
-- Shortage of trained software practitioners.
+
+- **Increasing complexity:** Software requirements grew rapidly in complexity while tools and techniques remained primitive.
+- **Rising demand:** The demand for new software outpaced the industry's ability to produce it.
+- **Inadequate techniques:** Informal development techniques could not scale to large systems.
+- **Poor management:** Project management lacked standardized engineering methodologies.
+- **Maintenance challenges:** The cost of maintenance often exceeded the initial development cost.
+- **Shortage of practitioners:** There were not enough trained software practitioners to meet the demand.
 
 **Manifestations:**
+
 - Projects running significantly over budget and past deadlines.
 - Delivered software failing to meet customer requirements.
 - Software that was error-prone, unreliable, and poorly documented.
 - Large projects becoming unmanageable or being cancelled entirely.
 
 **Historical examples:**
-- **IBM OS/360 (1963–65)** experienced massive delays and cost overruns in creating a unified OS.
-- **Therac-25 (1985–87)** had software-based safety failures in a radiation therapy machine that caused patient fatalities.
-- **Denver Airport Baggage System (1995)** suffered from automated baggage system software glitches that delayed airport opening for 16 months.
-- **Ariane 5 Rocket (1996)** crashed 37 seconds after launch due to an integer overflow in control software.
+
+- **IBM OS/360 (1963–65):** It experienced massive delays and cost overruns in creating a unified OS.
+- **Therac-25 (1985–87):** It had software-based safety failures in a radiation therapy machine that caused patient fatalities.
+- **Denver Airport Baggage System (1995):** It suffered from automated baggage system software glitches that delayed airport opening for 16 months.
+- **Ariane 5 Rocket (1996):** It crashed 37 seconds after launch due to an integer overflow in control software.
 
 **Solutions proposed:**
+
 - Adoption of systematic software engineering practices (process models, methods, tools).
 - Better requirements gathering and management.
 - Use of formal reviews, inspections, and testing strategies.
@@ -160,24 +166,28 @@ Software myths are widely held but false beliefs that lead to mismanagement, unr
 
 ### The Essence of Practice
 
-Based on George Polya's problem-solving approach (*How to Solve It*, 1945), software engineering practice follows four essential steps:
+Based on George Polya's problem-solving approach (_How to Solve It_, 1945), software engineering practice follows four essential steps:
 
 **1. Understand the problem** (communication and analysis)
+
 - Who are the stakeholders?
 - What are the unknowns? What data, functions, and features are required?
 - Can the problem be decomposed into smaller, more manageable problems?
 - Can the problem be represented graphically? Can an analysis model be created?
 
 **2. Plan a solution** (modeling and software design)
+
 - Have you seen similar problems before? Are there reusable patterns or existing software?
 - Can subproblems be defined with readily apparent solutions?
 - Can a design model be created that leads to effective implementation?
 
 **3. Carry out the plan** (code generation)
+
 - Does the solution conform to the design plan? Is the code traceable to the design model?
 - Is each component provably correct? Has the code been reviewed?
 
 **4. Examine the result for accuracy** (testing and quality assurance)
+
 - Has a reasonable testing strategy been implemented?
 - Does the solution produce results that conform to requirements?
 - Has the software been validated against all stakeholder requirements?
@@ -208,11 +218,11 @@ A **process** is a collection of activities, actions, and tasks performed when a
 
 A generic process framework encompasses **five framework activities**:
 
-- **Communication** involves understanding stakeholders' objectives and gathering requirements.
-- **Planning** involves creating a software project plan describing tasks, risks, resources, work products, and schedule.
-- **Modeling** involves creating models (sketches, UML diagrams) to understand requirements and design the solution.
-- **Construction** involves code generation (manual or automated) combined with testing to uncover errors.
-- **Deployment** involves delivering software to the customer, who evaluates it and provides feedback.
+- **Communication:** It involves understanding stakeholders' objectives and gathering requirements.
+- **Planning:** It involves creating a software project plan describing tasks, risks, resources, work products, and schedule.
+- **Modeling:** It involves creating models (sketches, UML diagrams) to understand requirements and design the solution.
+- **Construction:** It involves code generation (manual or automated) combined with testing to uncover errors.
+- **Deployment:** It involves delivering software to the customer, who evaluates it and provides feedback.
 
 These activities are applied **iteratively**: each iteration produces an **increment** that adds features and functionality until the software is complete.
 
@@ -220,14 +230,14 @@ These activities are applied **iteratively**: each iteration produces an **incre
 
 Applied throughout the software process to manage and control progress, quality, change, and risk:
 
-- **Software project tracking and control** is used to assess progress against the plan.
-- **Risk management** is used to assess risks affecting outcome or quality.
-- **Software quality assurance** includes activities to ensure software quality.
-- **Technical reviews** help uncover and remove errors before propagation.
-- **Measurement** involves collecting process, project, and product measures.
-- **Software configuration management** is used to manage effects of change.
-- **Reusability management** is used to define reuse criteria and mechanisms.
-- **Work product preparation and production** involves creating models, documents, logs, forms.
+- **Software project tracking and control:** It is used to assess progress against the plan.
+- **Risk management:** It is used to assess risks affecting outcome or quality.
+- **Software quality assurance:** It includes activities to ensure software quality.
+- **Technical reviews:** They help uncover and remove errors before propagation.
+- **Measurement:** It involves collecting process, project, and product measures.
+- **Software configuration management:** It is used to manage effects of change.
+- **Reusability management:** It is used to define reuse criteria and mechanisms.
+- **Work product preparation and production:** It involves creating models, documents, logs, forms.
 
 ### Process Adaptation
 
