@@ -926,7 +926,7 @@ Extreme Programming (XP), created by Kent Beck, is an agile methodology that tak
 
 **The Seven Principles of Lean Software Development:**
 
-6. **Build Integrity In:** Ensure both **conceptual integrity** (components work as a cohesive whole) and **perceived integrity** (the product meets customer expectations). Achieve this through automated testing, continuous integration, and refactoring.
+6. **Build Integrity In:** Ensure both conceptual integrity (components work as a cohesive whole) and perceived integrity (the product meets customer expectations). Achieve this through automated testing, continuous integration, and refactoring.
 7. **Optimize the Whole:** Focus on improving the entire value stream (the complete sequence of activities required to design, produce, and deliver a product) from concept to delivery, not just individual parts. Avoid sub-optimization where improving one part degrades the overall system.
 
 ---
