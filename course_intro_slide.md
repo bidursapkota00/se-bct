@@ -428,13 +428,13 @@ The objective of this course is to provide students with a foundation in softwar
 # Academic Calender
 
 **Semester Start:** Jestha 4
-**Semester End:** Bhadra 12
+**Semester End:** Bhadra 11
 
 **Theory class:** Monday, Thursday
 **Practical class:** Tuesday
 
-**First Exam:** Asar 2nd week
-**Second Exam:** Bhadra 12+
+**First Exam:** Asar 11
+**Second Exam:** Bhadra 1
 
 ---
 
