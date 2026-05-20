@@ -179,6 +179,12 @@ Modern software engineering emerged to address recurring problems: late delivery
 
 # 1.1 Software and Software Engineering
 
+![Software Engineering Layers](images/ch_1/software-engineering-layers.png)
+
+---
+
+# 1.1 Software and Software Engineering
+
 **Software Engineering vs. Computer Science**
 
 <br>
@@ -222,6 +228,12 @@ Software is not manufactured in the classical sense. Although similarities exist
 **Software doesn't "wear out":**
 
 Hardware follows a "bathtub curve" with a high early failure rate (infant mortality), then a steady-state, then increasing failures due to wear. Software has no physical wear. Its failure curve is idealized as a high initial failure rate (undiscovered defects) that drops and flattens as defects are corrected. However, software deteriorates because each change introduces new errors, causing failure rate spikes. Over time, the baseline failure rate rises.
+
+---
+
+# 1.2 Nature and Characteristics of Software
+
+![Software Failure Curve](images/ch_1/software-failure-curve.png)
 
 ---
 
@@ -377,11 +389,22 @@ The software crisis is a term coined in the late 1960s (at the 1968 NATO confere
 <br>
 
 4. **Poor management:**
-   Project management lacked standardized engineering methodologies.
+   Project management lacked standardized engineering methodologies. Unrealistic Deadlines, Inadequate Quality Assurance.
 5. **Maintenance challenges:**
    The cost of maintenance often exceeded the initial development cost.
 6. **Shortage of practitioners:**
    There were not enough trained software practitioners to meet the demand.
+
+---
+
+# 1.5 Software Crisis
+
+**Causes of the software crisis:**
+
+<br>
+
+7. **Poor communication:**
+   Poor communication between stakeholders, developers, and users resulted in software that did not actually meet the business requirements.
 
 ---
 
