@@ -174,7 +174,7 @@ A generic process framework defines five framework activities applicable to all 
 
 1. **Communication:** It involves collaborating with stakeholders to understand their objectives and gather requirements that define software features and functions.
 2. **Planning:** It involves creating a software project plan that describes technical tasks, risks, resources, work products, and schedule (the project "road map").
-3. **Modeling:** It involves creating models (sketches, diagrams, architectural representations) to understand requirements and the design that will achieve them.
+3. **Modeling:** It involves creating models (sketches, UML diagrams, architectural representations) to understand requirements and the design that will achieve them.
 
 ---
 
