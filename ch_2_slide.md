@@ -858,6 +858,12 @@ Scrum is the most widely used agile framework, conceived by Jeff Sutherland in t
 
 # 2.3 Agile and Adaptive Process Models
 
+![Scrum](images/ch_2/scrum.png)
+
+---
+
+# 2.3 Agile and Adaptive Process Models
+
 ### 2.3.4 Extreme Programming (XP) Practices
 
 Extreme Programming (XP), created by Kent Beck, is an agile methodology that takes proven software development practices to "extreme" levels. XP is organized around four framework activities: planning, design, coding, and testing.
@@ -920,9 +926,15 @@ Extreme Programming (XP), created by Kent Beck, is an agile methodology that tak
 
 # 2.3 Agile and Adaptive Process Models
 
+![XP](images/ch_2/xp.png)
+
+---
+
+# 2.3 Agile and Adaptive Process Models
+
 ### 2.3.5 Lean Software Development
 
-**Lean Software Development**, articulated by Mary and Tom Poppendieck, adapts principles from lean manufacturing (Toyota Production System) to software engineering. It focuses on delivering maximum value with minimum waste.
+Lean Software Development, articulated by Mary and Tom Poppendieck, adapts principles from lean manufacturing (Toyota Production System) to software engineering. It focuses on delivering maximum value with minimum waste.
 
 <br>
 
@@ -970,6 +982,12 @@ Extreme Programming (XP), created by Kent Beck, is an agile methodology that tak
 ### 2.3.5 Lean Software Development
 
 Lean principles complement other agile methods. Kanban, a lean-originated method, visualizes workflow on a board, limits work in progress (WIP), manages flow, makes process policies explicit, creates feedback loops, and encourages collaborative process evolution.
+
+---
+
+# 2.3 Agile and Adaptive Process Models
+
+![Kanban](images/ch_2/kanban.png)
 
 ---
 
