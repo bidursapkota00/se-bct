@@ -161,15 +161,20 @@ Software Engineering (IEEE definition): The application of a systematic, discipl
 
 Software engineering is a layered technology built on four layers (bottom to top):
 
-1. **Quality focus:** It is the bedrock that represents an organizational commitment to continuous quality improvement (e.g., TQM, Six Sigma).
-2. **Process:** It is the foundation that defines a framework for management control, milestones, and change management.
+1. **Quality focus:** It is the bedrock that represents an organizational commitment to continuous quality improvement (e.g., TQM, Six Sigma). Main Goals is to Reduce defects, Improve customer satisfaction, Ensure reliability and maintainability, and Continuously improve development practices. A company may review coding standards regularly, track defect rates, perform quality audits.
 
 ---
 
 # 1.1 Software and Software Engineering
 
-3. **Methods:** They provide the technical how-to's, including communication, requirements analysis, design modeling, construction, testing, and support.
-4. **Tools:** They provide automated or semi-automated support for process and methods (CASE tools).
+2. **Process:** It is the foundation that defines a framework for management control, milestones, and change management. It answers What activities should be done?, In what order?, Who is responsible?, How is progress tracked?
+3. **Methods:** They provide the technical how-to's, including communication, requirements analysis, design modeling, construction, testing, and support. This layer answers “How do we actually create the software?”. Examples UML diagrams for design, Object-oriented analysis and design, Database modeling, Unit testing techniques, Design patterns.
+
+---
+
+# 1.1 Software and Software Engineering
+
+4. **Tools:** They provide automated or semi-automated support for process and methods (CASE tools). A team may use Git for source control, Jira for task management, Jenkins for automated deployment, Selenium for testing.
 
 <br>
 
@@ -286,7 +291,7 @@ It is not assembled from standard components, although the industry is moving to
 Seven broad categories of computer software:
 
 1. **System software:**
-   It consists of programs that service other programs (e.g., compilers, editors, OS components, drivers, networking software). It processes complex information structures, often with indeterminate input/output.
+   It consists of programs that service other programs (e.g., compilers, OS components, drivers, networking software). It processes complex information structures, often with indeterminate input/output.
 2. **Application software:**
    It consists of standalone programs that solve specific business needs (e.g., payroll, inventory). It processes business or technical data for decision making.
 
@@ -308,7 +313,7 @@ Seven broad categories of computer software:
 6. **Web/mobile applications:**
    They are network-centric software spanning browser-based apps, cloud computing, service-based computing, and mobile device software.
 7. **Artificial intelligence software:**
-   It uses heuristics to solve complex problems not amenable to regular computation (e.g., robotics, machine learning, pattern recognition, game playing, decision-making systems).
+   Artificial intelligence (AI) software is software designed to simulate human intelligence and make decisions or solve problems that are difficult to solve using normal step-by-step algorithms. AI software can learn from data, recognize patterns, make predictions, reason and decide. It uses heuristics to solve complex problems not amenable to regular computation (e.g., robotics, machine learning, pattern recognition, game playing, decision-making systems).
 
 ---
 
@@ -377,8 +382,6 @@ The software crisis is a term coined in the late 1960s (at the 1968 NATO confere
    Software requirements grew rapidly in complexity while tools and techniques remained primitive.
 2. **Rising demand:**
    The demand for new software outpaced the industry's ability to produce it.
-3. **Inadequate techniques:**
-   Informal development techniques could not scale to large systems.
 
 ---
 
@@ -386,7 +389,14 @@ The software crisis is a term coined in the late 1960s (at the 1968 NATO confere
 
 **Causes of the software crisis:**
 
-<br>
+3. **Inadequate techniques:**
+   Informal development techniques could not scale to large systems. Early software development was mostly: “Code-first” (start writing code without proper design), Informal (little documentation or planning), Individual-based (dependent on a few programmers’ knowledge).
+
+---
+
+# 1.5 Software Crisis
+
+**Causes of the software crisis:**
 
 4. **Poor management:**
    Project management lacked standardized engineering methodologies. Unrealistic Deadlines, Inadequate Quality Assurance.
