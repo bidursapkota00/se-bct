@@ -199,8 +199,14 @@ Process flow describes how framework activities are organized with respect to se
 
 <br>
 
-1. **Linear process flow:** It executes each activity in sequence (communication → planning → modeling → construction → deployment).
+1. **Linear process flow:** It executes each activity in sequence.
 2. **Iterative process flow:** It repeats one or more activities before proceeding to the next.
+
+---
+
+# 2.1 Process Framework and Umbrella Activities
+
+![Linear and Iterative process flow](images/ch_2/linear-and-iterative-process-flow.png)
 
 ---
 
@@ -210,6 +216,18 @@ Process flow describes how framework activities are organized with respect to se
 
 3. **Evolutionary process flow:** It executes activities in a "circular" manner. Each circuit leads to a more complete version of the software.
 4. **Parallel process flow:** It executes one or more activities concurrently with others (e.g., modeling for one aspect while constructing another).
+
+---
+
+# 2.1 Process Framework and Umbrella Activities
+
+![Evolutionary Process Flow](images/ch_2/evolutionary-process-flow.png)
+
+---
+
+# 2.1 Process Framework and Umbrella Activities
+
+![Parallel Process Flow](images/ch_2/parallel-process-flow.png)
 
 ---
 
@@ -241,14 +259,6 @@ Umbrella activities are applied throughout the software process to manage and co
 
 7. **Reusability management:** It involves defining criteria for work product reuse and establishing mechanisms for reusable components.
 8. **Work product preparation and production:** It involves creating models, documents, logs, forms, and lists.
-
----
-
-# 2.1 Process Framework and Umbrella Activities
-
-### Task Sets
-
-Each framework activity is populated by software engineering actions, and each action is defined by a task set, which is a collection of work tasks, related work products, quality assurance points, and project milestones. The task set is chosen based on project needs and team characteristics. A small project may have a simple task set (e.g., a phone call for communication), while a complex project may have elaborate task sets (e.g., inception, elicitation, elaboration, negotiation, specification, and validation for communication).
 
 ---
 
@@ -292,6 +302,12 @@ The **waterfall model** (also called the linear sequential model), originally pr
 5. **Deployment:** It covers delivery, support, and feedback.
 
 Each phase must be completed before the next phase begins, and there is little opportunity to revisit earlier phases.
+
+---
+
+# 2.2 Traditional (Plan-Driven) Process Models
+
+![Waterfall Model](images/ch_2/waterfall-model.png)
 
 ---
 
@@ -381,7 +397,7 @@ The incremental model combines elements of linear and iterative flows. It delive
 ### 2.2.2 Incremental Process Model
 
 - Requirements are gathered and prioritized.
-- The system is divided into increments, each going through its own mini-waterfall cycle (communication → planning → modeling → construction → deployment).
+- The system is divided into increments, each going through its own mini-waterfall cycle.
 - Each increment delivers a working, usable product to the customer.
 - Customer feedback from each increment informs the planning of the next.
 
@@ -495,6 +511,12 @@ All stakeholders should agree upfront that the prototype is built to define requ
 
 # 2.2 Traditional (Plan-Driven) Process Models
 
+![Prototyping Model](images/ch_2/prototyping-model.png)
+
+---
+
+# 2.2 Traditional (Plan-Driven) Process Models
+
 **When to use prototyping:**
 
 1. When the customer has general objectives but cannot specify detailed requirements.
@@ -580,11 +602,17 @@ Each circuit (loop) around the spiral produces a progressively more complete ver
 
 # 2.2 Traditional (Plan-Driven) Process Models
 
+![Spiral Model](images/ch_2/spiral-model.png)
+
+---
+
+# 2.2 Traditional (Plan-Driven) Process Models
+
 #### Spiral Model
 
 **Accommodating waterfall and prototyping within the spiral:**
 
-The spiral model is a meta-model that can incorporate other process models. The first circuit can use a prototyping approach to explore uncertain requirements and refine the UI. Once requirements are stabilized, subsequent circuits can follow a more waterfall-like sequential flow within each loop (requirements → design → code → test). Thus, the spiral model uses prototyping for risk reduction and requirement exploration, while using waterfall-like discipline for well-understood portions. Each loop's approach is chosen based on the risk profile of that iteration.
+The spiral model is a meta-model that can incorporate other process models. The first circuit can use a prototyping approach to explore uncertain requirements and refine the UI. Once requirements are stabilized, subsequent circuits can follow a more waterfall-like sequential flow within each loop. Thus, the spiral model uses prototyping for risk reduction and requirement exploration, while using waterfall-like discipline for well-understood portions. Each loop's approach is chosen based on the risk profile of that iteration.
 
 ---
 
@@ -738,6 +766,12 @@ _While items on the right have value, Agile values the items on the left more._
 In plan-driven development, the cost of change increases exponentially as the project progresses (a change during testing can be 60–100× more costly than during requirements). Agile processes aim to "flatten" this cost-of-change curve through continuous testing, incremental delivery, refactoring, and close customer collaboration.
 
 In practice, many projects benefit from combining elements of both approaches, using agile principles for flexibility while retaining enough planning discipline for coordination and risk management.
+
+---
+
+# 2.3 Agile and Adaptive Process Models
+
+![Cost of Change](images/ch_2/cost-of-change.png)
 
 ---
 
