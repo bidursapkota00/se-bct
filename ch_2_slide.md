@@ -376,6 +376,14 @@ The waterfall model requires all phases to be completed sequentially. No working
 
 # 2.2 Traditional (Plan-Driven) Process Models
 
+![V Model](images/ch_2/v-model.png)
+
+Figure: V-Model
+
+---
+
+# 2.2 Traditional (Plan-Driven) Process Models
+
 ### 2.2.2 Incremental Process Model
 
 > **Explain the incremental model with its advantages and disadvantages. [4+3 marks] (2075 Chaitra - IOE - Old Syllabus Relevant)**
@@ -400,6 +408,12 @@ The incremental model combines elements of linear and iterative flows. It delive
 - The system is divided into increments, each going through its own mini-waterfall cycle.
 - Each increment delivers a working, usable product to the customer.
 - Customer feedback from each increment informs the planning of the next.
+
+---
+
+# 2.2 Traditional (Plan-Driven) Process Models
+
+![Incremental Model](images/ch_2/incremental-model.png)
 
 ---
 
@@ -870,7 +884,7 @@ Extreme Programming (XP), created by Kent Beck, is an agile methodology that tak
 
 <br>
 
-**XP Core Values:** The five core values are Communication, Simplicity, Feedback, Courage, and Respect.
+The five core values of XP are Communication, Simplicity, Feedback, Courage, and Respect.
 
 ---
 
