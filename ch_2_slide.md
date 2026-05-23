@@ -147,6 +147,10 @@ style: |
   th, td {
     border: 1px solid black !important;
   }
+
+  tr {
+    background: white !important;
+  }
 ---
 
 <!-- _class: title-slide -->
