@@ -610,7 +610,7 @@ Software is developed in a series of evolutionary releases by traversing a spira
 
 #### Spiral Model
 
-2. **Planning:** It involves estimating costs and schedule, evaluating alternatives, conducting risk analysis to identify and resolve risks, and creating prototypes to reduce uncertainty.
+2. **Planning / Risk Analysis:** It involves determining alternatives, estimating costs and schedule, evaluating alternatives, conducting risk analysis to identify and resolve risks, and creating prototypes to reduce uncertainty.
 3. **Modeling:** It involves analysis and design, creating representations of the system that are progressively refined with each spiral iteration.
 4. **Construction:** It involves developing and verifying the software (code + test).
 
