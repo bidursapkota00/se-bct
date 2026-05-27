@@ -158,4 +158,4 @@ _There may be minor deviation in marks distribution._
 2. Mall, R. (2018). Fundamentals of software engineering. PHI Learning.
 3. Sommerville, I. (2016). Software engineering. Pearson.
 4. Martin, R. C. (2009). Clean code: A handbook of agile software craftsmanship. Pearson.
-5. **Schwaber, K., Beedle, M. (2002). Agile software development with Scrum. Prentice Hall.**
+5. Schwaber, K., Beedle, M. (2002). Agile software development with Scrum. Prentice Hall.

@@ -748,7 +748,7 @@ _While items on the right have value, Agile values the items on the left more._
 **Plan-driven (traditional) development:**
 
 - Change is managed through formal change control processes.
-- Works best when: requirements are stable and well-understood, the project is large and safety/mission-critical, the team is large and possibly distributed, and the organization has a strong process culture.
+- Works best when: requirements are stable and well-understood, the project is safety/mission-critical, the team is large and possibly distributed, and the organization has a strong process culture.
 
 ---
 
@@ -771,7 +771,7 @@ _While items on the right have value, Agile values the items on the left more._
 **Agile development:**
 
 - Change is embraced and accommodated through short iterations.
-- Works best when: requirements are volatile or poorly understood, the project is small to medium-sized, the team is small, co-located, and experienced, and rapid delivery is critical.
+- Works best when: requirements are volatile or poorly understood, the team is small, co-located, and experienced, and rapid delivery is critical.
 
 ---
 
