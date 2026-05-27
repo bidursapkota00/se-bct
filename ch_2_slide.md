@@ -600,9 +600,9 @@ The spiral model, proposed by Barry Boehm (1988), is an evolutionary process mod
 
 <br>
 
-Software is developed in a series of evolutionary releases by traversing a spiral path in four quadrants:
+Software is developed in a series of evolutionary releases by traversing a spiral path through five framework activities:
 
-1. **Planning:** It involves determining objectives, alternatives, and constraints, estimating costs and schedule, and conducting risk analysis.
+1. **Communication:** It involves determining objectives and constraints through effective interaction between the developer and customer.
 
 ---
 
@@ -610,9 +610,19 @@ Software is developed in a series of evolutionary releases by traversing a spira
 
 #### Spiral Model
 
-2. **Risk Analysis:** It involves identifying and resolving risks and creating prototypes to reduce uncertainty.
-3. **Construction:** It involves developing and verifying the software (code + test).
-4. **Evaluation:** It involves assessing results, obtaining customer feedback, and planning the next iteration.
+2. **Planning:** It involves estimating costs and schedule, evaluating alternatives, conducting risk analysis to identify and resolve risks, and creating prototypes to reduce uncertainty.
+3. **Modeling:** It involves analysis and design, creating representations of the system that are progressively refined with each spiral iteration.
+4. **Construction:** It involves developing and verifying the software (code + test).
+
+---
+
+# 2.2 Traditional (Plan-Driven) Process Models
+
+#### Spiral Model
+
+5. **Deployment:** It involves delivering the software increment to the customer, assessing results, obtaining feedback, and planning the next iteration.
+
+<br>
 
 Each circuit (loop) around the spiral produces a progressively more complete version of the software. The first circuit might produce a product specification or proof-of-concept prototype; subsequent circuits produce increasingly refined and complete versions.
 
