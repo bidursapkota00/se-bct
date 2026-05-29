@@ -725,13 +725,28 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 - Complete system specification ensures that developers know what to build and to what standard.
 - Testing requires both functional test cases and performance/security benchmarks.
+
+---
+
+# 3.3 Functional and Non-Functional Requirements
+
+### Why Both Must Be in the SRS
+
 - Contract enforcement requires stakeholders to have measurable criteria for acceptance.
 - Risk reduction is important because missing NFRs often lead to costly rework or system rejection.
+
+---
+
+# 3.3 Functional and Non-Functional Requirements
 
 ### User Requirements vs. System Requirements
 
 - **User requirements:** They are high-level statements written in natural language (possibly with diagrams) describing what the system should provide to users and the constraints under which it operates. They are written for customers and managers. Example: "The system should allow customers to book flights."
 - **System requirements:** They are detailed, precise descriptions of system functions, services, and constraints. They are written for developers and testers. Example: "The system shall accept origin (IATA code), destination (IATA code), departure date (YYYY-MM-DD), and number of passengers (1–9) as search parameters and return matching flights sorted by price within 3 seconds."
+
+---
+
+# 3.3 Functional and Non-Functional Requirements
 
 ### Example: Airlines Reservation System
 
@@ -739,6 +754,10 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 - **Search Flights:** The system shall allow passengers to search for flights by origin, destination, date, and class. Results shall display flight number, departure/arrival times, duration, and price.
 - **Book a Ticket:** The system shall allow passengers to select a flight, enter passenger details, choose a seat, and confirm the booking. A booking confirmation with a PNR number shall be generated.
+
+---
+
+# 3.3 Functional and Non-Functional Requirements
 
 **Non-Functional Requirements:**
 
@@ -748,12 +767,20 @@ Functional requirements alone do not guarantee a usable system. A system may per
 - **Scalability:** The system shall support at least 10,000 concurrent users.
 - **Usability:** The booking process shall be completable within 5 steps.
 
+---
+
+# 3.3 Functional and Non-Functional Requirements
+
 ### Example: Online Food Ordering System
 
 **Functional Requirements:**
 
 - **Order Food:** The customer shall browse the menu, select food items, specify quantity, add customizations (e.g., extra cheese, no onions), and add items to the cart. The cart shall display a summary with item-wise and total prices.
 - **Make Payment:** The system shall support multiple payment methods (credit/debit card, digital wallet, cash on delivery). Upon successful payment, an order confirmation with an estimated delivery time shall be displayed.
+
+---
+
+# 3.3 Functional and Non-Functional Requirements
 
 **Non-Functional Requirements:**
 
@@ -763,6 +790,10 @@ Functional requirements alone do not guarantee a usable system. A system may per
 - **Reliability:** The system shall handle order processing without data loss during peak hours.
 - **Availability:** 99.5% uptime during restaurant operating hours.
 
+---
+
+# 3.3 Functional and Non-Functional Requirements
+
 ### Example: Online Ticket Booking System for a Movie Theatre
 
 **Functional Requirements:**
@@ -770,9 +801,18 @@ Functional requirements alone do not guarantee a usable system. A system may per
 - The system shall display currently running movies with showtimes, language, and format (2D/3D).
 - The system shall allow users to select a movie, showtime, and preferred seats from a seat map.
 - The system shall hold selected seats for a limited time (e.g., 10 minutes) during payment processing.
+
+---
+
+# 3.3 Functional and Non-Functional Requirements
+
 - The system shall process online payment and generate an e-ticket with a unique booking ID and QR code.
 - The system shall allow users to cancel a booking up to 2 hours before showtime and process a refund.
 - The system shall send booking confirmation and e-ticket via email and SMS.
+
+---
+
+# 3.3 Functional and Non-Functional Requirements
 
 ### Example: Restaurant Information System
 
@@ -784,6 +824,10 @@ Functional requirements alone do not guarantee a usable system. A system may per
 - The system shall generate a bill with itemized charges and applicable taxes.
 - The system shall support table reservation with date, time, and party size.
 
+---
+
+# 3.3 Functional and Non-Functional Requirements
+
 **Non-Functional Requirements:**
 
 - **Performance:** Order placement shall be processed within 2 seconds.
@@ -794,7 +838,13 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 ---
 
-## 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+<style scoped>
+ * {
+  font-size: 26pt !important;
+ }
+</style>
 
 > **Prepare a use case diagram for an event management system. [4 marks] (2082 Bhadra - IOE - Old Syllabus Relevant)**
 >
@@ -806,9 +856,17 @@ Functional requirements alone do not guarantee a usable system. A system may per
 >
 > **Draw a use case diagram illustrating interactions between a doctor, patients, and prescriptions. [5 marks] (2078 Bhadra - IOE - Old Syllabus Relevant)**
 
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
 ### Use Cases
 
-A **use case** describes how an end user (playing a specific role) interacts with the system under a specific set of circumstances. It tells a stylized story from the end user's point of view. Use cases can be expressed as narrative text (user stories), outlines, template-based descriptions, or UML diagrams.
+A use case describes how an end user (playing a specific role) interacts with the system under a specific set of circumstances. It tells a stylized story from the end user's point of view. Use cases can be expressed as narrative text (user stories), outlines, template-based descriptions, or UML diagrams.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
 ### Key Elements of a Use Case
 
@@ -816,28 +874,71 @@ A **use case** describes how an end user (playing a specific role) interacts wit
 - **Primary actor:** It directly interacts with and derives benefit from the system.
 - **Secondary actor:** It supports the system so primary actors can do their work.
 - **Use case:** It is a specific function or service provided by the system, described from the actor's perspective.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Key Elements of a Use Case
+
 - **System boundary:** It is a rectangle that defines the scope of the system. Actors are outside and use cases are inside.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
 ### Relationships in Use Case Diagrams
 
 - **Association:** It is a solid line connecting an actor to a use case, indicating interaction.
 - **Include (<<include>>):** It is represented by a dashed arrow from the base use case to the included use case. The included use case is **always** executed as part of the base use case. It is used for common, reusable functionality. Example: "Place Order" includes "Verify Login."
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Relationships in Use Case Diagrams
+
 - **Extend (<<extend>>):** It is represented by a dashed arrow from the extending use case to the base use case. The extending use case is executed **only under certain conditions**. The base use case is complete on its own. Example: "Checkout" may be extended by "Apply Coupon."
 - **Generalization:** It is a solid line with a hollow triangle arrowhead, representing inheritance between actors or between use cases.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
 ### Writing a Use Case (Template-Based Description)
 
 A formal use case includes: use case name, primary actor, goal, preconditions, trigger, main scenario (numbered steps), exceptions/alternate flows, priority, frequency of use, and open issues.
 
-### Use Case Diagram Examples
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
 **Note:** In exams, draw these with: a rectangle for the system boundary (labeled with the system name), stick figures for actors (outside the boundary), ovals for use cases (inside the boundary), solid lines for associations, and dashed arrows with stereotypes for <<include>> and <<extend>> relationships.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
 
 **Event Management System:**
 
 - **Actors:** The actors are Organizer, Attendee, and Admin.
 - **Use Cases:** The use cases include Create Event, Edit Event, Delete Event, Register for Event, View Event Details, Search Events, Cancel Registration, Generate Reports, Manage Venues, and Send Notifications.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
+
 - **Relationships:** "Create Event" includes "Verify Organizer Login." "Register for Event" includes "Make Payment." "Register for Event" may extend "Apply Discount Code."
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
 
 **Online Food Ordering System:**
 
@@ -845,11 +946,23 @@ A formal use case includes: use case name, primary actor, goal, preconditions, t
 - **Use Cases:** The use cases include Browse Menu, Search Items, Add to Cart, Place Order, Make Payment, Track Order, Rate/Review, Manage Menu, Update Order Status, and Assign Delivery.
 - **Relationships:** "Place Order" includes "Make Payment." "Place Order" may extend "Apply Coupon."
 
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
+
 **Online Appointment Booking App:**
 
 - **Actors:** The actors are Patient, Doctor, and Admin.
 - **Use Cases:** The use cases include Register/Login, Search Doctor, View Available Slots, Book Appointment, Cancel Appointment, View Appointment History, Manage Schedule, and Send Reminder Notification.
 - **Relationships:** "Book Appointment" includes "Verify Patient Login." "Book Appointment" may extend "Send Reminder Notification."
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
 
 **Automated Ticket Issuing System:**
 
@@ -857,15 +970,28 @@ A formal use case includes: use case name, primary actor, goal, preconditions, t
 - **Use Cases:** The use cases include Select Route, Select Seat, Make Payment, Issue Ticket, Cancel Ticket, View Schedule, and Generate Reports.
 - **Relationships:** "Issue Ticket" includes "Make Payment." "Cancel Ticket" may extend "Process Refund."
 
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
+
 **Doctor-Patient-Prescription System:**
 
 - **Actors:** The actors are Doctor, Patient, and Pharmacist.
 - **Use Cases:** The use cases include Register Patient, View Patient History, Diagnose, Write Prescription, View Prescription, Dispense Medicine, and Schedule Follow-Up.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
+
 - **Relationships:** "Diagnose" includes "View Patient History." "Write Prescription" is associated with Doctor. "View Prescription" and "Dispense Medicine" are associated with Pharmacist.
 
 ---
 
-## 3.5 Agile Requirements Engineering
+# 3.5 Agile Requirements Engineering
 
 ### 3.5.1 User Stories and Acceptance Criteria
 
@@ -877,6 +1003,10 @@ A **user story** is a short, informal description of a feature told from the per
 
 **Example:** "As a customer, I want to filter products by price range so that I can find items within my budget."
 
+---
+
+# 3.5 Agile Requirements Engineering
+
 **INVEST Criteria for Good User Stories:**
 
 - **I (Independent):** The story is self-contained and not dependent on other stories.
@@ -886,6 +1016,10 @@ A **user story** is a short, informal description of a feature told from the per
 - **S (Small):** It is small enough to be completed within a single sprint.
 - **T (Testable):** It has clear criteria that allow verification.
 
+---
+
+# 3.5 Agile Requirements Engineering
+
 **Acceptance Criteria** define the specific conditions that must be satisfied for a user story to be considered complete. They bridge the gap between the user story and the implementation.
 
 **Given-When-Then Format (BDD Style):**
@@ -894,24 +1028,49 @@ A **user story** is a short, informal description of a feature told from the per
 - **When** [an action is performed],
 - **Then** [an expected result occurs].
 
+---
+
+# 3.5 Agile Requirements Engineering
+
 **Example:**
 
 - Story: "As a customer, I want to reset my password so that I can regain access if I forget it."
 - Acceptance criteria:
   - Given the user is on the login page, when they click "Forgot Password" and enter a registered email, then a password reset link shall be sent to that email within 1 minute.
   - Given the user clicks the reset link, when they enter a new password meeting complexity rules, then the password shall be updated and a confirmation displayed.
+
+---
+
+# 3.5 Agile Requirements Engineering
+
+- Acceptance criteria:
   - Given the user enters an unregistered email, when they submit the form, then an error message "Email not found" shall be displayed.
+
+---
+
+# 3.5 Agile Requirements Engineering
 
 ### 3.5.2 Product Backlog Creation and Prioritization
 
-The **product backlog** is an ordered, evolving list of everything needed in the product, including features, enhancements, bug fixes, and technical tasks. It is the single source of requirements for the development team. The **Product Owner** is responsible for maintaining and prioritizing the backlog.
+The product backlog is an ordered, evolving list of everything needed in the product, including features, enhancements, bug fixes, and technical tasks. It is the single source of requirements for the development team. The Product Owner is responsible for maintaining and prioritizing the backlog.
 
 **Creating the Product Backlog:**
 
 - Gather initial user stories from stakeholders through interviews, workshops, and brainstorming.
 - Write each requirement as a user story with acceptance criteria.
+
+---
+
+# 3.5 Agile Requirements Engineering
+
+**Creating the Product Backlog:**
+
 - Estimate effort for each story (using story points or ideal days).
 - Order the backlog by priority. Highest-priority items at the top are refined in detail, while lower items remain coarser.
+
+---
+
+# 3.5 Agile Requirements Engineering
 
 **Prioritization Techniques:**
 
@@ -920,15 +1079,28 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 - **Risk-Based:** This prioritization addresses high-risk items early to reduce uncertainty.
 - **Kano Model:** It classifies features as Basic (expected), Performance (more is better), or Delighters (unexpected positive features).
 
+---
+
+# 3.5 Agile Requirements Engineering
+
 ### 3.5.3 Story Mapping Basics
 
-**User story mapping**, popularized by Jeff Patton, is a visual technique for organizing user stories to provide the "big picture" of the product while maintaining the detail of individual stories. It addresses the limitation of flat backlogs, which often lose context of the overall user experience.
+User story mapping, popularized by Jeff Patton, is a visual technique for organizing user stories to provide the "big picture" of the product while maintaining the detail of individual stories. It addresses the limitation of flat backlogs, which often lose context of the overall user experience.
 
 **Structure of a Story Map:**
 
 - **Backbone (horizontal axis):** It contains the high-level user activities arranged left-to-right following the narrative flow of the user journey (the sequence of steps a user takes to achieve a goal).
+
+---
+
+# 3.5 Agile Requirements Engineering
+
 - **Ribs (vertical axis):** They are placed beneath each backbone activity. Specific user tasks and stories are stacked vertically in order of priority (most important at top).
 - **Release slices (horizontal lines):** They are drawn across the map to group stories into releases. The topmost slice forms the **Minimum Viable Product (MVP)** or "walking skeleton."
+
+---
+
+# 3.5 Agile Requirements Engineering
 
 **Steps to Create a Story Map:**
 
@@ -938,6 +1110,10 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 - Prioritize stories vertically under each activity.
 - Slice horizontally for release planning.
 
+---
+
+# 3.5 Agile Requirements Engineering
+
 **Benefits:**
 
 - Visualizes the entire product scope and prevents losing sight of the big picture.
@@ -945,18 +1121,33 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 - Facilitates release planning by enabling teams to slice out cohesive, valuable releases.
 - Improves communication and shared understanding among team members and stakeholders.
 
+---
+
+# 3.5 Agile Requirements Engineering
+
 ### 3.5.4 Continuous Requirements Refinement (Backlog Grooming)
 
-**Backlog refinement** (also called backlog grooming) is the ongoing process of reviewing, updating, and elaborating product backlog items to ensure they are ready for upcoming sprints. It is not a one-time event but a continuous activity throughout the project.
+Backlog refinement (also called backlog grooming) is the ongoing process of reviewing, updating, and elaborating product backlog items to ensure they are ready for upcoming sprints. It is not a one-time event but a continuous activity throughout the project.
 
 **Activities during backlog refinement:**
 
 - **Adding detail:** It involves breaking down large stories (epics) into smaller, implementable user stories.
 - **Re-estimating:** It involves updating effort estimates as the team gains more understanding.
+
+---
+
+# 3.5 Agile Requirements Engineering
+
+**Activities during backlog refinement:**
+
 - **Re-prioritizing:** It involves adjusting the order of backlog items based on changing business needs, customer feedback, or new information learned from recent sprints.
 - **Removing obsolete items:** It involves deleting stories that are no longer relevant.
 - **Adding acceptance criteria:** It involves ensuring each story near the top of the backlog has clear, testable acceptance criteria.
 - **Identifying dependencies:** It involves flagging stories that depend on others so the team can plan accordingly.
+
+---
+
+# 3.5 Agile Requirements Engineering
 
 **When it happens:**
 
@@ -966,6 +1157,8 @@ The **product backlog** is an ordered, evolving list of everything needed in the
 
 **Goal:** Ensure that items at the top of the backlog are "ready," meaning they are small enough, well-understood, estimated, and have clear acceptance criteria, so that sprint planning is efficient and the team can begin work immediately.
 
-**Refinement vs. Sprint Planning:** Refinement prepares items for future sprints; sprint planning selects and commits to items for the upcoming sprint. Without effective refinement, sprint planning becomes chaotic and time-consuming.
-
 ---
+
+# 3.5 Agile Requirements Engineering
+
+**Refinement vs. Sprint Planning:** Refinement prepares items for future sprints; sprint planning selects and commits to items for the upcoming sprint. Without effective refinement, sprint planning becomes chaotic and time-consuming.
