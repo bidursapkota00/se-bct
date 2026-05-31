@@ -175,6 +175,10 @@ By Bidur Sapkota
 >
 > **What are the different techniques used for requirements gathering and analysis? Explain any three methods in detail. [7 marks] (2070 Ashad - IOE - Old Syllabus Relevant)**
 
+---
+
+# 3.1 Requirement Engineering Process
+
 **Requirements engineering (RE)** is the broad spectrum of tasks and techniques that lead to an understanding of requirements. It begins during the communication activity and continues into modeling. RE establishes the solid base for design and construction. Without it, the resulting software has a high probability of not meeting customer needs.
 
 ---
@@ -211,7 +215,7 @@ By Bidur Sapkota
 
 ### Seven Tasks of Requirements Engineering
 
-**6. Validation:** Assess the quality of requirements work products. Ensure requirements are stated unambiguously, are consistent, and that omissions and errors are corrected. The primary mechanism is a **technical review** involving software engineers, customers, users, and other stakeholders.
+**6. Validation:** Assess the quality of requirements work products. Ensure requirements are stated unambiguously, are consistent, and that omissions and errors are corrected. The primary mechanism is a technical review involving software engineers, customers, users, and other stakeholders.
 
 **7. Management:** Identify, control, and track requirements and changes to requirements throughout the project lifecycle. Requirements change constantly, and management activities ensure that changes are handled systematically (closely related to software configuration management).
 
@@ -860,15 +864,111 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-### Use Cases
+**Scenario:** A specific narrative describing a single path of interaction between an actor and the system. It tells a concrete story of how the system is used.
 
-A use case describes how an end user (playing a specific role) interacts with the system under a specific set of circumstances. It tells a stylized story from the end user's point of view. Use cases can be expressed as narrative text (user stories), outlines, template-based descriptions, or UML diagrams.
+**Use Case:** A structured, generalized description of how an actor interacts with the system to achieve a specific goal. It includes the main success scenario plus alternate/exception flows. Use cases can be expressed as narrative text (user stories), outlines, template-based descriptions, or UML diagrams.
 
 ---
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-### Key Elements of a Use Case
+**Example Scenario: Customer Purchasing a Book:**
+
+1. Customer logs into the bookstore website.
+2. Customer searches for "Software Engineering" in the search bar.
+3. System displays a list of matching books with titles, authors, prices, and ratings.
+4. Customer selects a book and views its details page.
+5. Customer clicks "Add to Cart."
+6. Customer proceeds to checkout.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+**Example Scenario: Customer Purchasing a Book:**
+
+7. Customer enters shipping address and selects payment method.
+8. System processes the payment through the payment gateway.
+9. System confirms the order and sends a confirmation email.
+10. Customer receives the book within the estimated delivery time.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Writing a Use Case (Template-Based Description)
+
+A formal use case includes: use case name, primary actor, secondary actor, preconditions, main scenario (numbered steps), exceptions/alternate flows, and post conditions.
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+**Use Case: Purchase a Book:**
+
+| Element           | Details                                            |
+| ----------------- | -------------------------------------------------- |
+| **Use Case Name** | Purchase a Book                                    |
+| **Actor**         | Customer                                           |
+| **Precondition**  | Customer has a registered account and is logged in |
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+<style scoped>
+  th,td {
+    font-size: 26pt;
+  }
+</style>
+
+| Element       | Details                                                                                                                                                                                                                                                                                                                                    |
+| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Main Flow** | 1. Customer searches for a book. <br>2. System displays matching results. <br>3. Customer selects a book. <br>4. Customer adds book to cart. <br>5. Customer proceeds to checkout. <br>6. Customer enters shipping and payment details. <br>7. System validates payment via payment gateway. <br>8. System confirms order and sends email. |
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+| Element             | Details                                                                                                                                                                                     |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Alternate Flows** | A1: Book is out of stock → system displays "Out of Stock" message and suggests similar books. <br>A2: Payment fails → system notifies customer and asks to retry or use a different method. |
+| **Postcondition**   | Order is placed, payment is processed, and confirmation email is sent.                                                                                                                      |
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+**Use Case: Add New Book to Catalog:**
+
+| Element           | Details                                            |
+| ----------------- | -------------------------------------------------- |
+| **Use Case Name** | Add New Book to Catalog                            |
+| **Actor**         | Bookstore Owner                                    |
+| **Precondition**  | Bookstore Owner is logged in with admin privileges |
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+| Element       | Details                                                                                                                                                                                                                                                                                                                     |
+| ------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Main Flow** | 1. Owner selects "Add New Book" from the dashboard. <br>2. Owner enters book details (title, author, ISBN, price, description, cover image, stock quantity). <br>3. System validates the input fields. <br>4. System adds the book to the catalog database. <br>5. System displays confirmation: "Book added successfully." |
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+| Element             | Details                                                                                                                                                      |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Alternate Flows** | A1: ISBN already exists → system notifies owner and offers to update the existing entry. <br>A2: Required fields missing → system highlights missing fields. |
+| **Postcondition**   | New book is visible in the catalog and available for purchase.                                                                                               |
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Elements of a Use Case (Diagram-Based Description)
 
 - **Actor:** It is any external entity (person, device, or external system) that communicates with the system. Actors represent roles, not specific individuals. A single user may play multiple roles (and thus be multiple actors).
 - **Primary actor:** It directly interacts with and derives benefit from the system.
@@ -879,7 +979,7 @@ A use case describes how an end user (playing a specific role) interacts with th
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-### Key Elements of a Use Case
+### Elements of a Use Case (Diagram-Based Description)
 
 - **System boundary:** It is a rectangle that defines the scope of the system. Actors are outside and use cases are inside.
 
@@ -890,7 +990,7 @@ A use case describes how an end user (playing a specific role) interacts with th
 ### Relationships in Use Case Diagrams
 
 - **Association:** It is a solid line connecting an actor to a use case, indicating interaction.
-- **Include (<<include>>):** It is represented by a dashed arrow from the base use case to the included use case. The included use case is **always** executed as part of the base use case. It is used for common, reusable functionality. Example: "Place Order" includes "Verify Login."
+- **Include (<<include>>):** It is represented by a dashed arrow from the base use case to the included use case. The included use case is always executed as part of the base use case. It is used for common, reusable functionality. Example: "Place Order" includes "Verify Login."
 
 ---
 
@@ -898,22 +998,84 @@ A use case describes how an end user (playing a specific role) interacts with th
 
 ### Relationships in Use Case Diagrams
 
-- **Extend (<<extend>>):** It is represented by a dashed arrow from the extending use case to the base use case. The extending use case is executed **only under certain conditions**. The base use case is complete on its own. Example: "Checkout" may be extended by "Apply Coupon."
+- **Extend (<<extend>>):** It is represented by a dashed arrow from the extending use case to the base use case. The extending use case is executed only under certain conditions. The base use case is complete on its own. Example: "Checkout" may be extended by "Apply Coupon."
 - **Generalization:** It is a solid line with a hollow triangle arrowhead, representing inheritance between actors or between use cases.
 
 ---
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-### Writing a Use Case (Template-Based Description)
-
-A formal use case includes: use case name, primary actor, goal, preconditions, trigger, main scenario (numbered steps), exceptions/alternate flows, priority, frequency of use, and open issues.
+Use case diagram is drawn with symbols: a rectangle for the system boundary (labeled with the system name), stick figures for actors (outside the boundary), ovals for use cases (inside the boundary), solid lines for associations, and dashed arrows with stereotypes for <<include>> and <<extend>> relationships.
 
 ---
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-**Note:** In exams, draw these with: a rectangle for the system boundary (labeled with the system name), stick figures for actors (outside the boundary), ovals for use cases (inside the boundary), solid lines for associations, and dashed arrows with stereotypes for <<include>> and <<extend>> relationships.
+| ![Actor](images/ch_3/actor.png) | ![Use Case](images/ch_3/use-case.png) |
+| ------------------------------- | ------------------------------------- |
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+| ![Association](images/ch_3/line.png) | ![Boundary](images/ch_3/boundary.png) |
+| ------------------------------------ | ------------------------------------- |
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
+
+**Railway Reservation System:**
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+![Railway Reservation System](images/ch_3/railway.png)
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
+
+**Parking Management System:**
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+![Parking Management System](images/ch_3/parking.png)
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
+
+**Event Management System:**
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+![Library Management System](images/ch_3/library.png)
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+### Use Case Diagram Examples
+
+**Event Management System:**
+
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+![Event Management System](images/ch_3/event.png)
 
 ---
 
