@@ -1083,30 +1083,13 @@ Use case diagram is drawn with symbols: a rectangle for the system boundary (lab
 
 ### Use Case Diagram Examples
 
-**Event Management System:**
-
-- **Actors:** The actors are Organizer, Attendee, and Admin.
-- **Use Cases:** The use cases include Create Event, Edit Event, Delete Event, Register for Event, View Event Details, Search Events, Cancel Registration, Generate Reports, Manage Venues, and Send Notifications.
-
----
-
-# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
-
-### Use Case Diagram Examples
-
-- **Relationships:** "Create Event" includes "Verify Organizer Login." "Register for Event" includes "Make Payment." "Register for Event" may extend "Apply Discount Code."
-
----
-
-# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
-
-### Use Case Diagram Examples
-
 **Online Food Ordering System:**
 
-- **Actors:** The actors are Customer, Restaurant Admin, and Delivery Personnel.
-- **Use Cases:** The use cases include Browse Menu, Search Items, Add to Cart, Place Order, Make Payment, Track Order, Rate/Review, Manage Menu, Update Order Status, and Assign Delivery.
-- **Relationships:** "Place Order" includes "Make Payment." "Place Order" may extend "Apply Coupon."
+---
+
+# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
+
+![Food Ordering System](images/ch_3/food-ordering.svg)
 
 ---
 
@@ -1114,42 +1097,13 @@ Use case diagram is drawn with symbols: a rectangle for the system boundary (lab
 
 ### Use Case Diagram Examples
 
-**Online Appointment Booking App:**
-
-- **Actors:** The actors are Patient, Doctor, and Admin.
-- **Use Cases:** The use cases include Register/Login, Search Doctor, View Available Slots, Book Appointment, Cancel Appointment, View Appointment History, Manage Schedule, and Send Reminder Notification.
-- **Relationships:** "Book Appointment" includes "Verify Patient Login." "Book Appointment" may extend "Send Reminder Notification."
+**Online Appointment Booking System:**
 
 ---
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-### Use Case Diagram Examples
-
-**Automated Ticket Issuing System:**
-
-- **Actors:** The actors are Passenger, Admin, and Payment Gateway.
-- **Use Cases:** The use cases include Select Route, Select Seat, Make Payment, Issue Ticket, Cancel Ticket, View Schedule, and Generate Reports.
-- **Relationships:** "Issue Ticket" includes "Make Payment." "Cancel Ticket" may extend "Process Refund."
-
----
-
-# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
-
-### Use Case Diagram Examples
-
-**Doctor-Patient-Prescription System:**
-
-- **Actors:** The actors are Doctor, Patient, and Pharmacist.
-- **Use Cases:** The use cases include Register Patient, View Patient History, Diagnose, Write Prescription, View Prescription, Dispense Medicine, and Schedule Follow-Up.
-
----
-
-# 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
-
-### Use Case Diagram Examples
-
-- **Relationships:** "Diagnose" includes "View Patient History." "Write Prescription" is associated with Doctor. "View Prescription" and "Dispense Medicine" are associated with Pharmacist.
+![Appointment Booking System](images/ch_3/appointment-booking.svg)
 
 ---
 
