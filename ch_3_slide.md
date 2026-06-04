@@ -25,7 +25,7 @@ style: |
     background-color: rgb(25, 107, 36);
     color: white;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 44pt;
+    font-size: 32pt;
     margin: 0;
     padding: 8pt;
     text-align: center;
@@ -1111,7 +1111,7 @@ Use case diagram is drawn with symbols: a rectangle for the system boundary (lab
 
 ### 3.5.1 User Stories and Acceptance Criteria
 
-A **user story** is a short, informal description of a feature told from the perspective of the user who wants the capability. It serves as a placeholder for conversation rather than a rigid specification.
+A user story is a short, informal description of a feature told from the perspective of the user who wants the capability. It serves as a placeholder for conversation rather than a rigid specification.
 
 **Standard Format:**
 
@@ -1144,23 +1144,26 @@ A **user story** is a short, informal description of a feature told from the per
 - **When** [an action is performed],
 - **Then** [an expected result occurs].
 
+<br>
+
+```text
+BDD (Behavior-Driven Development) is a software development approach that focuses on describing how a system should
+behave from the user's or business's perspective, instead of starting with technical implementation details.
+```
+
 ---
 
 # 3.5 Agile Requirements Engineering
 
 **Example:**
 
-- Story: "As a customer, I want to reset my password so that I can regain access if I forget it."
-- Acceptance criteria:
-  - Given the user is on the login page, when they click "Forgot Password" and enter a registered email, then a password reset link shall be sent to that email within 1 minute.
-  - Given the user clicks the reset link, when they enter a new password meeting complexity rules, then the password shall be updated and a confirmation displayed.
+**Story:** "As a customer, I want to reset my password so that I can regain access if I forget it."
 
----
+**Acceptance criteria:**
 
-# 3.5 Agile Requirements Engineering
-
-- Acceptance criteria:
-  - Given the user enters an unregistered email, when they submit the form, then an error message "Email not found" shall be displayed.
+1. Given the user is on the login page, when they click "Forgot Password" and enter a registered email, then a password reset link shall be sent to that email within 1 minute.
+2. Given the user clicks the reset link, when they enter a new password meeting complexity rules, then the password shall be updated and a confirmation displayed.
+3. Given the user enters an unregistered email, when they submit the form, then an error message "Email not found" shall be displayed.
 
 ---
 
@@ -1168,7 +1171,7 @@ A **user story** is a short, informal description of a feature told from the per
 
 ### 3.5.2 Product Backlog Creation and Prioritization
 
-The product backlog is an ordered, evolving list of everything needed in the product, including features, enhancements, bug fixes, and technical tasks. It is the single source of requirements for the development team. The Product Owner is responsible for maintaining and prioritizing the backlog.
+The product backlog is an ordered, evolving list of everything needed in the product, including features, enhancements and bug fixes. It is the single source of requirements for the development team. The Product Owner is responsible for maintaining and prioritizing the backlog.
 
 **Creating the Product Backlog:**
 
@@ -1212,7 +1215,25 @@ User story mapping, popularized by Jeff Patton, is a visual technique for organi
 # 3.5 Agile Requirements Engineering
 
 - **Ribs (vertical axis):** They are placed beneath each backbone activity. Specific user tasks and stories are stacked vertically in order of priority (most important at top).
-- **Release slices (horizontal lines):** They are drawn across the map to group stories into releases. The topmost slice forms the **Minimum Viable Product (MVP)** or "walking skeleton."
+- **Release slices (horizontal lines):** They are drawn across the map to group stories into releases. The topmost slice forms the Minimum Viable Product (MVP) or "walking skeleton."
+
+---
+
+# 3.5 Agile Requirements Engineering
+
+<style scoped>
+  img {
+    height: 100%;
+  }
+</style>
+
+![Story Map](images/ch_3/story-map.jpg)
+
+---
+
+# 3.5 Agile Requirements Engineering
+
+![Story Map](images/ch_3/story-map-2.jpg)
 
 ---
 
@@ -1243,7 +1264,20 @@ User story mapping, popularized by Jeff Patton, is a visual technique for organi
 
 ### 3.5.4 Continuous Requirements Refinement (Backlog Grooming)
 
-Backlog refinement (also called backlog grooming) is the ongoing process of reviewing, updating, and elaborating product backlog items to ensure they are ready for upcoming sprints. It is not a one-time event but a continuous activity throughout the project.
+Backlog refinement (also called backlog grooming) is the ongoing process of reviewing, updating, and elaborating product backlog items to ensure they are ready for upcoming sprints. It is not a one-time event but a continuous activity throughout the project.  
+Typically, teams dedicate about 10% of sprint capacity to backlog refinement.  
+It can occur during a dedicated refinement meeting (mid-sprint) or informally throughout the sprint.  
+The Product Owner, development team, and Scrum Master participate.
+
+---
+
+# 3.5 Agile Requirements Engineering
+
+### 3.5.4 Continuous Requirements Refinement (Backlog Grooming)
+
+Ensure that items at the top of the backlog are "ready," meaning they are small enough, well-understood, estimated, and have clear acceptance criteria, so that sprint planning is efficient and the team can begin work immediately.
+
+<br>
 
 **Activities during backlog refinement:**
 
@@ -1260,18 +1294,6 @@ Backlog refinement (also called backlog grooming) is the ongoing process of revi
 - **Removing obsolete items:** It involves deleting stories that are no longer relevant.
 - **Adding acceptance criteria:** It involves ensuring each story near the top of the backlog has clear, testable acceptance criteria.
 - **Identifying dependencies:** It involves flagging stories that depend on others so the team can plan accordingly.
-
----
-
-# 3.5 Agile Requirements Engineering
-
-**When it happens:**
-
-- Typically, teams dedicate about 10% of sprint capacity to backlog refinement.
-- It can occur during a dedicated refinement meeting (mid-sprint) or informally throughout the sprint.
-- The Product Owner, development team, and Scrum Master participate.
-
-**Goal:** Ensure that items at the top of the backlog are "ready," meaning they are small enough, well-understood, estimated, and have clear acceptance criteria, so that sprint planning is efficient and the team can begin work immediately.
 
 ---
 
