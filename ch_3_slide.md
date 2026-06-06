@@ -787,11 +787,14 @@ Functional requirements alone do not guarantee a usable system. A system may per
 - The system shall allow the customer to add items to the cart.
 - The cart shall display a summary with item-wise and total prices.
 - The system shall support multiple payment methods (credit/debit card, digital wallet, cash on delivery).
-- The system shall display an order confirmation with an estimated delivery time upon successful payment.
 
 ---
 
 # 3.3 Functional and Non-Functional Requirements
+
+**Functional Requirements:**
+
+- The system shall display an order confirmation with an estimated delivery time upon successful payment.
 
 **Non-Functional Requirements:**
 
