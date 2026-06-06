@@ -914,11 +914,12 @@ A formal use case includes: use case name, primary actor, secondary actor, preco
 
 **Use Case: Purchase a Book:**
 
-| Element           | Details                                            |
-| ----------------- | -------------------------------------------------- |
-| **Use Case Name** | Purchase a Book                                    |
-| **Actor**         | Customer                                           |
-| **Precondition**  | Customer has a registered account and is logged in |
+| Element           | Details                                                            |
+| ----------------- | ------------------------------------------------------------------ |
+| **Use Case Name** | Purchase a Book                                                    |
+| **Actor**         | Customer                                                           |
+| **Precondition**  | Customer has a registered account and is logged in.                |
+| **Trigger**       | The customer decides to search for and purchase a book.            |
 
 ---
 
@@ -938,10 +939,10 @@ A formal use case includes: use case name, primary actor, secondary actor, preco
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-| Element             | Details                                                                                                                                                                                     |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Alternate Flows** | A1: Book is out of stock → system displays "Out of Stock" message and suggests similar books. <br>A2: Payment fails → system notifies customer and asks to retry or use a different method. |
-| **Postcondition**   | Order is placed, payment is processed, and confirmation email is sent.                                                                                                                      |
+| Element            | Details                                                                                                                                                                                                                                      |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Exceptions**     | 1. The book is out of stock, so the system displays an "Out of Stock" message and suggests similar books. <br>2. The payment fails, so the system notifies the customer and asks them to retry or use a different payment method. |
+| **Postcondition**  | Order is placed, payment is processed, and confirmation email is sent.                                                                                                                                                                       |
 
 ---
 
@@ -949,11 +950,12 @@ A formal use case includes: use case name, primary actor, secondary actor, preco
 
 **Use Case: Add New Book to Catalog:**
 
-| Element           | Details                                            |
-| ----------------- | -------------------------------------------------- |
-| **Use Case Name** | Add New Book to Catalog                            |
-| **Actor**         | Bookstore Owner                                    |
-| **Precondition**  | Bookstore Owner is logged in with admin privileges |
+| Element           | Details                                                                |
+| ----------------- | ---------------------------------------------------------------------- |
+| **Use Case Name** | Add New Book to Catalog                                                |
+| **Actor**         | Bookstore Owner                                                        |
+| **Precondition**  | Bookstore Owner is logged in with admin privileges.                    |
+| **Trigger**       | The bookstore owner decides to add a new book to the catalog.          |
 
 ---
 
@@ -967,10 +969,10 @@ A formal use case includes: use case name, primary actor, secondary actor, preco
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-| Element             | Details                                                                                                                                                      |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Alternate Flows** | A1: ISBN already exists → system notifies owner and offers to update the existing entry. <br>A2: Required fields missing → system highlights missing fields. |
-| **Postcondition**   | New book is visible in the catalog and available for purchase.                                                                                               |
+| Element            | Details                                                                                                                                                                                                                  |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Exceptions**     | 1. The ISBN already exists in the system, so the system notifies the owner and offers to update the existing entry. <br>2. The required fields are missing, so the system highlights the missing fields for the owner. |
+| **Postcondition**  | New book is visible in the catalog and available for purchase.                                                                                                                                                            |
 
 ---
 
