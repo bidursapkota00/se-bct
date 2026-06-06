@@ -756,8 +756,10 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 **Functional Requirements:**
 
-- **Search Flights:** The system shall allow passengers to search for flights by origin, destination, date, and class. Results shall display flight number, departure/arrival times, duration, and price.
-- **Book a Ticket:** The system shall allow passengers to select a flight, enter passenger details, choose a seat, and confirm the booking. A booking confirmation with a PNR number shall be generated.
+- The system shall allow passengers to search for flights by origin, destination, date, and class.
+- The system shall display flight number, departure/arrival times, duration, and price in the search results.
+- The system shall allow passengers to select a flight, enter passenger details, and choose a seat.
+- The system shall generate a booking confirmation with a PNR number upon confirming the booking.
 
 ---
 
@@ -765,11 +767,12 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 **Non-Functional Requirements:**
 
-- **Performance:** Search results shall be returned within 3 seconds.
-- **Availability:** The system shall be available 24/7 with 99.9% uptime.
-- **Security:** Payment information shall be encrypted using TLS 1.2 or higher, and PCI-DSS compliance is mandatory.
-- **Scalability:** The system shall support at least 10,000 concurrent users.
-- **Usability:** The booking process shall be completable within 5 steps.
+- The system shall return search results within 3 seconds.
+- The system shall be available 24/7 with 99.9% uptime.
+- The system shall encrypt payment information using TLS 1.2 or higher.
+- The system shall comply with PCI-DSS standards for payment processing.
+- The system shall support at least 10,000 concurrent users.
+- The booking process shall be completable within 5 steps.
 
 ---
 
@@ -779,8 +782,12 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 **Functional Requirements:**
 
-- **Order Food:** The customer shall browse the menu, select food items, specify quantity, add customizations (e.g., extra cheese, no onions), and add items to the cart. The cart shall display a summary with item-wise and total prices.
-- **Make Payment:** The system shall support multiple payment methods (credit/debit card, digital wallet, cash on delivery). Upon successful payment, an order confirmation with an estimated delivery time shall be displayed.
+- The system shall allow the customer to browse the menu and select food items.
+- The system shall allow the customer to specify quantity and add customizations (e.g., extra cheese, no onions) for each item.
+- The system shall allow the customer to add items to the cart.
+- The cart shall display a summary with item-wise and total prices.
+- The system shall support multiple payment methods (credit/debit card, digital wallet, cash on delivery).
+- The system shall display an order confirmation with an estimated delivery time upon successful payment.
 
 ---
 
@@ -788,11 +795,12 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 **Non-Functional Requirements:**
 
-- **Performance:** The payment transaction shall complete within 5 seconds.
-- **Security:** All payment data shall be transmitted over encrypted connections, and user passwords shall be hashed.
-- **Usability:** The system shall support a mobile-responsive design.
-- **Reliability:** The system shall handle order processing without data loss during peak hours.
-- **Availability:** 99.5% uptime during restaurant operating hours.
+- The payment transaction shall complete within 5 seconds.
+- The system shall transmit all payment data over encrypted connections.
+- The system shall store user passwords in hashed format.
+- The system shall support a mobile-responsive design.
+- The system shall handle order processing without data loss during peak hours.
+- The system shall maintain 99.5% uptime during restaurant operating hours.
 
 ---
 
@@ -834,11 +842,11 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 **Non-Functional Requirements:**
 
-- **Performance:** Order placement shall be processed within 2 seconds.
-- **Usability:** The interface shall be operable on tablets used by waitstaff.
-- **Reliability:** The system shall not lose orders during power failures (persistent storage).
-- **Security:** Customer payment data shall be handled per PCI-DSS standards.
-- **Scalability:** The system shall handle peak-hour load without degradation.
+- The system shall process order placement within 2 seconds.
+- The interface shall be operable on tablets used by waitstaff.
+- The system shall not lose orders during power failures by using persistent storage.
+- The system shall handle customer payment data per PCI-DSS standards.
+- The system shall handle peak-hour load without performance degradation.
 
 ---
 
