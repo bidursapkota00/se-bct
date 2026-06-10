@@ -1,0 +1,259 @@
+/* ── LaTeX-style Document Stylesheet ── */
+
+/* Import Computer Modern (Latin Modern) serif font for LaTeX look */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500&display=swap');
+
+@page {
+  size: 210mm 297mm;
+}
+
+/* RIGHT-HAND (odd) pages */
+@page :right {
+  margin: 25mm 25mm 30mm 25mm;
+
+  @top-right {
+    content: "Software Requirement Specification By Bidur Sapkota";
+    font-family: "EB Garamond", "Times New Roman", "Georgia", serif;
+    font-size: 9pt;
+    font-style: italic;
+    color: #555;
+  }
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "EB Garamond", "Times New Roman", "Georgia", serif;
+    font-size: 10pt;
+    color: #000;
+  }
+}
+
+/* LEFT-HAND (even) pages */
+@page :left {
+  margin: 25mm 25mm 30mm 25mm;
+
+  @top-right {
+    content: "Software Requirement Specification By Bidur Sapkota";
+    font-family: "EB Garamond", "Times New Roman", "Georgia", serif;
+    font-size: 9pt;
+    font-style: italic;
+    color: #555;
+  }
+
+  @bottom-center {
+    content: counter(page);
+    font-family: "EB Garamond", "Times New Roman", "Georgia", serif;
+    font-size: 10pt;
+    color: #000;
+  }
+}
+
+/* ── Body ── */
+body {
+  font-family: "EB Garamond", "Times New Roman", "Georgia", "Computer Modern", serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #000;
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Headings (LaTeX-style) ── */
+
+/* Chapter-level heading: large, bold, centered like \section* */
+h1 {
+  font-family: "EB Garamond", "Times New Roman", "Georgia", serif;
+  font-size: 20pt;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 24px;
+  page-break-before: always;
+  letter-spacing: 0;
+}
+
+h1:first-of-type {
+  page-break-before: avoid;
+}
+
+/* Section heading: bold, left-aligned, like \section */
+h2 {
+  font-family: "EB Garamond", "Times New Roman", "Georgia", serif;
+  font-size: 14pt;
+  font-weight: 700;
+  color: #000;
+  margin-top: 28px;
+  margin-bottom: 12px;
+  border-bottom: none;
+}
+
+/* Subsection heading: bold, slightly smaller, like \subsection */
+h3 {
+  font-family: "EB Garamond", "Times New Roman", "Georgia", serif;
+  font-size: 12pt;
+  font-weight: 700;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* Sub-subsection heading: bold italic, like \subsubsection */
+h4 {
+  font-family: "EB Garamond", "Times New Roman", "Georgia", serif;
+  font-size: 11pt;
+  font-weight: 700;
+  font-style: italic;
+  color: #000;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+/* ── Paragraphs ── */
+p {
+  margin: 0 0 10px 0;
+  text-align: justify;
+  text-indent: 0;
+  hyphens: auto;
+}
+
+/* ── Code blocks ── */
+.codehilite {
+  background-color: #f8f8f8;
+  border: 0.5pt solid #ddd;
+  padding: 10px 14px;
+  margin: 14px 0;
+  page-break-inside: auto;
+  break-inside: auto;
+}
+
+.codehilite pre {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", "Consolas", "Courier New", monospace;
+  font-size: 8.5pt;
+  line-height: 1.45;
+  page-break-inside: auto;
+  break-inside: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Inline code */
+code {
+  font-family: "Source Code Pro", "Consolas", "Courier New", monospace;
+  font-size: 9pt;
+  background-color: #f4f4f4;
+  padding: 1px 4px;
+  border: 0.5pt solid #e0e0e0;
+}
+
+.codehilite code {
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+/* ── Blockquotes ── */
+blockquote {
+  margin: 14px 0 14px 20px;
+  padding: 0 0 0 14px;
+  border-left: 2pt solid #999;
+  font-size: 10.5pt;
+  font-style: italic;
+  color: #333;
+  background: none;
+  page-break-inside: avoid;
+}
+
+blockquote p {
+  margin: 0 0 6px 0;
+}
+
+/* ── Tables (LaTeX booktabs style) ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-size: 10pt;
+  page-break-inside: auto;
+}
+
+th {
+  padding: 6px 10px;
+  font-family: "EB Garamond", "Times New Roman", "Georgia", serif;
+  font-weight: 700;
+  text-align: left;
+  border-top: 1.5pt solid #000;
+  border-bottom: 0.75pt solid #000;
+  color: #000;
+}
+
+td {
+  padding: 5px 10px;
+  border-bottom: none;
+  vertical-align: top;
+}
+
+/* Bottom rule on the last row */
+tr:last-child td {
+  border-bottom: 1.5pt solid #000;
+}
+
+tr {
+  page-break-inside: avoid;
+}
+
+/* Light alternating row for readability (subtle, academic) */
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* ── Lists ── */
+ul,
+ol {
+  margin: 6px 0 14px 0;
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 4px;
+  font-size: 11pt;
+}
+
+/* ── Links ── */
+a {
+  color: #000;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ── Images ── */
+img {
+  max-width: 100%;
+  max-height: 240mm;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+/* ── Horizontal rules ── */
+hr {
+  border: none;
+  border-top: 0.75pt solid #000;
+  margin: 28px 0;
+}
+
+/* ── Bold / Emphasis ── */
+strong {
+  font-weight: 700;
+  color: #000;
+}
+
+em {
+  font-style: italic;
+}
