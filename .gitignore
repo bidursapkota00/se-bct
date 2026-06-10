@@ -2,3 +2,4 @@
 *.pdf
 *.pptx
 temp.md
+venv/

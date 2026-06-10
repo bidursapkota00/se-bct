@@ -74,8 +74,16 @@ h1 {
   letter-spacing: 0;
 }
 
-h1:first-of-type {
+/* Title page: center all headings */
+h2:first-of-type,
+h3:first-of-type,
+h2:nth-of-type(2) {
+  text-align: center;
   page-break-before: avoid;
+}
+
+h3:first-of-type {
+  page-break-after: always;
 }
 
 /* Section heading: bold, left-aligned, like \section */

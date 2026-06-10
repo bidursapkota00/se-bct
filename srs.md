@@ -1,6 +1,4 @@
-# Complete SRS Example (IEEE 830 Format) for Online Library Management System
-
-# SOFTWARE REQUIREMENTS SPECIFICATION
+## SOFTWARE REQUIREMENTS SPECIFICATION
 
 ## Online Library Management System (OLMS)
 
@@ -30,7 +28,10 @@ OLMS is a web-based application that automates the core operations of a college 
 
 ### 1.5 Overview
 
-Section 2 provides an overall description of the product. Section 3 specifies detailed functional and non-functional requirements.
+Section 2 provides an overall description of the product.  
+Section 3 specifies detailed functional and non-functional requirements.
+
+<div style="page-break-after: always;"></div>
 
 ## 2. Overall Description
 
