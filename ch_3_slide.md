@@ -680,7 +680,7 @@ Functional requirements alone do not guarantee a usable system. A system may per
 
 ### Writing a Use Case (Template-Based Description)
 
-A formal use case includes: use case name, primary actor, secondary actor, preconditions, main scenario (numbered steps), exceptions/alternate flows, and post conditions.
+A formal use case includes: use case name, primary actor, secondary actor, preconditions, trigger, main scenario (numbered steps), exceptions/alternate flows, post conditions and priority (essential, conditional, optional).
 
 ---
 
@@ -713,10 +713,11 @@ A formal use case includes: use case name, primary actor, secondary actor, preco
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-| Element           | Details                                                                                                                                                                                                                           |
-| ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Exceptions**    | 1. The book is out of stock, so the system displays an "Out of Stock" message and suggests similar books. <br>2. The payment fails, so the system notifies the customer and asks them to retry or use a different payment method. |
-| **Postcondition** | Order is placed, payment is processed, and confirmation email is sent.                                                                                                                                                            |
+| Element           | Details                                                                                                                                                                                               |
+| ----------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Exceptions**    | 1. Out of Stock: System displays an "Out of Stock" message and suggests similar books. <br>2. Payment Failure: System notifies the customer and asks them to retry or use a different payment method. |
+| **Postcondition** | Order is placed, payment is processed, and confirmation email is sent.                                                                                                                                |
+| **Priority**      | Essential                                                                                                                                                                                             |
 
 ---
 
@@ -743,10 +744,11 @@ A formal use case includes: use case name, primary actor, secondary actor, preco
 
 # 3.4 Gathering Requirements Using Use Case Modeling and Scenarios
 
-| Element           | Details                                                                                                                                                                                                                |
-| ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Exceptions**    | 1. The ISBN already exists in the system, so the system notifies the owner and offers to update the existing entry. <br>2. The required fields are missing, so the system highlights the missing fields for the owner. |
-| **Postcondition** | New book is visible in the catalog and available for purchase.                                                                                                                                                         |
+| Element           | Details                                                                                                                                                                                                             |
+| ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Exceptions**    | 1. Duplicate ISBN: System notifies the owner that a book with this ISBN already exists and offers to update the existing entry. <br>2. Missing Required Fields: System highlights the missing fields for the owner. |
+| **Postcondition** | New book is visible in the catalog and available for purchase.                                                                                                                                                      |
+| **Priority**      | Essential                                                                                                                                                                                                           |
 
 ---
 

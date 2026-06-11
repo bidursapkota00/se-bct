@@ -579,32 +579,44 @@ A widely used architectural pattern, particularly in web and mobile applications
 
 # 4.3 Taxonomy of Architectural Styles
 
-**Flow:** The user interacts with the View → the Controller receives the request → the Controller invokes the Model → the Model processes data and returns results → the Controller selects the appropriate View → the View renders the response to the user.
+The user interacts with the View. The Controller receives the request and invokes the Model. The Model processes the data and returns the results to the Controller. The Controller then selects the appropriate View, and the View renders the response to the user.
 
-**Advantages:** Clear separation of concerns allows designers to work on the UI (View) independently of developers working on business logic (Model). Supports multiple views for the same data. Facilitates testing (Model can be tested independently).
+**Advantages:**
 
-**Disadvantages:** Can increase complexity for simple applications. Tight coupling between Controller and Model can emerge if not designed carefully.
-
----
-
-# 4.3 Taxonomy of Architectural Styles
-
-| Aspect        | Repository Model                                        | Layered Model                                       |
-| ------------- | ------------------------------------------------------- | --------------------------------------------------- |
-| Structure     | Central data store accessed by independent components   | Horizontal layers, each serving the layer above     |
-| Communication | All components interact through the shared data store   | Each layer communicates only with adjacent layers   |
-| Data sharing  | Efficient for systems with large shared data sets       | Data passes through layers, may introduce overhead  |
-| Coupling      | Components coupled to the data model, not to each other | Layers coupled only through well-defined interfaces |
+- Clear separation of concerns allows designers to work on the UI (View) independently of developers working on business logic (Model).
+- Supports multiple views for the same data.
+- Facilitates testing (Model can be tested independently).
 
 ---
 
 # 4.3 Taxonomy of Architectural Styles
 
-| Aspect                  | Repository Model                                                      | Layered Model                                                              |
-| ----------------------- | --------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Modifiability           | Adding/removing components is easy; changing the data schema is hard  | Changing a layer is easy if the interface is preserved                     |
-| Single point of failure | The data store is a single point of failure                           | No single point of failure (unless a critical layer fails)                 |
-| Best suited for         | Systems with shared, complex data (CASE tools, IDEs, data warehouses) | Systems with clear functional separation (web apps, OS, network protocols) |
+**Disadvantages:**
+
+Can increase complexity for simple applications.
+
+Tight coupling between Controller and Model can emerge if not designed carefully.
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
+| Repository Model                                                                                        | Layered Model                                                                                                        |
+| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| A central data store is accessed by independent components.                                             | The system is organized into horizontal layers, each serving the layer above it.                                     |
+| All components interact through the shared data store.                                                  | Each layer communicates only with adjacent layers.                                                                    |
+| It is efficient for systems with large shared data sets.                                                | Data passes through multiple layers, which may introduce overhead.                                                   |
+| Components are coupled to the data model, not to each other.                                            | Layers are coupled only through well-defined interfaces.                                                             |
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
+| Repository Model                                                                                           | Layered Model                                                                                                             |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Adding or removing components is easy, but changing the data schema is hard.                               | Changing a layer is easy as long as the interface is preserved.                                                           |
+| The data store is a single point of failure.                                                                | There is no single point of failure unless a critical layer fails.                                                        |
+| It is best suited for systems with shared, complex data such as CASE tools, IDEs, and data warehouses.     | It is best suited for systems with clear functional separation such as web applications, OS, and network protocols.       |
 
 ---
 
