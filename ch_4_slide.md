@@ -325,6 +325,8 @@ It can also be difficult to distribute across multiple machines.
 
 **Example:** A CASE (Computer-Aided Software Engineering) tool suite where all tools (editor, compiler, debugger, version control) access a shared project repository.
 
+![Repository Architecture](images/ch_4/repository.png)
+
 ---
 
 # 4.3 Taxonomy of Architectural Styles
@@ -354,6 +356,12 @@ Can have performance overhead due to data transformation between filters.
 Not well-suited for complex, branching control flows.
 
 **Example:** A Unix command pipeline: `cat file.txt | grep "error" | sort | uniq -c`. In this pipeline, each command is a filter connected by pipes.
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
+![Pipe and Filter Architecture](images/ch_4/pipe-and-filter.png)
 
 ---
 
@@ -390,6 +398,12 @@ Tightly coupled control flow can reduce flexibility.
 
 # 4.3 Taxonomy of Architectural Styles
 
+![Call and Return Architecture](images/ch_4/call-and-return.png)
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
 ### Object-Oriented Architecture
 
 Components encapsulate both data and the operations that manipulate it. Communication between components is achieved through message passing. Each object manages its own state and exposes behavior through well-defined interfaces.
@@ -415,6 +429,12 @@ Can be harder to visualize the overall system structure.
 Performance overhead from message passing.
 
 Potential for complex interdependencies if not designed carefully.
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
+![Object Oriented Architecture](images/ch_4/object-oriented.png)
 
 ---
 
@@ -462,6 +482,12 @@ Not all systems decompose cleanly into layers. Excessive layering can introduce 
 
 # 4.3 Taxonomy of Architectural Styles
 
+![Layered Architecture](images/ch_4/layered.png)
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
 ### Client-Server Architecture
 
 A distributed architecture that partitions work between servers (providers of resources/services) and clients (requesters of services). The server hosts shared resources (data, processing logic, files) and listens for client requests. Clients present the user interface and send requests to the server over a network.
@@ -496,11 +522,23 @@ Server can become a bottleneck under heavy load. Higher infrastructure cost.
 
 # 4.3 Taxonomy of Architectural Styles
 
+![Client Server Architecture](images/ch_4/client-server.png)
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
 ### Multi-Tier Architecture
 
 An extension of client-server that separates functionality into distinct tiers, each running on separate infrastructure:
 
 **2-Tier Architecture:** The client communicates directly with the server. The client handles the UI and some application logic; the server handles data storage and remaining logic. Example: A desktop database application where the client application connects directly to a database server.
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
+![Two Tier Architecture](images/ch_4/two-tier.png)
 
 ---
 
@@ -512,6 +550,12 @@ An extension of client-server that separates functionality into distinct tiers, 
 (3) the Data tier, which is the server database. Each tier can be developed, deployed, and scaled independently.
 
 **Example:** In an e-commerce website, the browser (presentation tier) sends requests to a web/application server (logic tier) that processes orders, applies business rules, and queries the database server (data tier).
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
+![Three Tier Architecture](images/ch_4/three-tier.png)
 
 ---
 

@@ -366,10 +366,10 @@ A software requirements document (SRD), commonly called the Software Requirement
 
 **Functional Requirements:**
 
-- The system shall allow the librarian to search for a book by title, author, or ISBN.
-- The system shall verify the borrower's library membership status before issuing.
-- The system shall check if the book is available (not already issued or reserved).
-- The system shall record the issue date and calculate the due date (e.g., 14 days from issue).
+- **FR-01: Search Book [Priority: Essential]** The system shall allow the librarian to search for a book by title, author, or ISBN.
+- **FR-02: Verify Membership [Priority: Essential]** The system shall verify the borrower's library membership status before issuing.
+- **FR-03: Check Availability [Priority: Essential]** The system shall check if the book is available (not already issued or reserved).
+- **FR-04: Record Issue Date [Priority: Essential]** The system shall record the issue date and calculate the due date (e.g., 14 days from issue).
 
 ---
 
@@ -379,8 +379,8 @@ A software requirements document (SRD), commonly called the Software Requirement
 
 **Functional Requirements:**
 
-- The system shall update the book's status to "issued" and associate it with the borrower's account.
-- The system shall generate an issue receipt for the borrower.
+- **FR-05: Update Book Status [Priority: Essential]** The system shall update the book's status to "issued" and associate it with the borrower's account.
+- **FR-06: Generate Receipt [Priority: Conditional]** The system shall generate an issue receipt for the borrower.
 
 ---
 
