@@ -248,7 +248,7 @@ Architectural design is guided by a set of fundamental principles that apply reg
 
 **Principle 5: User interface design should prioritize ease of use.** No matter how sophisticated the internal architecture, a poorly designed UI leads to the perception that the software is "bad."
 
-**Principle 6: Components should be functionally independent.** Each component should be cohesive — focused on a single, well-defined function. This simplifies development, testing, and maintenance.
+**Principle 6: Components should be functionally independent.** Each component should be cohesive, meaning it is focused on a single, well-defined function. This simplifies development, testing, and maintenance.
 
 ---
 
@@ -285,7 +285,8 @@ Architectural design is guided by a set of fundamental principles that apply reg
 An architectural style defines a family of systems in terms of a pattern of structural organization. Each style describes:  
 (1) a set of components that perform system functions,  
 (2) a set of connectors that enable communication, coordination, and cooperation among components,  
-(3) constraints that define how components can be integrated, and (4) semantic models that help understand the overall system properties.
+(3) constraints that define how components can be integrated, and  
+(4) semantic models that help understand the overall system properties.
 
 ---
 
@@ -302,9 +303,25 @@ A central data store (database, file, or shared repository) resides at the cente
 
 # 4.3 Taxonomy of Architectural Styles
 
-**Advantages:** Components can be changed or added independently without affecting other components (high integrability). Centralized data management simplifies backup, security, and consistency. Efficient for systems where many components share large volumes of data.
+**Advantages:**
 
-**Disadvantages:** The repository is a single point of failure. Components become tightly coupled to the data model, and changes to the data schema may require updates across many components. It can also be difficult to distribute across multiple machines.
+Components can be changed or added independently without affecting other components (high integrability).
+
+Centralized data management simplifies backup, security, and consistency.
+
+Efficient for systems where many components share large volumes of data.
+
+**Disadvantages:**
+
+The repository is a single point of failure.
+
+Components become tightly coupled to the data model, and changes to the data schema may require updates across many components.
+
+It can also be difficult to distribute across multiple machines.
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
 
 **Example:** A CASE (Computer-Aided Software Engineering) tool suite where all tools (editor, compiler, debugger, version control) access a shared project repository.
 
@@ -320,9 +337,21 @@ Input data is transformed through a series of processing components (called filt
 
 # 4.3 Taxonomy of Architectural Styles
 
-**Advantages:** Supports reuse (filters can be recombined). Easy to understand, add new filters, or replace existing ones. Naturally supports concurrent processing.
+**Advantages:**
 
-**Disadvantages:** Not suitable for interactive applications. Can have performance overhead due to data transformation between filters. Not well-suited for complex, branching control flows.
+Supports reuse (filters can be recombined).
+
+Easy to understand, add new filters, or replace existing ones.
+
+Naturally supports concurrent processing.
+
+**Disadvantages:**
+
+Not suitable for interactive applications.
+
+Can have performance overhead due to data transformation between filters.
+
+Not well-suited for complex, branching control flows.
 
 **Example:** A Unix command pipeline: `cat file.txt | grep "error" | sort | uniq -c`. In this pipeline, each command is a filter connected by pipes.
 
@@ -341,9 +370,21 @@ A program structure where a "main" program invokes subprograms, which may in tur
 
 # 4.3 Taxonomy of Architectural Styles
 
-**Advantages:** Relatively easy to modify and scale. Well-understood, traditional approach. Clear control flow.
+**Advantages:**
 
-**Disadvantages:** Can be rigid. Changes to the hierarchy may require restructuring. Tightly coupled control flow can reduce flexibility.
+Relatively easy to modify and scale.
+
+Well-understood, traditional approach.
+
+Clear control flow.
+
+**Disadvantages:**
+
+Can be rigid.
+
+Changes to the hierarchy may require restructuring.
+
+Tightly coupled control flow can reduce flexibility.
 
 ---
 
@@ -353,9 +394,27 @@ A program structure where a "main" program invokes subprograms, which may in tur
 
 Components encapsulate both data and the operations that manipulate it. Communication between components is achieved through message passing. Each object manages its own state and exposes behavior through well-defined interfaces.
 
-**Advantages:** Promotes reuse, modularity, and information hiding. Changes to one object's internal representation do not affect others. Natural mapping to real-world problem domains.
+**Advantages:**
 
-**Disadvantages:** Can be harder to visualize the overall system structure. Performance overhead from message passing. Potential for complex interdependencies if not designed carefully.
+Promotes reuse, modularity, and information hiding.
+
+Changes to one object's internal representation do not affect others.
+
+Natural mapping to real-world problem domains.
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
+### Object-Oriented Architecture
+
+**Disadvantages:**
+
+Can be harder to visualize the overall system structure.
+
+Performance overhead from message passing.
+
+Potential for complex interdependencies if not designed carefully.
 
 ---
 
@@ -373,13 +432,25 @@ The system is organized into horizontal layers, each providing a set of services
 
 # 4.3 Taxonomy of Architectural Styles
 
-**Advantages:** Separation of concerns ensures that each layer has a clearly defined responsibility. Layers can be developed, tested, and modified independently. Changes in one layer generally do not affect others (as long as the interface is preserved). Supports reuse of layers across applications.
+**Advantages:**
 
-**Disadvantages:** Performance overhead is a concern because requests may have to traverse multiple layers. Not all systems decompose cleanly into layers. Excessive layering can introduce complexity and rigidity.
+Separation of concerns ensures that each layer has a clearly defined responsibility.
+
+Layers can be developed, tested, and modified independently.
+
+Changes in one layer generally do not affect others (as long as the interface is preserved).
+
+Supports reuse of layers across applications.
 
 ---
 
 # 4.3 Taxonomy of Architectural Styles
+
+**Disadvantages:**
+
+Performance overhead is a concern because requests may have to traverse multiple layers.
+
+Not all systems decompose cleanly into layers. Excessive layering can introduce complexity and rigidity.
 
 **Example:** A web application with four layers:  
 (1) Presentation layer (HTML/CSS/JS in the browser),  
@@ -395,13 +466,29 @@ The system is organized into horizontal layers, each providing a set of services
 
 A distributed architecture that partitions work between servers (providers of resources/services) and clients (requesters of services). The server hosts shared resources (data, processing logic, files) and listens for client requests. Clients present the user interface and send requests to the server over a network.
 
-**Advantages:** Centralized management of data and security. The architecture is scalable because servers can be upgraded or additional servers can be added. It is resource-efficient since thin clients can access powerful server-side processing. Data integrity is maintained at the server.
+**Advantages:**
+
+Centralized management of data and security.
+
+The architecture is scalable because servers can be upgraded or additional servers can be added.
 
 ---
 
 # 4.3 Taxonomy of Architectural Styles
 
-**Disadvantages:** Server is a single point of failure. Entirely dependent on network connectivity. Server can become a bottleneck under heavy load. Higher infrastructure cost.
+**Advantages:**
+
+It is resource-efficient since thin clients can access powerful server-side processing.
+
+Data integrity is maintained at the server.
+
+**Disadvantages:**
+
+Server is a single point of failure.
+
+Entirely dependent on network connectivity.
+
+Server can become a bottleneck under heavy load. Higher infrastructure cost.
 
 **Example:** In an online banking system, the mobile app (client) sends transaction requests to the bank's application server, which processes business logic and communicates with the database server to fetch or update account information. The server returns results to the client for display.
 
