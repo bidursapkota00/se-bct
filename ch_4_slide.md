@@ -522,6 +522,12 @@ Server can become a bottleneck under heavy load. Higher infrastructure cost.
 
 # 4.3 Taxonomy of Architectural Styles
 
+<style scoped>
+  img {
+    height: 50%;
+  }
+</style>
+
 ![Client Server Architecture](images/ch_4/client-server.png)
 
 ---
@@ -601,22 +607,28 @@ Tight coupling between Controller and Model can emerge if not designed carefully
 
 # 4.3 Taxonomy of Architectural Styles
 
-| Repository Model                                                                                        | Layered Model                                                                                                        |
-| ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
-| A central data store is accessed by independent components.                                             | The system is organized into horizontal layers, each serving the layer above it.                                     |
-| All components interact through the shared data store.                                                  | Each layer communicates only with adjacent layers.                                                                    |
-| It is efficient for systems with large shared data sets.                                                | Data passes through multiple layers, which may introduce overhead.                                                   |
-| Components are coupled to the data model, not to each other.                                            | Layers are coupled only through well-defined interfaces.                                                             |
+![MVC Architecture](images/ch_4/mvc.png)
 
 ---
 
 # 4.3 Taxonomy of Architectural Styles
 
-| Repository Model                                                                                           | Layered Model                                                                                                             |
-| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Adding or removing components is easy, but changing the data schema is hard.                               | Changing a layer is easy as long as the interface is preserved.                                                           |
-| The data store is a single point of failure.                                                                | There is no single point of failure unless a critical layer fails.                                                        |
-| It is best suited for systems with shared, complex data such as CASE tools, IDEs, and data warehouses.     | It is best suited for systems with clear functional separation such as web applications, OS, and network protocols.       |
+| Repository Model                                             | Layered Model                                                                    |
+| ------------------------------------------------------------ | -------------------------------------------------------------------------------- |
+| A central data store is accessed by independent components.  | The system is organized into horizontal layers, each serving the layer above it. |
+| All components interact through the shared data store.       | Each layer communicates only with adjacent layers.                               |
+| It is efficient for systems with large shared data sets.     | Data passes through multiple layers, which may introduce overhead.               |
+| Components are coupled to the data model, not to each other. | Layers are coupled only through well-defined interfaces.                         |
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
+
+| Repository Model                                                                                       | Layered Model                                                                                                       |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| Adding or removing components is easy, but changing the data schema is hard.                           | Changing a layer is easy as long as the interface is preserved.                                                     |
+| The data store is a single point of failure.                                                           | There is no single point of failure unless a critical layer fails.                                                  |
+| It is best suited for systems with shared, complex data such as CASE tools, IDEs, and data warehouses. | It is best suited for systems with clear functional separation such as web applications, OS, and network protocols. |
 
 ---
 
@@ -646,6 +658,12 @@ Modularity is the most common manifestation of the "separation of concerns" prin
 
 # 4.4 Modular Design, Cohesion, and Coupling
 
+![Modularity Tradeoff](images/ch_4/modularity-tradeoff.png)
+
+---
+
+# 4.4 Modular Design, Cohesion, and Coupling
+
 ### Modular Decomposition Styles
 
 **Functional decomposition (top-down):** The system is decomposed by function. A high-level function is broken into sub-functions, which are further broken into smaller sub-functions until each module performs a single, well-defined task. Example: An order processing system decomposed into modules for "Validate Order," "Calculate Total," "Process Payment," and "Generate Invoice."
@@ -662,19 +680,18 @@ Modularity is the most common manifestation of the "separation of concerns" prin
 
 # 4.4 Modular Design, Cohesion, and Coupling
 
+<style scoped>
+  * {
+    font-size: 26.5pt;
+  }
+</style>
+
 ### Information Hiding
 
 The principle of information hiding (proposed by David Parnas) states that modules should be designed so that internal details (algorithms, data structures, design decisions) are hidden from other modules. Only the module's interface (what it does, not how it does it) is visible to the outside.
 
 - Effective modularity is achieved by defining independent modules that communicate only information necessary to achieve software function.
 - Information hiding reduces error propagation. Inadvertent errors introduced during modification are less likely to spread to other parts of the software.
-
----
-
-# 4.4 Modular Design, Cohesion, and Coupling
-
-### Information Hiding
-
 - It provides the greatest benefits during testing and maintenance, when modifications are frequent.
 
 ---
@@ -685,7 +702,7 @@ The principle of information hiding (proposed by David Parnas) states that modul
 
 A module is functionally independent if it performs a single, well-defined function and interacts with other modules only through simple, well-defined interfaces. Functional independence is a direct outgrowth of separation of concerns, modularity, abstraction, and information hiding.
 
-**Why functional independence matters:**
+**Importance:**
 
 - Independent modules are easier to develop (function is compartmentalized, interfaces are simplified).
 - Independent modules are easier to test and maintain (secondary effects of modifications are limited, error propagation is reduced).
@@ -695,6 +712,8 @@ A module is functionally independent if it performs a single, well-defined funct
 # 4.4 Modular Design, Cohesion, and Coupling
 
 - Independent modules are more reusable.
+
+<br>
 
 Functional independence is assessed using two qualitative criteria: cohesion and coupling. The goal is high cohesion and low coupling.
 
