@@ -472,11 +472,11 @@ Performance overhead is a concern because requests may have to traverse multiple
 
 Not all systems decompose cleanly into layers. Excessive layering can introduce complexity and rigidity.
 
-**Example:** A web application with four layers:  
-(1) Presentation layer (HTML/CSS/JS in the browser),  
-(2) Application layer (controllers handling HTTP requests),  
-(3) Business logic layer (domain rules and processing), and  
-(4) Data access layer (database queries and ORM).
+**Example:** An Operating System architecture:  
+(1) User Interface layer (Shell or GUI),
+(2) System Utilities layer (File management and process tracking),
+(3) Kernel layer (Core memory management and CPU scheduling), and
+(4) Hardware Abstraction layer (Device drivers communicating with physical hardware).
 
 ---
 
@@ -514,7 +514,13 @@ Server is a single point of failure.
 
 Entirely dependent on network connectivity.
 
-Server can become a bottleneck under heavy load. Higher infrastructure cost.
+Server can become a bottleneck under heavy load. 
+
+Higher infrastructure cost.
+
+---
+
+# 4.3 Taxonomy of Architectural Styles
 
 **Example:** In an online banking system, the mobile app (client) sends transaction requests to the bank's application server, which processes business logic and communicates with the database server to fetch or update account information. The server returns results to the client for display.
 
@@ -553,7 +559,9 @@ An extension of client-server that separates functionality into distinct tiers, 
 **3-Tier Architecture:** This style adds a middle tier between client and server. The three tiers are:  
 (1) the Presentation tier, which is the client UI,  
 (2) the Application/Logic tier, which handles business rules and processing, and  
-(3) the Data tier, which is the server database. Each tier can be developed, deployed, and scaled independently.
+(3) the Data tier, which is the server database. 
+
+Each tier can be developed, deployed, and scaled independently.
 
 **Example:** In an e-commerce website, the browser (presentation tier) sends requests to a web/application server (logic tier) that processes orders, applies business rules, and queries the database server (data tier).
 
@@ -567,7 +575,15 @@ An extension of client-server that separates functionality into distinct tiers, 
 
 # 4.3 Taxonomy of Architectural Styles
 
-**Advantages of 3-tier over 2-tier:** Better separation of concerns. The middle tier can be scaled independently. Security is improved because the database is not directly exposed to clients. Maintenance is easier because business logic changes do not affect the client or database.
+**Advantages of 3-tier over 2-tier:** 
+
+Better separation of concerns. 
+
+The middle tier can be scaled independently. 
+
+Security is improved because the database is not directly exposed to clients. 
+
+Maintenance is easier because business logic changes do not affect the client or database.
 
 ---
 
