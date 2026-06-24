@@ -527,7 +527,10 @@ The primary technique for identifying classes is the grammatical parse, which in
 
 # 5.4.2 Class-Based Modeling
 
-![Class Diagram Syntax](images/ch_5/class-syntax.png)
+| MyClass                                                          |
+| ---------------------------------------------------------------- |
+| -attribute1: int<br>-attribute2: float<br>#attribute3: Circle    |
+| +operation1(a : bool, b: int): String<br>+operation2(): Circle\* |
 
 ---
 
