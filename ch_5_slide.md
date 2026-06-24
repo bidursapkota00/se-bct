@@ -684,56 +684,130 @@ CRC cards are useful for brainstorming classes and for role-playing reviews. In 
 
 # Class-Responsibility-Collaborator (CRC) Modeling
 
-### 1. Class: Customer
-
-**Description:** Represents a registered user who navigates the store, alters profiles, and purchases goods.
-
-| Responsibility                                          | Collaborator            |
-| ------------------------------------------------------- | ----------------------- |
-| Maintains contact info, shipping, and billing addresses |                         |
-| Reviews previous transaction logs and receipts          | `Order`                 |
-| Initiates the checkout sequence                         | `ShoppingCart`, `Order` |
-
----
-
-# Class-Responsibility-Collaborator (CRC) Modeling
-
-### 2. Class: ShoppingCart
-
-**Description:** Manages the temporary list of items selected by a customer for potential purchase.
-
-| Responsibility                                   | Collaborator |
-| ------------------------------------------------ | ------------ |
-| Adds a product and tracking its quantity         | `Product`    |
-| Removes a product from the current selection     | `Product`    |
-| Calculates the subtotal cost of all items inside | `Product`    |
-| Empties all contents after a successful checkout | `Order`      |
-
----
-
-# Class-Responsibility-Collaborator (CRC) Modeling
-
-### 3. Class: Order
-
-**Description:** Represents a finalized purchase transaction and tracks its fulfillment status.
-
-| Responsibility                                  | Collaborator     |
-| ----------------------------------------------- | ---------------- |
-| Compiles final purchase items from the cart     | `ShoppingCart`   |
-| Authorizes and completes financial transaction  | `PaymentGateway` |
-| Requests reduction of available warehouse stock | `Product`        |
-| Records the delivery location and buyer profile | `Customer`       |
+<table>
+  <tr>
+    <th colspan="2">Class: Customer</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+      Represents a registered user who navigates the store, alters profiles, and purchases goods.
+    </td>
+  </tr>
+  <tr>
+    <th>Responsibility</th>
+    <th>Collaborator</th>
+  </tr>
+  <tr>
+    <td>Maintains contact info, shipping, and billing addresses</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Reviews previous transaction logs and receipts</td>
+    <td>Order</td>
+  </tr>
+    <tr>
+    <td>Initiates the checkout sequence</td>
+    <td>ShoppingCart, Order</td>
+  </tr>
+</table>
 
 ---
 
 # Class-Responsibility-Collaborator (CRC) Modeling
 
-### 4. Class: Product
+<table>
+  <tr>
+    <th colspan="2">Class: ShoppingCart</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+      Manages the temporary list of items selected by a customer for potential purchase.
+    </td>
+  </tr>
+  <tr>
+    <th>Responsibility</th>
+    <th>Collaborator</th>
+  </tr>
+  <tr>
+    <td>Adds a product and tracking its quantity</td>
+    <td>Product</td>
+  </tr>
+  <tr>
+    <td>Removes a product from the current selection</td>
+    <td>Product</td>
+  </tr>
+  <tr>
+    <td>Calculates the subtotal cost of all items inside</td>
+    <td>Product</td>
+  </tr>
+  <tr>
+    <td>Empties all contents after a successful checkout</td>
+    <td>Order</td>
+  </tr>
+</table>
 
-**Description:** Defines a specific item available for sale, including its core details and pricing.
+---
 
-| Responsibility                                        | Collaborator |
-| ----------------------------------------------------- | ------------ |
-| Supplies retail price, name, and description          |              |
-| Verifies if requested quantities are in stock         |              |
-| Updates internal inventory counts after order changes |              |
+# Class-Responsibility-Collaborator (CRC) Modeling
+
+<table>
+  <tr>
+    <th colspan="2">Class: Order</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+      Represents a finalized purchase transaction and tracks its fulfillment status.
+    </td>
+  </tr>
+  <tr>
+    <th>Responsibility</th>
+    <th>Collaborator</th>
+  </tr>
+  <tr>
+    <td>Compiles final purchase items from the cart</td>
+    <td>ShoppingCart</td>
+  </tr>
+  <tr>
+    <td>Authorizes and completes financial transaction</td>
+    <td>PaymentGateway</td>
+  </tr>
+  <tr>
+    <td>Requests reduction of available warehouse stock</td>
+    <td>Product</td>
+  </tr>
+  <tr>
+    <td>Records the delivery location and buyer profile</td>
+    <td>Customer</td>
+  </tr>
+</table>
+
+---
+
+# Class-Responsibility-Collaborator (CRC) Modeling
+
+<table>
+  <tr>
+    <th colspan="2">Class: Product</th>
+  </tr>
+  <tr>
+    <td colspan="2">
+      Defines a specific item available for sale, including its core details and pricing.
+    </td>
+  </tr>
+  <tr>
+    <th>Responsibility</th>
+    <th>Collaborator</th>
+  </tr>
+  <tr>
+    <td>Supplies retail price, name, and description</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Verifies if requested quantities are in stock</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Updates internal inventory counts after order changes</td>
+    <td></td>
+  </tr>
+</table>
