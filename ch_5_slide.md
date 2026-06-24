@@ -674,4 +674,66 @@ CRC modeling is a simple technique for identifying and organizing classes. Each 
 
 #### Class-Responsibility-Collaborator (CRC) Modeling
 
-CRC cards are useful for brainstorming classes and for **role-playing reviews**. In a role-playing review, a group of reviewers each holds cards for different classes and walks through use cases to verify that all responsibilities are assigned and all collaborations work correctly.
+CRC cards are useful for brainstorming classes and for role-playing reviews. In a role-playing review, a group of reviewers each holds cards for different classes and walks through use cases to verify that all responsibilities are assigned and all collaborations work correctly.
+
+<br>
+
+**Example: CRC (Class-Responsibility-Collaborator) design for Online E-Commerce Shopping System**
+
+---
+
+# Class-Responsibility-Collaborator (CRC) Modeling
+
+### 1. Class: Customer
+
+**Description:** Represents a registered user who navigates the store, alters profiles, and purchases goods.
+
+| Responsibility                                          | Collaborator            |
+| ------------------------------------------------------- | ----------------------- |
+| Maintains contact info, shipping, and billing addresses |                         |
+| Reviews previous transaction logs and receipts          | `Order`                 |
+| Initiates the checkout sequence                         | `ShoppingCart`, `Order` |
+
+---
+
+# Class-Responsibility-Collaborator (CRC) Modeling
+
+### 2. Class: ShoppingCart
+
+**Description:** Manages the temporary list of items selected by a customer for potential purchase.
+
+| Responsibility                                   | Collaborator |
+| ------------------------------------------------ | ------------ |
+| Adds a product and tracking its quantity         | `Product`    |
+| Removes a product from the current selection     | `Product`    |
+| Calculates the subtotal cost of all items inside | `Product`    |
+| Empties all contents after a successful checkout | `Order`      |
+
+---
+
+# Class-Responsibility-Collaborator (CRC) Modeling
+
+### 3. Class: Order
+
+**Description:** Represents a finalized purchase transaction and tracks its fulfillment status.
+
+| Responsibility                                  | Collaborator     |
+| ----------------------------------------------- | ---------------- |
+| Compiles final purchase items from the cart     | `ShoppingCart`   |
+| Authorizes and completes financial transaction  | `PaymentGateway` |
+| Requests reduction of available warehouse stock | `Product`        |
+| Records the delivery location and buyer profile | `Customer`       |
+
+---
+
+# Class-Responsibility-Collaborator (CRC) Modeling
+
+### 4. Class: Product
+
+**Description:** Defines a specific item available for sale, including its core details and pricing.
+
+| Responsibility                                        | Collaborator |
+| ----------------------------------------------------- | ------------ |
+| Supplies retail price, name, and description          |              |
+| Verifies if requested quantities are in stock         |              |
+| Updates internal inventory counts after order changes |              |
