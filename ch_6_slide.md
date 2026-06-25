@@ -375,12 +375,18 @@ By Bidur Sapkota
 
 # 6.2.3 Cleanroom Technique
 
-| Traditional Approach           | Cleanroom Approach                  |
-| ------------------------------ | ----------------------------------- |
-| Code → Test → Debug → Fix      | Specify → Verify → Certify          |
-| Defect removal via testing     | Defect prevention via verification  |
-| Developer tests own code       | Independent team tests the code     |
-| Unknown reliability until late | Certified reliability per increment |
+<style scoped>
+  tr {
+    font-size: 26pt;
+  }
+</style>
+
+| Traditional Approach                                                                | Cleanroom Approach                                                                            |
+| ----------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |
+| Development begins with coding, followed by testing, debugging, and fixing defects. | Development begins with formal specification, verification, and certification before release. |
+| Testing is primarily used to find and remove defects.                               | Verification is used to prevent defects from being introduced.                                |
+| Developers are responsible for testing their own code.                              | An independent certification team performs testing and evaluation.                            |
+| Reliability is often unknown until the later stages of development.                 | Reliability is measured and certified for each software increment.                            |
 
 ---
 
@@ -429,7 +435,7 @@ By Bidur Sapkota
 
 <br>
 
-**Unit testing** focuses on the smallest testable unit of software—typically an individual function, method, or component. The goal is to verify that each unit performs its intended function correctly in isolation.
+**Unit testing** focuses on the smallest testable unit of software, typically an individual function, method, or component. The goal is to verify that each unit performs its intended function correctly in isolation.
 
 ---
 
@@ -576,12 +582,18 @@ Integration testing focuses on verifying the interfaces and interactions between
 
 # 6.3.5 Acceptance Testing
 
-| Feature     | Alpha Testing                     | Beta Testing               |
-| ----------- | --------------------------------- | -------------------------- |
-| Location    | Developer's site                  | User's site                |
-| Tester      | End users (observed by developer) | End users (unobserved)     |
-| Environment | Controlled                        | Real-world, uncontrolled   |
-| Purpose     | Find errors before beta           | Find errors before release |
+<style scoped>
+  tr {
+    font-size: 26.5pt;
+  }
+</style>
+
+| Alpha Testing                                                                | Beta Testing                                                                       |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Alpha testing is conducted at the developer's site.                          | Beta testing is conducted at the user's site.                                      |
+| Alpha testing is performed by end users under the observation of developers. | Beta testing is performed by end users without direct observation from developers. |
+| Alpha testing takes place in a controlled environment.                       | Beta testing takes place in a real world, uncontrolled environment.                |
+| Alpha testing aims to identify and fix errors before beta testing begins.    | Beta testing aims to identify remaining issues before the final software release.  |
 
 ---
 
@@ -694,27 +706,27 @@ Rules for defining equivalence classes:
 
 ---
 
-# Black-Box Testing
+# White-Box & Black-Box Testing
 
-| Feature            | White-Box Testing             | Black-Box Testing          |
-| ------------------ | ----------------------------- | -------------------------- |
-| Basis              | Internal code structure       | Functional requirements    |
-| Knowledge required | Source code access needed     | Only specifications needed |
-| Focus              | Logic paths and code coverage | Input/output behavior      |
-
----
-
-# Black-Box Testing
-
-| Feature      | White-Box Testing                           | Black-Box Testing                                      |
-| ------------ | ------------------------------------------- | ------------------------------------------------------ |
-| When applied | Early (during unit testing)                 | Later (during integration, system, acceptance testing) |
-| Finds        | Logic errors, path errors, data flow errors | Missing functions, interface errors, behavior errors   |
-| Also called  | Structural testing, glass-box testing       | Behavioral testing, functional testing                 |
+| White-Box Testing                                                     | Black-Box Testing                                                                    |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| It is based on the internal structure and implementation of the code. | It is based on functional requirements and specifications.                           |
+| It requires access to the source code.                                | It requires only the software specifications and expected behavior.                  |
+| It focuses on logic paths, conditions, loops, and code coverage.      | It focuses on input and output behavior without considering internal implementation. |
 
 ---
 
-# Black-Box Testing
+# White-Box & Black-Box Testing
+
+| White-Box Testing                                                                          | Black-Box Testing                                                                  |
+| ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------- |
+| It is typically performed during the early stages of development, especially unit testing. | It is commonly performed during integration, system, and acceptance testing.       |
+| It helps identify logic errors, path errors, and data flow issues.                         | It helps identify missing functionality, interface defects, and behavioral errors. |
+| It is also known as structural testing or glass-box testing.                               | It is also known as behavioral testing or functional testing.                      |
+
+---
+
+# White-Box & Black-Box Testing
 
 **Are both White-Box Testing and Black-Box Testing necessary?**
 
@@ -734,15 +746,15 @@ Agile methodologies integrate testing throughout the development lifecycle rathe
 
 # 6.5.1 Test-Driven Development (TDD)
 
-**1. Red — Write a failing test:** Before writing any production code, the developer writes a small, focused test case for the next piece of desired functionality. Running this test should fail (shown as "red" in testing tools) because the code being tested does not exist yet. This step confirms the test is valid and that the requirement is truly missing.
+**1. Red - Write a failing test:** Before writing any production code, the developer writes a small, focused test case for the next piece of desired functionality. Running this test should fail (shown as "red" in testing tools) because the code being tested does not exist yet. This step confirms the test is valid and that the requirement is truly missing.
 
-**2. Green — Write the minimum code to pass:** The developer writes the simplest possible code that makes the failing test pass. The goal is correctness, not elegance. No optimization, no design patterns—just enough code to turn the test result from red to green.
+**2. Green - Write the minimum code to pass:** The developer writes the simplest possible code that makes the failing test pass. The goal is correctness, not elegance. No optimization, no design patterns, just enough code to turn the test result from red to green.
 
 ---
 
 # 6.5.1 Test-Driven Development (TDD)
 
-**3. Refactor — Improve the code:** With the test passing as a safety net, the developer cleans up the implementation: removes duplication, improves names, simplifies logic, and improves structure. After refactoring, the test must still pass. The cycle then repeats for the next piece of functionality.
+**3. Refactor - Improve the code:** With the test passing as a safety net, the developer cleans up the implementation: removes duplication, improves names, simplifies logic, and improves structure. After refactoring, the test must still pass. The cycle then repeats for the next piece of functionality.
 
 ---
 
