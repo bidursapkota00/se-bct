@@ -814,3 +814,9 @@ CRC cards are useful for brainstorming classes and for role-playing reviews. In 
     <td></td>
   </tr>
 </table>
+
+---
+
+# Class collaboration diagram
+
+![Class Collaboration Diagram for Banking Application](images/ch_5/class-collaboration-diagram.png)

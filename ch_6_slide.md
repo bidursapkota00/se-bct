@@ -396,6 +396,12 @@ By Bidur Sapkota
 
 ---
 
+# 6.3 Software Testing Fundamentals
+
+![Testing Strategy](images/ch_6/testing-strategy.png)
+
+---
+
 # 6.3.1 Verification and Validation
 
 > **Differentiate between verification and validation. [3 marks] (2082 Baishakh - IOE - Old Syllabus Relevant)**
@@ -473,6 +479,12 @@ By Bidur Sapkota
 
 ---
 
+# 6.3.2 Unit Testing
+
+![Unit Test Environment](images/ch_6/unit-test-env.png)
+
+---
+
 # 6.3.3 Integration Testing
 
 > **Explain integration testing. [2 marks] (2078 Kartik - IOE - Old Syllabus Relevant)**
@@ -505,6 +517,12 @@ Even if every individual unit works correctly in isolation, combining them can p
 
 # 6.3.3 Integration Testing
 
+![Top Down Integration](images/ch_6/top-down-integration.png)
+
+---
+
+# 6.3.3 Integration Testing
+
 <style scoped>
     p {
         font-size: 27pt;
@@ -516,6 +534,12 @@ Even if every individual unit works correctly in isolation, combining them can p
 **Bottom-up integration:** Integration begins with the lowest-level (atomic) modules, which are combined into clusters. Drivers are used to coordinate testing of each cluster. As integration progresses upward, drivers are removed and clusters are combined. Advantage: eliminates the need for complex stubs. Disadvantage: the complete system is not visible until the last module is added.
 
 **Continuous integration:** Components are merged into the evolving software build one or more times per day. Each integration triggers automated tests. This is the standard practice in agile and DevOps environments. A variant called smoke testing involves rebuilding and testing the software daily to ensure the build is stable enough for further testing.
+
+---
+
+# 6.3.3 Integration Testing
+
+![alt text](images/ch_6/bottom-up-integration.png)
 
 ---
 
@@ -609,9 +633,7 @@ These are two fundamental and complementary philosophies for designing test case
 
 ---
 
-# 6.4 Black-Box and White-Box Testing Approach
-
-### White-Box Testing
+# 6.4 White-Box Testing
 
 **White-box testing** (also called glass-box testing or structural testing) designs test cases based on knowledge of the internal structure, logic, and code of the software. The tester examines the source code and designs tests to exercise specific paths, conditions, and loops.
 
@@ -619,7 +641,7 @@ Ensure that all internal operations are performed according to specifications an
 
 ---
 
-# 6.4 Black-Box and White-Box Testing Approach
+# 6.4 White-Box Testing
 
 **What white-box testing guarantees:**
 
@@ -630,13 +652,17 @@ Ensure that all internal operations are performed according to specifications an
 
 <br>
 
-**Basis path testing:** A technique proposed by Tom McCabe that uses cyclomatic complexity to determine the number of independent paths through a program. This defines the minimum number of test cases needed to ensure every statement is executed at least once.
+**A. Basis path testing:** A technique proposed by Tom McCabe that uses cyclomatic complexity to determine the number of independent paths through a program. This defines the minimum number of test cases needed to ensure every statement is executed at least once.
 
 ---
 
-# 6.4 Black-Box and White-Box Testing Approach
+# 6.4 White-Box Testing
 
-### White-Box Testing
+![Path Testing](images/ch_6/path-testing.png)
+
+---
+
+# 6.4 White-Box Testing
 
 **Cyclomatic complexity V(G)** is computed in three ways:
 
@@ -648,15 +674,19 @@ The value of V(G) gives an upper bound on the number of independent paths and, t
 
 ---
 
-# 6.4 Black-Box and White-Box Testing Approach
+# 6.4 White-Box Testing
 
-### White-Box Testing
-
-### Control structure testing:
+### B. Control structure testing:
 
 - **Condition testing:** Exercises all logical conditions in the program.
 - **Data flow testing:** Selects test paths based on the locations of variable definitions and uses.
 - **Loop testing:** Tests loop constructs specifically. For simple loops (with max n iterations): skip the loop entirely; 1 pass; 2 passes; m passes (m < n); and n−1, n, n+1 passes. For nested loops: start at the innermost loop, test it while holding outer loops at minimum values, then work outward.
+
+---
+
+# 6.4 White-Box Testing
+
+![Loop Testing](images/ch_6/loop-testing.png)
 
 ---
 
@@ -672,7 +702,7 @@ Black-Box Testing find errors in the following categories: (1) incorrect or miss
 
 # Black-Box Testing
 
-**Equivalence partitioning:** Divides the input domain into classes (partitions) of data that are expected to be treated the same way by the software. One representative test case is selected from each class, reducing the number of test cases while maintaining coverage.
+**A. Equivalence partitioning:** Divides the input domain into classes (partitions) of data that are expected to be treated the same way by the software. One representative test case is selected from each class, reducing the number of test cases while maintaining coverage.
 
 <br>
 
@@ -698,7 +728,7 @@ Rules for defining equivalence classes:
 
 # Black-Box Testing
 
-**Boundary value analysis (BVA):** A technique that focuses on testing at the edges of equivalence classes, because errors tend to occur at boundaries. For a range bounded by values a and b, test cases should include: a, b, a−1, a+1, b−1, b+1.
+**B. Boundary value analysis (BVA):** A technique that focuses on testing at the edges of equivalence classes, because errors tend to occur at boundaries. For a range bounded by values a and b, test cases should include: a, b, a−1, a+1, b−1, b+1.
 
 <br>
 
