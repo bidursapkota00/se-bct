@@ -333,7 +333,7 @@ By Bidur Sapkota
 
 # 6.2.2 Code Inspection
 
-**FTR guidelines:**
+**Formal Technical Reviews (FTR) guidelines:**
 
 - Review the product, not the producer. The tone should be constructive, not adversarial.
 - Set an agenda and maintain it. Avoid drift.
@@ -511,7 +511,9 @@ Even if every individual unit works correctly in isolation, combining them can p
 
 **Big bang integration:** All components are combined at once and the system is tested as a whole. This approach is discouraged because when errors are found, it is very difficult to isolate their cause within the vast expanse of the entire program.
 
-**Top-down integration:** Integration starts with the main control module. Subordinate modules are added one at a time (either depth-first or breadth-first). Stubs are used to replace modules that have not yet been integrated. Advantage: major control and decision points are tested early. Disadvantage: stubs may need to be complex.
+**Top-down integration:** Integration starts with the main control module. Subordinate modules are added one at a time (either depth-first or breadth-first). Stubs are used to replace modules that have not yet been integrated.
+Advantage: major control and decision points are tested early.
+Disadvantage: stubs may need to be complex.
 
 ---
 
