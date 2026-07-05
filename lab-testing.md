@@ -8,11 +8,11 @@
 2. [Project Setup](#project-setup)
 3. [Database Configuration](#database-configuration)
 4. [Application Code](#application-code)
-5. [Unit Testing](#unit-testing)
-6. [Integration Testing](#integration-testing)
-7. [Test Coverage Reports](#test-coverage-reports)
-8. [Running Everything with Docker Compose](#running-everything-with-docker-compose)
-9. [Swagger API Documentation](#swagger-api-documentation)
+5. [Running with Docker Compose](#running-with-docker-compose)
+6. [Swagger API Documentation](#swagger-api-documentation)
+7. [Unit Testing](#unit-testing)
+8. [Integration Testing](#integration-testing)
+9. [Test Coverage Reports](#test-coverage-reports)
 
 ---
 
@@ -204,6 +204,131 @@ def get_product(product_id: int, db: Session = Depends(get_db)):
 ```
 
 `Base.metadata.create_all(bind=engine)` creates all tables defined by ORM models if they do not already exist. `response_model=ProductResponse` tells FastAPI to serialize the response using the Pydantic schema. `status_code=201` returns HTTP 201 Created for successful product creation. `Depends(get_db)` injects a database session into the endpoint using FastAPI's dependency injection. `db.add()` stages the new object, `db.commit()` writes it to the database, and `db.refresh()` reloads it with the generated `id`. `HTTPException(status_code=404)` returns a 404 error if the product is not found.
+
+---
+
+## Running with Docker Compose
+
+Docker Compose runs both PostgreSQL and the FastAPI app with a single command. The test database is also configured as part of the setup.
+
+### Create `Dockerfile`
+
+```dockerfile
+FROM python:3.14-slim
+
+WORKDIR /app
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["fastapi", "dev", "app/main.py", "--host", "0.0.0.0", "--port", "8000"]
+```
+
+### Create `.dockerignore`
+
+```text
+venv/
+.venv/
+__pycache__/
+*.pyc
+.git/
+.env
+htmlcov/
+.pytest_cache/
+```
+
+### Create `compose.yaml`
+
+```yaml
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://user:pass@db:5432/mydb
+    volumes:
+      - ./app:/app/app
+    depends_on:
+      - db
+
+  db:
+    image: postgres:16
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=mydb
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+volumes:
+  db-data:
+```
+
+`depends_on` ensures the database container starts before the API container. The `db` service uses the official `postgres:16` image. Environment variables configure the database credentials. The API connects to PostgreSQL using `db` as the hostname because Compose creates a shared network. The `volumes` entry `./app:/app/app` mounts the local `app/` directory into the container so that code changes on the host are immediately reflected inside the container, enabling live reload.
+
+### Start the Application
+
+```bash
+docker compose up --build
+```
+
+`--build` rebuilds the image if any files changed. The command runs in the foreground so you can see live logs from both the API and database containers. The API is available at `http://localhost:8000`. Swagger docs are at `http://localhost:8000/docs`. Because the Dockerfile uses `fastapi dev`, the server automatically reloads when you edit any file in the `app/` directory. Press `Ctrl+C` to stop all containers.
+
+### Stop Everything
+
+```bash
+docker compose down -v
+```
+
+`-v` also removes the database volume, giving you a clean state for the next run.
+
+---
+
+## Swagger API Documentation
+
+FastAPI automatically generates interactive API documentation from your code. No additional configuration is needed.
+
+### Accessing Documentation
+
+| URL                           | Description                              |
+| ----------------------------- | ---------------------------------------- |
+| `http://localhost:8000/docs`  | Swagger UI — interactive API explorer    |
+| `http://localhost:8000/redoc` | ReDoc — alternative documentation viewer |
+
+### What Swagger Shows
+
+Swagger UI displays all endpoints with their HTTP methods, request/response schemas, validation rules, and example values. You can test endpoints directly from the browser by clicking "Try it out", filling in the fields, and clicking "Execute".
+
+The documentation is generated from:
+
+- **Route decorators**: `@app.post("/products")` defines the endpoint method and path.
+- **Pydantic schemas**: `ProductCreate` and `ProductResponse` define request and response shapes.
+- **Field validators**: `Field(min_length=1, gt=0)` documents validation constraints.
+- **FastAPI metadata**: `title`, `description`, and `version` in `FastAPI()` appear in the docs header.
+
+### Testing via Swagger
+
+1. Open `http://localhost:8000/docs` in your browser.
+2. Click on `POST /products` to expand it.
+3. Click **Try it out**.
+4. Enter a JSON body:
+
+```json
+{
+  "name": "Laptop",
+  "price": 999.99
+}
+```
+
+5. Click **Execute**. You should see a `201` response with the created product including its `id`.
+6. Click on `GET /products` and execute it to see the product you just created.
 
 ---
 
@@ -460,82 +585,6 @@ pytest --cov=app --cov-report=html tests/
 
 This creates an `htmlcov/` directory. Open `htmlcov/index.html` in a browser to see a detailed, interactive coverage report with color-coded source files showing covered and uncovered lines.
 
----
-
-## Running Everything with Docker Compose
-
-Docker Compose runs both PostgreSQL and the FastAPI app with a single command. The test database is also configured as part of the setup.
-
-### Create `Dockerfile`
-
-```dockerfile
-FROM python:3.14-slim
-
-WORKDIR /app
-
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-
-COPY . .
-
-EXPOSE 8000
-
-CMD ["fastapi", "dev", "app/main.py", "--host", "0.0.0.0", "--port", "8000"]
-```
-
-### Create `.dockerignore`
-
-```text
-venv/
-.venv/
-__pycache__/
-*.pyc
-.git/
-.env
-htmlcov/
-.pytest_cache/
-```
-
-### Create `compose.yaml`
-
-```yaml
-services:
-  api:
-    build: .
-    ports:
-      - "8000:8000"
-    environment:
-      - DATABASE_URL=postgresql://user:pass@db:5432/mydb
-    volumes:
-      - ./app:/app/app
-    depends_on:
-      - db
-
-  db:
-    image: postgres:16
-    environment:
-      - POSTGRES_USER=user
-      - POSTGRES_PASSWORD=pass
-      - POSTGRES_DB=mydb
-    ports:
-      - "5432:5432"
-    volumes:
-      - db-data:/var/lib/postgresql/data
-
-volumes:
-  db-data:
-```
-
-`depends_on` ensures the database container starts before the API container. The `db` service uses the official `postgres:16` image. Environment variables configure the database credentials. The API connects to PostgreSQL using `db` as the hostname because Compose creates a shared network. The `volumes` entry `./app:/app/app` mounts the local `app/` directory into the container so that code changes on the host are immediately reflected inside the container, enabling live reload.
-
-### Start the Application
-
-```bash
-docker compose up --build
-```
-
-`--build` rebuilds the image if any files changed. The command runs in the foreground so you can see live logs from both the API and database containers. The API is available at `http://localhost:8000`. Swagger docs are at `http://localhost:8000/docs`. Because the Dockerfile uses `fastapi dev`, the server automatically reloads when you edit any file in the `app/` directory. Press `Ctrl+C` to stop all containers.
-
 ### Create the Test Database
 
 The integration tests use a separate database called `testdb`. Create it inside the running PostgreSQL container:
@@ -587,52 +636,3 @@ TOTAL                   42      0   100%
 
 ============================== 16 passed ==============================
 ```
-
-### Stop Everything
-
-```bash
-docker compose down -v
-```
-
-`-v` also removes the database volume, giving you a clean state for the next run.
-
----
-
-## Swagger API Documentation
-
-FastAPI automatically generates interactive API documentation from your code. No additional configuration is needed.
-
-### Accessing Documentation
-
-| URL                           | Description                              |
-| ----------------------------- | ---------------------------------------- |
-| `http://localhost:8000/docs`  | Swagger UI — interactive API explorer    |
-| `http://localhost:8000/redoc` | ReDoc — alternative documentation viewer |
-
-### What Swagger Shows
-
-Swagger UI displays all endpoints with their HTTP methods, request/response schemas, validation rules, and example values. You can test endpoints directly from the browser by clicking "Try it out", filling in the fields, and clicking "Execute".
-
-The documentation is generated from:
-
-- **Route decorators**: `@app.post("/products")` defines the endpoint method and path.
-- **Pydantic schemas**: `ProductCreate` and `ProductResponse` define request and response shapes.
-- **Field validators**: `Field(min_length=1, gt=0)` documents validation constraints.
-- **FastAPI metadata**: `title`, `description`, and `version` in `FastAPI()` appear in the docs header.
-
-### Testing via Swagger
-
-1. Open `http://localhost:8000/docs` in your browser.
-2. Click on `POST /products` to expand it.
-3. Click **Try it out**.
-4. Enter a JSON body:
-
-```json
-{
-  "name": "Laptop",
-  "price": 999.99
-}
-```
-
-5. Click **Execute**. You should see a `201` response with the created product including its `id`.
-6. Click on `GET /products` and execute it to see the product you just created.
