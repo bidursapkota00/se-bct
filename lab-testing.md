@@ -480,7 +480,7 @@ COPY . .
 
 EXPOSE 8000
 
-CMD ["fastapi", "run", "app/main.py", "--port", "8000"]
+CMD ["fastapi", "dev", "app/main.py", "--host", "0.0.0.0", "--port", "8000"]
 ```
 
 ### Create `.dockerignore`
@@ -506,6 +506,8 @@ services:
       - "8000:8000"
     environment:
       - DATABASE_URL=postgresql://user:pass@db:5432/mydb
+    volumes:
+      - ./app:/app/app
     depends_on:
       - db
 
@@ -524,15 +526,15 @@ volumes:
   db-data:
 ```
 
-`depends_on` ensures the database container starts before the API container. The `db` service uses the official `postgres:16` image. Environment variables configure the database credentials. The API connects to PostgreSQL using `db` as the hostname because Compose creates a shared network.
+`depends_on` ensures the database container starts before the API container. The `db` service uses the official `postgres:16` image. Environment variables configure the database credentials. The API connects to PostgreSQL using `db` as the hostname because Compose creates a shared network. The `volumes` entry `./app:/app/app` mounts the local `app/` directory into the container so that code changes on the host are immediately reflected inside the container, enabling live reload.
 
 ### Start the Application
 
 ```bash
-docker compose up --build -d
+docker compose up --build
 ```
 
-`--build` rebuilds the image if any files changed. `-d` runs in the background. The API is available at `http://localhost:8000`. Swagger docs are at `http://localhost:8000/docs`.
+`--build` rebuilds the image if any files changed. The command runs in the foreground so you can see live logs from both the API and database containers. The API is available at `http://localhost:8000`. Swagger docs are at `http://localhost:8000/docs`. Because the Dockerfile uses `fastapi dev`, the server automatically reloads when you edit any file in the `app/` directory. Press `Ctrl+C` to stop all containers.
 
 ### Create the Test Database
 
