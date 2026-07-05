@@ -13,6 +13,7 @@
 7. [Unit Testing](#unit-testing)
 8. [Integration Testing](#integration-testing)
 9. [Test Coverage Reports](#test-coverage-reports)
+10. [Running Tests with Docker](#running-tests-with-docker)
 
 ---
 
@@ -585,6 +586,12 @@ pytest --cov=app --cov-report=html tests/
 
 This creates an `htmlcov/` directory. Open `htmlcov/index.html` in a browser to see a detailed, interactive coverage report with color-coded source files showing covered and uncovered lines.
 
+---
+
+## Running Tests with Docker
+
+The previous sections showed how to run tests locally using `pytest` directly. In a containerized setup, tests run inside the Docker containers where the application and database are already configured.
+
 ### Create the Test Database
 
 The integration tests use a separate database called `testdb`. Create it inside the running PostgreSQL container:
@@ -594,6 +601,30 @@ docker compose exec db psql -U user -d mydb -c "CREATE DATABASE testdb;"
 ```
 
 `exec db` runs a command inside the `db` container. `psql -U user` connects as the `user` role. `-c` executes the SQL command directly.
+
+### Run Unit Tests
+
+```bash
+docker compose exec api pytest tests/test_unit.py -v
+```
+
+Unit tests validate the Pydantic schemas in isolation. They do not require a database connection, but run inside the `api` container to use the same Python environment.
+
+### Run Integration Tests
+
+```bash
+docker compose exec api pytest tests/test_integration.py -v
+```
+
+Integration tests send HTTP requests to the FastAPI application and verify responses against a real PostgreSQL database. The `api` container communicates with the `db` container over the Docker network.
+
+### Run Tests with Coverage
+
+```bash
+docker compose exec api pytest --cov=app --cov-report=term-missing tests/
+```
+
+This runs all tests and produces a terminal coverage report showing which lines of the `app` package were not executed during the test run.
 
 ### Run All Tests
 
