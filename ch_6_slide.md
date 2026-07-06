@@ -551,7 +551,13 @@ Disadvantage: stubs may need to be complex.
 
 **Regression testing:** After each integration of a new component, a subset of previously passed tests is re-executed to ensure the new addition has not broken existing functionality. The regression test suite contains: (1) tests that exercise all software functions, (2) tests focusing on functions likely affected by the change, and (3) tests targeting the changed components.
 
-**Stubs and drivers in integration testing:** Stubs are used in top-down integration to simulate lower-level modules not yet integrated. Drivers are used in bottom-up integration to simulate higher-level modules. Both represent testing overhead as they must be written but are not delivered with the final product.
+---
+
+# 6.3.3 Integration Testing
+
+**Stubs and drivers in integration testing:**
+
+Stubs are used in top-down integration to simulate lower-level modules not yet integrated. Drivers are used in bottom-up integration to simulate higher-level modules. Both represent testing overhead as they must be written but are not delivered with the final product.
 
 ---
 
