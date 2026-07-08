@@ -224,8 +224,8 @@ The cost of quality includes all costs incurred in the pursuit of quality or in 
 # 7.1 Quality Concepts
 
 3. **Failure costs:**
-   - **Internal failure costs:** Incurred when an error is detected before shipment — rework/repair costs, side-effect costs from rework, and costs of collecting quality metrics for failure mode analysis.
-   - **External failure costs:** Associated with defects found after shipment — complaint resolution, product return/replacement, help line support, warranty work, and loss of reputation/business.
+   - **Internal failure costs:** These are incurred when an error is detected before shipment. They include rework or repair costs, side-effect costs from rework, and costs of collecting quality metrics for failure mode analysis.
+   - **External failure costs:** These are associated with defects found after shipment. They include complaint resolution, product return or replacement, help line support, warranty work, and loss of reputation or business.
 
 The cost to find and repair an error increases dramatically as development progresses. According to Boehm and Basili, a defect costing ~$977 to fix during coding costs ~$7,136 during system testing and ~$14,102 during maintenance.
 
@@ -464,8 +464,8 @@ A Formal Technical Review (FTR) is a structured software quality assurance activ
 
 4. **Decision:** At the end, the team makes one of three decisions:
    - **Accept** the product as is (with no or minor modifications).
-   - **Rework** — the producer must correct errors and the moderator verifies corrections (no re-review needed).
-   - **Reject** — serious errors found; the product must be reworked and re-reviewed.
+   - **Rework:** The producer must correct errors and the moderator verifies corrections (no re-review needed).
+   - **Reject:** Serious errors are found. The product must be reworked and re-reviewed.
 5. **Follow-up:** The producer addresses all identified defects. The moderator verifies that corrections are complete. A review summary report is produced.
 
 ---
@@ -492,7 +492,7 @@ Statistical SQA reflects a growing trend to become more quantitative about quali
 
 1. Information about software errors and defects is collected and categorized.
 2. An attempt is made to trace each error and defect to its underlying cause (e.g., nonconformance to specifications, design error, violation of standards, poor communication with the customer).
-3. Using the Pareto principle (80% of the defects can be traced to 20% of all possible causes), isolate the 20% — called "the vital few."
+3. Using the Pareto principle (80% of the defects can be traced to 20% of all possible causes), isolate the 20% which are called "the vital few."
 
 ---
 
@@ -510,7 +510,7 @@ Statistical SQA reflects a growing trend to become more quantitative about quali
 
 ## Six Sigma
 
-Six Sigma is the most widely used strategy for statistical quality assurance. The term is derived from six standard deviations — 3.4 defects per million occurrences — implying an extremely high-quality standard. It defines the DMAIC method:
+Six Sigma is the most widely used strategy for statistical quality assurance. The term is derived from six standard deviations, which means 3.4 defects per million occurrences. This implies an extremely high-quality standard. It defines the DMAIC method:
 
 - **Define** customer requirements and project goals.
 - **Measure** the existing process and its output (collect defect metrics).
@@ -553,7 +553,7 @@ ISO 9000 describes quality assurance elements in generic terms that can be appli
 
 **Key elements of ISO 9001:2015:**
 
-1. Establish the elements of a quality management system — develop, implement, and improve the system; define a policy that emphasizes the importance of the system; document the quality system.
+1. Establish the elements of a quality management system. This involves developing, implementing, and improving the system. It also requires defining a policy that emphasizes the importance of the system and documenting the quality system.
 
 ---
 
@@ -561,8 +561,8 @@ ISO 9000 describes quality assurance elements in generic terms that can be appli
 
 **Key elements of ISO 9001:2015:**
 
-2. Support quality control and assurance — promote the importance of quality among all stakeholders; focus on customer satisfaction; define a quality plan that addresses objectives, responsibilities, and authority.
-3. Establish review mechanisms for the quality management system — identify review methods and feedback mechanisms; define follow-up procedures.
+2. Support quality control and assurance. This is done by promoting the importance of quality among all stakeholders and focusing on customer satisfaction. You should also define a quality plan that addresses objectives, responsibilities, and authority.
+3. Establish review mechanisms for the quality management system. This involves identifying review methods and feedback mechanisms, and defining follow-up procedures.
 4. Identify quality resources including personnel, training, and infrastructure elements.
 
 ---
@@ -571,8 +571,8 @@ ISO 9000 describes quality assurance elements in generic terms that can be appli
 
 **Key elements of ISO 9001:2015:**
 
-5. Establish control mechanisms — for planning, customer requirements, technical activities (analysis, design, testing), and project monitoring/management.
-6. Define methods for remediation — assess quality data and metrics; define approach for continuous process and quality improvement.
+5. Establish control mechanisms. These are needed for planning, customer requirements, technical activities (analysis, design, testing), and project monitoring or management.
+6. Define methods for remediation. This includes assessing quality data and metrics, and defining an approach for continuous process and quality improvement.
 
 ---
 
@@ -604,7 +604,7 @@ To become ISO certified, a company's quality system and operations are scrutiniz
 
 CMMI is a process improvement framework developed by the Software Engineering Institute (SEI). The staged CMMI model defines five maturity levels, each providing a layer of foundation for continuous process improvement:
 
-**Level 1 — Initial:**
+**Level 1: Initial**
 
 - Processes are ad hoc, chaotic, and reactive.
 - Success depends on individual effort and heroics, not on established processes.
@@ -617,7 +617,7 @@ CMMI is a process improvement framework developed by the Software Engineering In
 
 ## CMMI (Capability Maturity Model Integration)
 
-**Level 2 — Managed:**
+**Level 2: Managed**
 
 - Basic project management processes are established to track cost, schedule, and functionality.
 - The discipline exists to repeat earlier successes on projects with similar applications.
@@ -629,7 +629,7 @@ CMMI is a process improvement framework developed by the Software Engineering In
 
 ## CMMI (Capability Maturity Model Integration)
 
-**Level 3 — Defined:**
+**Level 3: Defined**
 
 - Processes for both management and engineering activities are documented, standardized, and integrated into a standard software process for the organization.
 - All projects use an approved, tailored version of the organization's standard process.
@@ -641,7 +641,7 @@ CMMI is a process improvement framework developed by the Software Engineering In
 
 ## CMMI (Capability Maturity Model Integration)
 
-**Level 4 — Quantitatively Managed:**
+**Level 4: Quantitatively Managed**
 
 - The organization and projects establish quantitative objectives for quality and process performance and use them as criteria in managing processes.
 - Detailed measures of the software process and product quality are collected and statistically analyzed.
@@ -653,7 +653,7 @@ CMMI is a process improvement framework developed by the Software Engineering In
 
 ## CMMI (Capability Maturity Model Integration)
 
-**Level 5 — Optimizing:**
+**Level 5: Optimizing**
 
 - Continuous process improvement is enabled by quantitative feedback from the process and from piloting innovative ideas and technologies.
 - The organization identifies weaknesses and strengthens the process proactively, preventing defects.
@@ -702,7 +702,7 @@ Maintenance typically accounts for 60–80% of the total software lifecycle cost
 
 **1. Corrective Maintenance:**
 
-Corrective maintenance involves diagnosing and fixing errors (bugs) discovered in the software after delivery. These may be errors in design, logic, or code that cause incorrect results or system failures. Corrective maintenance is reactive — it occurs in response to problem reports from users or from monitoring systems.
+Corrective maintenance involves diagnosing and fixing errors (bugs) discovered in the software after delivery. These may be errors in design, logic, or code that cause incorrect results or system failures. Corrective maintenance is reactive. It occurs in response to problem reports from users or from monitoring systems.
 
 Example: Fixing a calculation error in a payroll system that causes incorrect tax deductions.
 
@@ -732,7 +732,7 @@ Example: Adding a new reporting module to an existing ERP system, or optimizing 
 
 **4. Preventive Maintenance:**
 
-Preventive maintenance involves making changes to the software to prevent future problems. It is proactive — changes are made to improve the software's future maintainability and reliability before problems actually occur. This includes restructuring code, optimizing, and updating documentation to reduce technical debt.
+Preventive maintenance involves making changes to the software to prevent future problems. It is proactive. Changes are made to improve the software's future maintainability and reliability before problems actually occur. This includes restructuring code, optimizing, and updating documentation to reduce technical debt.
 
 Example: Refactoring legacy code to improve its structure, updating libraries before they become unsupported, or adding error-handling routines to modules that currently lack them.
 
