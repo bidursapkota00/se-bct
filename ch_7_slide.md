@@ -669,14 +669,14 @@ CMMI is a process improvement framework developed by the Software Engineering In
 
 # 7.4 ISO Standards, CMMI Levels
 
-| Feature           | ISO 9001:2015                                   | CMMI                                                 |
-| ----------------- | ----------------------------------------------- | ---------------------------------------------------- |
-| **Nature**        | Quality Management System standard              | Process improvement framework                        |
-| **Primary goal**  | Quality management and customer satisfaction    | Process capability and maturity improvement          |
-| **Applicability** | Any industry, any size                          | Primarily IT, software, engineering, defense         |
-| **Assessment**    | Third-party audit for certification (pass/fail) | Appraisal for maturity level rating (1–5)            |
-| **Focus**         | Consistent quality and continual improvement    | Process sophistication and performance maturity      |
-| **Scope**         | Defines what must be done (requirements)        | Defines how to do it (best practices and guidelines) |
+| ISO 9001:2015                                                                    | CMMI                                                                        |
+| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| It is a Quality Management System standard.                                      | It is a process improvement framework.                                      |
+| Its primary goal is quality management and customer satisfaction.                | Its primary goal is process capability and maturity improvement.            |
+| It is applicable to any industry of any size.                                    | It is primarily applicable to IT, software, engineering, and defense.       |
+| Assessment is done through a third-party audit for certification (pass or fail). | Assessment is done through an appraisal for maturity level rating (1 to 5). |
+| It focuses on consistent quality and continual improvement.                      | It focuses on process sophistication and performance maturity.              |
+| Its scope defines what must be done in terms of requirements.                    | Its scope defines how to do things using best practices and guidelines.     |
 
 ---
 
