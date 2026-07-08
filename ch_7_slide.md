@@ -231,6 +231,12 @@ The cost to find and repair an error increases dramatically as development progr
 
 ---
 
+# 7.1 Quality Concepts
+
+![Software Failure Costs](images/ch_7/failure-costs.png)
+
+---
+
 # 7.2 Quality Attributes
 
 > **Explain quality attributes of software. [3 marks] (2073 Shrawan - IOE - Old Syllabus Relevant)**
@@ -279,6 +285,12 @@ McCall and Walters proposed a model that organizes 11 quality factors into three
 - **Portability:** The effort required to transfer a program from one hardware/software environment to another.
 - **Reusability:** The extent to which a program (or parts of it) can be reused in other applications.
 - **Interoperability:** The effort required to couple one system to another.
+
+---
+
+# 7.2 Quality Attributes
+
+![McCall's Software Quality Factors](images/ch_7/quality-factors.png)
 
 ---
 
@@ -355,6 +367,12 @@ Software Quality Assurance is a planned and systematic pattern of actions requir
 
 5. A procedure to ensure compliance with software development standards.
 6. Measurement and reporting mechanisms.
+
+---
+
+# 7.3 Reviews, Inspections, and QA Concepts
+
+![Software Quality Assurance](images/ch_7/sqa.png)
 
 ---
 
@@ -511,6 +529,12 @@ For developing a new process (rather than improving an existing one), Six Sigma 
 
 ---
 
+# 7.3 Reviews, Inspections, and QA Concepts
+
+![Six Sigma](images/ch_7/six-sigma.png)
+
+---
+
 # 7.4 ISO Standards, CMMI Levels
 
 > **Describe the staged CMMI model with levels and key process areas. [5 marks] (2082 Bhadra - IOE - Old Syllabus Relevant)**
@@ -634,6 +658,12 @@ CMMI is a process improvement framework developed by the Software Engineering In
 - Continuous process improvement is enabled by quantitative feedback from the process and from piloting innovative ideas and technologies.
 - The organization identifies weaknesses and strengthens the process proactively, preventing defects.
 - Key Process Areas: Causal Analysis and Resolution, Organizational Performance Management.
+
+---
+
+# 7.4 ISO Standards, CMMI Levels
+
+![CMMI Levels](images/ch_7/cmmi-levels.png)
 
 ---
 
