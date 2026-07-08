@@ -669,18 +669,29 @@ CMMI is a process improvement framework developed by the Software Engineering In
 
 # 7.4 ISO Standards, CMMI Levels
 
+<style scoped>
+   td {
+      font-size: 27pt;
+   }
+</style>
+
 | ISO 9001:2015                                                                    | CMMI                                                                        |
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
 | It is a Quality Management System standard.                                      | It is a process improvement framework.                                      |
 | Its primary goal is quality management and customer satisfaction.                | Its primary goal is process capability and maturity improvement.            |
 | It is applicable to any industry of any size.                                    | It is primarily applicable to IT, software, engineering, and defense.       |
 | Assessment is done through a third-party audit for certification (pass or fail). | Assessment is done through an appraisal for maturity level rating (1 to 5). |
-| It focuses on consistent quality and continual improvement.                      | It focuses on process sophistication and performance maturity.              |
-| Its scope defines what must be done in terms of requirements.                    | Its scope defines how to do things using best practices and guidelines.     |
 
 ---
 
 # 7.4 ISO Standards, CMMI Levels
+
+| ISO 9001:2015                                                 | CMMI                                                                    |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| It focuses on consistent quality and continual improvement.   | It focuses on process sophistication and performance maturity.          |
+| Its scope defines what must be done in terms of requirements. | Its scope defines how to do things using best practices and guidelines. |
+
+<br>
 
 Both frameworks can work together. ISO 9001 serves as an overarching quality framework, while CMMI provides specific, granular best practices to mature software development processes. They are complementary rather than competing.
 
