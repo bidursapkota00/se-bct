@@ -372,6 +372,62 @@ Software Quality Assurance is a planned and systematic pattern of actions requir
 
 # 7.3 Reviews, Inspections, and QA Concepts
 
+![Software Quality Assurance Process](images/ch_7/sqa-process.png)
+
+---
+
+# 7.3 Reviews, Inspections, and QA Concepts
+
+## SQA Process
+
+**1. Identify a Problem Area**
+
+The cycle begins by recognizing a specific aspect of the software, development process, or system performance that needs attention or exhibits defects (e.g., high crash rates, slow API response times, or frequent regression bugs).
+
+**2. Identify Indicators**
+
+Once the problem area is defined, the team determines _what_ to measure to track this problem. These indicators (or metrics) could include things like test coverage percentages, defect density, server response latency, or user-reported bugs per release.
+
+---
+
+# 7.3 Reviews, Inspections, and QA Concepts
+
+## SQA Process
+
+**3. Prepare Criteria**
+
+In this step, benchmarks, standards, or acceptance thresholds are established based on the indicators. For example, if the indicator is "response latency," the criteria might be set as: _"95% of API requests must resolve in less than 200ms."_
+
+**4. Compare Results**
+
+Actual data gathered from testing, production logs, or user feedback is compared against the pre-established criteria. This acts as a gap analysis to see where the software or process is falling short.
+
+---
+
+# 7.3 Reviews, Inspections, and QA Concepts
+
+## SQA Process
+
+**5. Analyze the Assessment**
+
+The team dives deep into the discrepancies found during the comparison stage. This involves root-cause analysis to understand _why_ the criteria weren't met (e.g., identifying a memory leak, a bottleneck in the CI/CD pipeline, or poorly written test cases).
+
+**6. Take Measures to Improve**
+
+Based on the analysis, concrete actions are implemented to resolve the underlying issues. This could involve refactoring code, updating hardware, adjusting development workflows, or writing more robust automated tests.
+
+---
+
+# 7.3 Reviews, Inspections, and QA Concepts
+
+## SQA Process
+
+Once improvements are made, the process loops back. The team continues to monitor the indicators and look for new or recurring problem areas, ensuring that software quality steadily increases over time.
+
+---
+
+# 7.3 Reviews, Inspections, and QA Concepts
+
 ![Software Quality Assurance](images/ch_7/sqa.png)
 
 ---
