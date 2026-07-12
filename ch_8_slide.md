@@ -175,6 +175,18 @@ Software configuration management (SCM) is a set of activities designed to manag
 
 # 8.1 Software Configuration Management
 
+![SCM](images/ch_8/scm.png)
+
+---
+
+# 8.1 Software Configuration Management
+
+Software configuration management (SCM) is an umbrella activity that is applied throughout the software process. Typical SCM work flow is shown in Figure. Because change can occur at any time, SCM activities are developed to (1) identify change, (2) control change, (3) ensure that change is being properly implemented, and (4) report changes to others who may have an interest.
+
+---
+
+# 8.1 Software Configuration Management
+
 **Importance of SCM:**
 
 Software projects produce a large number of work products (requirements documents, design models, source code, test plans, user manuals, etc.). These work products are interdependent because a change to one can affect many others. Without SCM, uncontrolled changes lead to confusion, quality degradation, and delayed delivery. SCM provides the discipline and tools to identify, control, track, and report changes so that the software team can accommodate change without introducing chaos.
@@ -209,18 +221,20 @@ A baseline is a specification or product that has been formally reviewed and agr
 Before an SCI becomes a baseline, changes can be made quickly and informally. Once a baseline is established, a specific, formal procedure must be applied to evaluate and verify each change. Common software baselines include:
 
 1. **System Specification:** This is established after system requirements are reviewed and approved.
-2. **Software Requirements Specification:** This is established after requirements are reviewed and approved.
 
 ---
 
 # 8.1 Software Configuration Management
 
+2. **Software Requirements Specification:** This is established after requirements are reviewed and approved.
 3. **Design Specification:** This is established after the design model is reviewed and approved.
 4. **Source Code:** This is established after code is reviewed, compiled, and tested.
 5. **Test Plans/Procedures/Data:** These are established after test documentation is reviewed.
 6. **Operational System:** This is established after the system is delivered and accepted.
 
-<br>
+---
+
+# 8.1 Software Configuration Management
 
 When a member of the team wants to modify a baselined SCI, it is copied from the project database into the engineer's private workspace. The modification can proceed only if SCM controls are followed. After modification, the SCI is checked back in through the controlled process.
 
@@ -234,6 +248,12 @@ When a member of the team wants to modify a baselined SCI, it is copied from the
 2. **Process elements:** A collection of procedures and tasks that define an effective approach to change management for all constituencies.
 3. **Construction elements:** A set of tools that automate the construction of software by ensuring that the proper set of validated components (correct version) have been assembled.
 4. **Human elements:** A set of tools and process features used by the software team to implement effective SCM.
+
+---
+
+# 8.1 Software Configuration Management
+
+![Baseline and Project Database](images/ch_8/baseline_and_project_database.png)
 
 ---
 
@@ -253,6 +273,12 @@ SCM tasks can be viewed as concentric layers through which SCIs flow throughout 
 
 4. **Configuration auditing:** Ensuring that changes have been properly implemented and that quality is maintained.
 5. **Status reporting (status accounting):** Recording and reporting information about each change, including what happened, who did it, when it happened, and what else will be affected.
+
+---
+
+# 8.1 Software Configuration Management
+
+![Layers of SCM Process](images/ch_8/layers_of_scm_process.png)
 
 ---
 

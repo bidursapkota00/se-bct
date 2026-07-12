@@ -759,7 +759,7 @@ Both frameworks can work together. ISO 9001 serves as an overarching quality fra
 
 Software maintenance is defined as the modification of a software product after delivery to correct faults, improve performance or other attributes, or adapt the product to a modified environment. It is a critical, continuous phase in the SDLC that begins after the software is delivered and continues throughout its operational lifetime.
 
-Maintenance typically accounts for 60–80% of the total software lifecycle costs, making it the most expensive phase of the software lifecycle.
+Maintenance typically accounts for 60 - 80% of the total software lifecycle costs, making it the most expensive phase of the software lifecycle.
 
 ---
 
