@@ -169,7 +169,7 @@ By Bidur Sapkota
 >
 > **Explain why we need Software Configuration Management (SCM). [4 marks] (2073 Shrawan - IOE - Old Syllabus Relevant)**
 
-Software configuration management (SCM) is a set of activities designed to manage change throughout the life cycle of computer software. The output of the software process — programs, documents, and data — collectively forms the software configuration. Because change can occur at any time during development and maintenance, SCM is an umbrella activity applied from the moment a project begins until the software is taken out of operation.
+Software configuration management (SCM) is a set of activities designed to manage change throughout the life cycle of computer software. The output of the software process, which includes programs, documents, and data, collectively forms the software configuration. Because change can occur at any time during development and maintenance, SCM is an umbrella activity applied from the moment a project begins until the software is taken out of operation.
 
 ---
 
@@ -177,7 +177,7 @@ Software configuration management (SCM) is a set of activities designed to manag
 
 **Importance of SCM:**
 
-Software projects produce a large number of work products (requirements documents, design models, source code, test plans, user manuals, etc.). These work products are interdependent — a change to one can affect many others. Without SCM, uncontrolled changes lead to confusion, quality degradation, and delayed delivery. SCM provides the discipline and tools to identify, control, track, and report changes so that the software team can accommodate change without introducing chaos.
+Software projects produce a large number of work products (requirements documents, design models, source code, test plans, user manuals, etc.). These work products are interdependent because a change to one can affect many others. Without SCM, uncontrolled changes lead to confusion, quality degradation, and delayed delivery. SCM provides the discipline and tools to identify, control, track, and report changes so that the software team can accommodate change without introducing chaos.
 
 ---
 
@@ -208,17 +208,17 @@ A baseline is a specification or product that has been formally reviewed and agr
 
 Before an SCI becomes a baseline, changes can be made quickly and informally. Once a baseline is established, a specific, formal procedure must be applied to evaluate and verify each change. Common software baselines include:
 
-1. **System Specification** — after system requirements are reviewed and approved.
-2. **Software Requirements Specification** — after requirements are reviewed and approved.
+1. **System Specification:** This is established after system requirements are reviewed and approved.
+2. **Software Requirements Specification:** This is established after requirements are reviewed and approved.
 
 ---
 
 # 8.1 Software Configuration Management
 
-3. **Design Specification** — after the design model is reviewed and approved.
-4. **Source Code** — after code is reviewed, compiled, and tested.
-5. **Test Plans/Procedures/Data** — after test documentation is reviewed.
-6. **Operational System** — after the system is delivered and accepted.
+3. **Design Specification:** This is established after the design model is reviewed and approved.
+4. **Source Code:** This is established after code is reviewed, compiled, and tested.
+5. **Test Plans/Procedures/Data:** These are established after test documentation is reviewed.
+6. **Operational System:** This is established after the system is delivered and accepted.
 
 <br>
 
@@ -252,7 +252,7 @@ SCM tasks can be viewed as concentric layers through which SCIs flow throughout 
 # 8.1 Software Configuration Management
 
 4. **Configuration auditing:** Ensuring that changes have been properly implemented and that quality is maintained.
-5. **Status reporting (status accounting):** Recording and reporting information about each change — what happened, who did it, when it happened, and what else will be affected.
+5. **Status reporting (status accounting):** Recording and reporting information about each change, including what happened, who did it, when it happened, and what else will be affected.
 
 ---
 
@@ -296,7 +296,7 @@ Version control combines procedures and tools to manage different versions of co
 
 # 8.2 Version Control and Continuous Integration
 
-**Difference between version and variant:** A version represents sequential evolution of the same product over time (v1.0 → v1.1 → v2.0). A variant represents parallel, simultaneous forms of the same product tailored for different environments, platforms, or customer segments. All variants may share the same version number but differ in configuration.
+**Difference between version and variant:** A version represents sequential evolution of the same product over time, such as progressing from v1.0 to v1.1 and then to v2.0. A variant represents parallel, simultaneous forms of the same product tailored for different environments, platforms, or customer segments. All variants may share the same version number but differ in configuration.
 
 **Change Set:** A change set is a collection of all changes (to some baseline configuration) required to create a specific version of the software. It captures all changes to all files in the configuration along with the reason for changes and details of who made the changes and when. Named change sets can be identified and applied to a baseline configuration to construct any specific version.
 
@@ -315,7 +315,7 @@ Version control combines procedures and tools to manage different versions of co
 
 ## Continuous Integration
 
-Continuous Integration (CI) is the practice of merging all developers' working copies to a shared mainline frequently — often multiple times per day. Each integration triggers an automated build and test process to detect errors as quickly as possible.
+Continuous Integration (CI) is the practice of merging all developers' working copies to a shared mainline frequently, which is often done multiple times per day. Each integration triggers an automated build and test process to detect errors as quickly as possible.
 
 **How CI works:**
 
@@ -372,7 +372,7 @@ The change management process defines a series of tasks with four primary object
 
 # 8.3 Change Management Process
 
-4. **Change Control Authority (CCA) decision:** The change report is reviewed by a Change Control Authority — a person or group that makes a final decision on the status and priority of the change. The CCA may be the project manager alone (on small projects) or a committee with representatives from software, hardware, database engineering, support, and marketing. The CCA takes a global view, assessing the impact of the change beyond the immediate SCI.
+4. **Change Control Authority (CCA) decision:** The change report is reviewed by a Change Control Authority, which is a person or group that makes a final decision on the status and priority of the change. The CCA may be the project manager alone (on small projects) or a committee with representatives from software, hardware, database engineering, support, and marketing. The CCA takes a global view, assessing the impact of the change beyond the immediate SCI.
 5. **Engineering Change Order (ECO):** If the change is approved, an ECO is generated describing the change to be made, the constraints that must be respected, and the criteria for review and audit. If the change is rejected, the user is informed with reasons.
 
 ---
@@ -491,7 +491,7 @@ The develop branch serves as the integration branch for features. It contains th
 - **Branched from:** `develop`.
 - **Merged back into:** Both `main` and `develop`.
 - **Naming convention:** `release/1.2.0`.
-- **Workflow:** When develop has acquired enough features for a release, a release branch is created. No new features are added on this branch — only bug fixes, documentation, and release-oriented tasks. Once ready, it is merged into main (and tagged with a version number) and also merged back into develop so that any fixes made during release preparation are not lost.
+- **Workflow:** When develop has acquired enough features for a release, a release branch is created. No new features are added on this branch. It only contains bug fixes, documentation updates, and release-oriented tasks. Once ready, it is merged into main (and tagged with a version number) and also merged back into develop so that any fixes made during release preparation are not lost.
 
 ---
 
@@ -513,8 +513,8 @@ The develop branch serves as the integration branch for features. It contains th
 
 | Branch      | Origin    | Merged Into          | Lifetime  |
 | ----------- | --------- | -------------------- | --------- |
-| `main`      | —         | —                    | Permanent |
-| `develop`   | `main`    | —                    | Permanent |
+| `main`      | None      | None                 | Permanent |
+| `develop`   | `main`    | None                 | Permanent |
 | `feature/*` | `develop` | `develop`            | Temporary |
 | `release/*` | `develop` | `main` and `develop` | Temporary |
 | `hotfix/*`  | `main`    | `main` and `develop` | Temporary |
