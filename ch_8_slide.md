@@ -535,20 +535,6 @@ The develop branch serves as the integration branch for features. It contains th
 
 # 8.4 Branching Strategies (Git-flow Basics)
 
-**Git-flow Branch Summary:**
-
-| Branch      | Origin    | Merged Into          | Lifetime  |
-| ----------- | --------- | -------------------- | --------- |
-| `main`      | None      | None                 | Permanent |
-| `develop`   | `main`    | None                 | Permanent |
-| `feature/*` | `develop` | `develop`            | Temporary |
-| `release/*` | `develop` | `main` and `develop` | Temporary |
-| `hotfix/*`  | `main`    | `main` and `develop` | Temporary |
-
----
-
-# 8.4 Branching Strategies (Git-flow Basics)
-
 **Basic Git Operations in Git-flow:**
 
 - **`git commit`:** Records changes to the local repository with a descriptive message.
@@ -565,11 +551,3 @@ The develop branch serves as the integration branch for features. It contains th
 **Conflict Resolution:**
 
 When two developers modify the same lines in the same file on different branches, a merge conflict occurs during merge. Git marks the conflicting sections in the file. The developer must manually review the conflicting changes, decide which changes to keep (or combine both), edit the file to resolve the conflict, and then commit the resolution.
-
----
-
-# 8.4 Branching Strategies (Git-flow Basics)
-
-**When to use Git-flow:**
-
-Git-flow works best for projects with scheduled, versioned releases and teams that maintain multiple versions in production. For teams practicing continuous delivery with frequent deployments, simpler strategies like GitHub Flow (a single main branch with feature branches and pull requests) or Trunk-Based Development (all developers commit to a single trunk/main branch with short-lived feature branches) may be more appropriate.
