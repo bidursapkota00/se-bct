@@ -165,7 +165,7 @@ By Bidur Sapkota
 
 # 9.1 DevOps and Continuous Deployment Pipelines
 
-DevOps is a set of practices, cultural philosophies, and tools that unify software development (Dev) and IT operations (Ops) to shorten the systems development life cycle and deliver high-quality software continuously. The term was coined around 2008–2009 by Patrick Debois and Andrew Shafer, and has since become a dominant paradigm in modern software engineering.
+DevOps is a set of practices, cultural philosophies, and tools that unify software development (Dev) and IT operations (Ops) to shorten the systems development life cycle and deliver high-quality software continuously. The term was coined around 2008 to 2009 by Patrick Debois and Andrew Shafer, and has since become a dominant paradigm in modern software engineering.
 
 Traditionally, development teams and operations teams worked in silos. Developers wrote code and "threw it over the wall" to operations for deployment, leading to blame games, slow releases, and fragile production environments. DevOps breaks down these silos by encouraging shared ownership, collaboration, and automation across the entire software delivery pipeline.
 
@@ -173,7 +173,7 @@ Traditionally, development teams and operations teams worked in silos. Developer
 
 # Principles of DevOps
 
-1. **Culture of collaboration:** Developers and operations staff share responsibility for the entire lifecycle — from development through production. There is no "your problem" when something breaks; the team collectively owns quality and uptime.
+1. **Culture of collaboration:** Developers and operations staff share responsibility for the entire lifecycle, from development through production. There is no "your problem" when something breaks; the team collectively owns quality and uptime.
 2. **Automation:** Manual, error-prone tasks (building, testing, deploying, provisioning infrastructure) are automated to achieve speed, consistency, and repeatability.
 3. **Continuous feedback:** Monitoring, logging, and alerting systems provide real-time feedback on application health and performance, allowing teams to detect and resolve issues quickly.
 
@@ -212,7 +212,7 @@ The cycle then feeds back into the Plan phase, creating a continuous loop.
 
 # Continuous Deployment Pipeline
 
-A continuous deployment pipeline automates the journey of code from a developer's commit to production. It extends beyond CI/CD (covered in Section 9.2) by removing all manual gates — every change that passes automated validation is automatically deployed to production without human intervention.
+A continuous deployment pipeline automates the journey of code from a developer's commit to production. It extends beyond CI/CD by removing all manual gates. Every change that passes automated validation is automatically deployed to production without human intervention.
 
 **Stages of a deployment pipeline:**
 
@@ -223,7 +223,7 @@ A continuous deployment pipeline automates the journey of code from a developer'
 
 # Continuous Deployment Pipeline
 
-3. **Test stage:** The artifact is subjected to automated tests — unit tests, integration tests, security scans, and performance tests. If any test fails, the pipeline halts and the developer is notified.
+3. **Test stage:** The artifact is subjected to automated tests such as unit tests, integration tests, security scans, and performance tests. If any test fails, the pipeline halts and the developer is notified.
 4. **Staging/Pre-production stage:** The artifact is deployed to a staging environment that mirrors production. Smoke tests and acceptance tests validate behavior in a production-like setting.
 5. **Production deployment:** The artifact is automatically deployed to the live production environment.
 
@@ -247,13 +247,13 @@ A continuous deployment pipeline automates the journey of code from a developer'
 
 # DevOps Tools
 
-- **Version control:** Git, GitHub, GitLab.
-- **CI/CD servers:** Jenkins, GitHub Actions, GitLab CI/CD, CircleCI.
-- **Containerization:** Docker.
-- **Orchestration:** Kubernetes.
-- **Configuration management:** Ansible, Chef, Puppet.
-- **Monitoring:** Prometheus, Grafana, Datadog.
-- **IaC:** Terraform, AWS CloudFormation, Pulumi.
+- **Version control:** The popular version control tools include Git, GitHub, and GitLab.
+- **CI/CD servers:** Common CI/CD servers are Jenkins, GitHub Actions, GitLab CI/CD, and CircleCI.
+- **Containerization:** Docker is widely used for containerization.
+- **Orchestration:** Kubernetes is the standard tool for orchestration.
+- **Configuration management:** Popular configuration management tools are Ansible, Chef, and Puppet.
+- **Monitoring:** Teams use tools like Prometheus, Grafana, and Datadog for monitoring.
+- **IaC:** Terraform, AWS CloudFormation, and Pulumi are commonly used for Infrastructure as Code.
 
 ---
 
@@ -263,7 +263,7 @@ CI/CD is the backbone of modern DevOps practices. It consists of two related but
 
 **Continuous Integration (CI):**
 
-Continuous Integration is the practice of merging all developers' working copies to a shared mainline frequently — ideally multiple times per day. Each integration triggers an automated build and test process to detect errors as quickly as possible. The central idea is that integrating early and often prevents the "integration hell" that occurs when developers work in isolation for long periods and then try to merge large batches of changes.
+Continuous Integration is the practice of merging all developers' working copies to a shared mainline frequently, ideally multiple times per day. Each integration triggers an automated build and test process to detect errors as quickly as possible. The central idea is that integrating early and often prevents the "integration hell" that occurs when developers work in isolation for long periods and then try to merge large batches of changes.
 
 ---
 
@@ -271,10 +271,10 @@ Continuous Integration is the practice of merging all developers' working copies
 
 1. Maintain a single source repository (version control) where all code resides.
 2. Automate the build so that the entire system can be built with a single command.
-3. Make the build self-testing — every build runs a comprehensive suite of automated tests.
+3. Make the build self-testing where every build runs a comprehensive suite of automated tests.
 4. Every developer commits to the mainline at least once per day.
 5. Every commit triggers an automated build and test on the CI server.
-6. Fix broken builds immediately — a broken build is the highest-priority issue for the team.
+6. Fix broken builds immediately. A broken build is the highest-priority issue for the team.
 7. Keep the build fast so that developers get feedback within minutes, not hours.
 
 ---
@@ -283,7 +283,7 @@ Continuous Integration is the practice of merging all developers' working copies
 
 **Continuous Delivery (CD):**
 
-Continuous Delivery extends CI by ensuring that the software is always in a releasable state. After passing through the CI pipeline (build and test), the software is automatically deployed to a staging or pre-production environment. The final deployment to production requires a manual approval step — a human decides when to release.
+Continuous Delivery extends CI by ensuring that the software is always in a releasable state. After passing through the CI pipeline (build and test), the software is automatically deployed to a staging or pre-production environment. The final deployment to production requires a manual approval step where a human decides when to release.
 
 **Continuous Deployment:**
 
@@ -295,7 +295,7 @@ Continuous Deployment goes one step further than Continuous Delivery. Every chan
 
 **Difference between Continuous Delivery and Continuous Deployment:**
 
-In Continuous Delivery, the code is automatically prepared, built, tested, and staged for release, but a human must manually approve the final push to production. In Continuous Deployment, the entire process from code commit to production deployment is fully automated — no manual approval is required. Continuous Delivery means "can be released at any time"; Continuous Deployment means "is released every time."
+In Continuous Delivery, the code is automatically prepared, built, tested, and staged for release, but a human must manually approve the final push to production. In Continuous Deployment, the entire process from code commit to production deployment is fully automated. No manual approval is required. Continuous Delivery means "can be released at any time"; Continuous Deployment means "is released every time."
 
 ---
 
@@ -303,7 +303,7 @@ In Continuous Delivery, the code is automatically prepared, built, tested, and s
 
 1. **Source (Trigger):** The pipeline is triggered when a developer commits code to the repository.
 2. **Build:** Source code is compiled, dependencies are fetched, and a build artifact is produced.
-3. **Test:** Automated tests run — unit tests verify individual components, integration tests verify module interactions, and security/functional tests validate the application.
+3. **Test:** Automated tests run to verify the code. Unit tests verify individual components, integration tests verify module interactions, and security or functional tests validate the application.
 4. **Package:** The successfully tested artifact is versioned and stored in an artifact repository or container registry.
 
 ---
@@ -366,7 +366,7 @@ Microservices architecture is a design approach in which an application is struc
 
 **Characteristics of microservices:**
 
-1. **Single responsibility:** Each microservice handles one specific business function (e.g., user authentication, payment processing, order management, notification service).
+1. **Single responsibility:** Each microservice handles one specific business function , such as user authentication, payment processing, order management, or a notification service.
 
 ---
 
@@ -374,7 +374,7 @@ Microservices architecture is a design approach in which an application is struc
 
 2. **Independent deployment:** Each service can be developed, tested, deployed, and scaled independently without affecting other services.
 3. **Decentralized data management:** Each microservice typically manages its own database or data store, avoiding a single shared database that becomes a bottleneck.
-4. **Technology heterogeneity:** Different services can be built using different programming languages, frameworks, or databases — the best tool for each specific job.
+4. **Technology heterogeneity:** Different services can be built using different programming languages, frameworks, or databases to use the best tool for each specific job.
 5. **Fault isolation:** A failure in one service does not bring down the entire application. Other services continue to function, and the failed service can be restarted independently.
 
 ---
@@ -383,27 +383,27 @@ Microservices architecture is a design approach in which an application is struc
 
 In a monolithic architecture, the entire application is built and deployed as a single unit. All components (UI, business logic, data access) are tightly coupled within one codebase and one deployment artifact. Scaling requires scaling the entire application, even if only one component needs more capacity. A bug in one module can bring down the entire system.
 
-In a microservices architecture, the application is decomposed into independent services. Each service has its own codebase, deployment pipeline, and data store. Services communicate through APIs. Scaling is granular — only the services that need more capacity are scaled. A failure in one service is isolated from the rest.
+In a microservices architecture, the application is decomposed into independent services. Each service has its own codebase, deployment pipeline, and data store. Services communicate through APIs. Scaling is granular because only the services that need more capacity are scaled. A failure in one service is isolated from the rest.
 
 ---
 
 # Advantages of microservices
 
-1. Independent scaling of services based on their individual resource requirements.
-2. Faster development and deployment cycles because teams can work on different services in parallel.
-3. Technology flexibility — each service can use the technology stack best suited to its function.
-4. Better fault isolation and resilience.
-5. Easier to understand and maintain because each service is focused on a single capability.
+1. Independent scaling of services based on their individual resource requirements is possible.
+2. Faster development and deployment cycles occur because teams can work on different services in parallel.
+3. Technology flexibility allows each service to use the technology stack best suited to its function.
+4. Better fault isolation and resilience are achieved.
+5. Systems are easier to understand and maintain because each service is focused on a single capability.
 
 ---
 
 # Challenges of microservices
 
-1. Increased operational complexity — managing dozens or hundreds of services requires sophisticated tooling.
-2. Network communication overhead and latency between services.
-3. Distributed data management introduces complexity (e.g., maintaining consistency across services).
-4. Monitoring and debugging is more complex across distributed services.
-5. Requires a mature DevOps culture and automation capabilities.
+1. Increased operational complexity occurs as managing dozens or hundreds of services requires sophisticated tooling.
+2. Network communication overhead and latency between services can increase.
+3. Distributed data management introduces complexity in maintaining consistency across services.
+4. Monitoring and debugging are more complex across distributed services.
+5. Adopting microservices requires a mature DevOps culture and automation capabilities.
 
 ---
 
@@ -411,7 +411,7 @@ In a microservices architecture, the application is decomposed into independent 
 
 Infrastructure as Code is the practice of managing and provisioning computing infrastructure (servers, networks, storage, databases, load balancers) through machine-readable configuration files rather than through manual processes or interactive configuration tools.
 
-Instead of an operations engineer manually logging into a cloud console to create servers, configure networking, and set up databases, IaC allows the entire infrastructure to be defined in code files (e.g., Terraform HCL files, YAML, JSON). These files are stored in version control alongside application code, enabling the same software engineering practices — version control, code review, testing, and CI/CD — to be applied to infrastructure management.
+Instead of an operations engineer manually logging into a cloud console to create servers, configure networking, and set up databases, IaC allows the entire infrastructure to be defined in code files (e.g., Terraform HCL files, YAML, JSON). These files are stored in version control alongside application code, enabling the same software engineering practices such as version control, code review, testing, and CI/CD to be applied to infrastructure management.
 
 ---
 
@@ -426,7 +426,7 @@ Instead of an operations engineer manually logging into a cloud console to creat
 
 # Benefits of IaC
 
-1. **Consistency:** Every environment (development, staging, production) is provisioned identically from the same code, eliminating configuration drift — the gradual divergence between environments that causes "works on my machine" problems.
+1. **Consistency:** Every environment (development, staging, production) is provisioned identically from the same code, eliminating configuration drift. This is the gradual divergence between environments that causes "works on my machine" problems.
 2. **Speed:** New environments can be provisioned in minutes rather than days or weeks.
 3. **Reproducibility:** Entire environments can be destroyed and recreated identically, enabling disaster recovery and cost optimization.
 
@@ -441,16 +441,16 @@ Instead of an operations engineer manually logging into a cloud console to creat
 
 # IaC Tools
 
-- **Terraform:** An open-source tool by HashiCorp that supports multiple cloud providers (AWS, Azure, GCP) with a declarative configuration language (HCL).
-- **AWS CloudFormation:** Amazon's native IaC service for defining AWS resources using JSON or YAML templates.
-- **Ansible:** An agentless configuration management and IaC tool that uses YAML playbooks.
-- **Pulumi:** An IaC tool that allows infrastructure definitions in general-purpose programming languages (Python, TypeScript, Go).
+- **Terraform:** Terraform is an open-source tool by HashiCorp that supports multiple cloud providers with a declarative configuration language.
+- **AWS CloudFormation:** AWS CloudFormation is Amazon's native IaC service for defining AWS resources using JSON or YAML templates.
+- **Ansible:** Ansible is an agentless configuration management and IaC tool that uses YAML playbooks.
+- **Pulumi:** Pulumi is an IaC tool that allows infrastructure definitions in general-purpose programming languages like Python, TypeScript, and Go.
 
 ---
 
 # 9.4 AI-Assisted Software Development
 
-AI-assisted software development refers to the use of artificial intelligence — particularly large language models (LLMs) and machine learning techniques — to augment and accelerate various phases of the software development lifecycle. Rather than replacing developers, AI tools act as intelligent assistants or "AI pair programmers" that help developers write code faster, find bugs earlier, generate tests, and produce documentation.
+AI-assisted software development refers to the use of artificial intelligence, particularly large language models and machine learning techniques, to augment and accelerate various phases of the software development lifecycle. Rather than replacing developers, AI tools act as intelligent assistants or AI pair programmers that help developers write code faster, find bugs earlier, generate tests, and produce documentation.
 
 ---
 
@@ -506,7 +506,7 @@ AI tools can analyze error messages, stack traces, and code context to suggest f
 
 **Benefits of AI-assisted development:**
 
-1. **Increased productivity:** Significant reduction in time spent on boilerplate code, routine debugging, and scaffolding, allowing developers to focus on higher-level design and problem-solving.
+1. **Increased productivity:** There is a significant reduction in time spent on boilerplate code, routine debugging, and scaffolding, which allows developers to focus on higher-level design and problem-solving.
 2. **Faster learning:** Real-time code suggestions help developers learn new languages, frameworks, and APIs by example.
 3. **Improved code quality:** AI-generated tests and automated code review catch issues that might be missed in manual review.
 4. **Reduced context switching:** Developers can get answers and code suggestions within their IDE without switching to documentation or search engines.
@@ -537,7 +537,7 @@ AI tools can analyze error messages, stack traces, and code context to suggest f
 **Best practices for using AI in development:**
 
 1. Always review and test AI-generated code before accepting it.
-2. Use AI as an assistant, not a replacement — maintain understanding of what the code does and why.
+2. Use AI as an assistant, not a replacement. Maintain understanding of what the code does and why.
 3. Establish organizational policies and governance for AI tool usage, especially regarding sensitive codebases.
 4. Combine AI suggestions with traditional quality practices (code reviews, testing, static analysis).
 
@@ -597,7 +597,7 @@ Low-code and no-code platforms are development environments that allow users to 
 
 ## Green Software Engineering
 
-Green software engineering is an emerging discipline that focuses on designing, developing, deploying, and managing software systems in ways that minimize their environmental impact — primarily their carbon emissions and energy consumption. It recognizes that the ICT (Information and Communications Technology) sector contributes significantly to global carbon emissions through energy-intensive data centers, network infrastructure, and end-user devices.
+Green software engineering is an emerging discipline that focuses on designing, developing, deploying, and managing software systems in ways that minimize their environmental impact, primarily their carbon emissions and energy consumption. It recognizes that the ICT sector contributes significantly to global carbon emissions through energy-intensive data centers, network infrastructure, and end-user devices.
 
 The Green Software Foundation (GSF), established in 2021 by organizations including Microsoft, GitHub, Accenture, and ThoughtWorks, defines green software engineering through a set of core principles.
 
@@ -652,7 +652,7 @@ Quantify the carbon emissions and energy consumption of software systems. What i
 **Practices for green software engineering:**
 
 4. **Data efficiency:** Store and transfer only necessary data. Compress data, archive infrequently accessed data to cold storage, and avoid excessive logging or telemetry that wastes storage and processing.
-5. **Sustainable architecture:** Choose architectures that inherently reduce waste — serverless computing (functions execute only when triggered, consuming zero resources when idle), efficient caching strategies, and CDNs (Content Delivery Networks) that reduce network traffic.
+5. **Sustainable architecture:** Choose architectures that inherently reduce waste. This includes serverless computing where functions execute only when triggered, efficient caching strategies, and CDNs that reduce network traffic.
 
 ---
 
@@ -660,9 +660,9 @@ Quantify the carbon emissions and energy consumption of software systems. What i
 
 **Why green software engineering matters:**
 
-1. Data centers currently consume approximately 1–2% of global electricity, and this share is growing as digital services expand.
+1. Data centers currently consume approximately one to two percent of global electricity, and this share is growing as digital services expand.
 2. The carbon footprint of training a single large AI model can equal the lifetime emissions of several automobiles.
-3. Regulatory pressure is increasing — governments are introducing carbon reporting requirements and sustainability standards for technology companies.
+3. Regulatory pressure is increasing as governments are introducing carbon reporting requirements and sustainability standards for technology companies.
 4. Consumers and enterprises increasingly prefer sustainable technology providers, making green practices a competitive advantage.
 
 ---
@@ -671,8 +671,8 @@ Quantify the carbon emissions and energy consumption of software systems. What i
 
 **Why green software engineering matters:**
 
-5. Energy efficiency directly reduces operational costs — lower energy consumption means lower cloud bills.
+5. Energy efficiency directly reduces operational costs because lower energy consumption means lower cloud bills.
 
 <br>
 
-Green software engineering treats sustainability as a non-functional requirement alongside performance, security, and reliability — integrating environmental responsibility into the software development lifecycle rather than treating it as an afterthought.
+Green software engineering treats sustainability as a non-functional requirement alongside performance, security, and reliability. This integrates environmental responsibility into the software development lifecycle rather than treating it as an afterthought.
