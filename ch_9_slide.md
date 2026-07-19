@@ -210,6 +210,18 @@ The cycle then feeds back into the Plan phase, creating a continuous loop.
 
 ---
 
+# DevOps Lifecycle
+
+<style scoped>
+  img {
+    width: 800pt;
+  }
+</style>
+
+![DevOps Lifecycle](images/ch_9/devops.png)
+
+---
+
 # Continuous Deployment Pipeline
 
 A continuous deployment pipeline automates the journey of code from a developer's commit to production. It extends beyond CI/CD by removing all manual gates. Every change that passes automated validation is automatically deployed to production without human intervention.
@@ -376,6 +388,12 @@ Microservices architecture is a design approach in which an application is struc
 3. **Decentralized data management:** Each microservice typically manages its own database or data store, avoiding a single shared database that becomes a bottleneck.
 4. **Technology heterogeneity:** Different services can be built using different programming languages, frameworks, or databases to use the best tool for each specific job.
 5. **Fault isolation:** A failure in one service does not bring down the entire application. Other services continue to function, and the failed service can be restarted independently.
+
+---
+
+# 9.3 Microservices Architecture
+
+![Microservice Architecture](images/ch_9/microservices.png)
 
 ---
 
