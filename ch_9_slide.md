@@ -550,17 +550,6 @@ AI tools can analyze error messages, stack traces, and code context to suggest f
 
 ---
 
-# 9.4 AI-Assisted Software Development
-
-**Best practices for using AI in development:**
-
-1. Always review and test AI-generated code before accepting it.
-2. Use AI as an assistant, not a replacement. Maintain understanding of what the code does and why.
-3. Establish organizational policies and governance for AI tool usage, especially regarding sensitive codebases.
-4. Combine AI suggestions with traditional quality practices (code reviews, testing, static analysis).
-
----
-
 # 9.5 Low-Code/No-Code, Green Software Engineering
 
 ## Low-Code/No-Code Development
@@ -675,22 +664,5 @@ Quantify the carbon emissions and energy consumption of software systems. What i
 ---
 
 # 9.5 Low-Code/No-Code, Green Software Engineering
-
-**Why green software engineering matters:**
-
-1. Data centers currently consume approximately one to two percent of global electricity, and this share is growing as digital services expand.
-2. The carbon footprint of training a single large AI model can equal the lifetime emissions of several automobiles.
-3. Regulatory pressure is increasing as governments are introducing carbon reporting requirements and sustainability standards for technology companies.
-4. Consumers and enterprises increasingly prefer sustainable technology providers, making green practices a competitive advantage.
-
----
-
-# 9.5 Low-Code/No-Code, Green Software Engineering
-
-**Why green software engineering matters:**
-
-5. Energy efficiency directly reduces operational costs because lower energy consumption means lower cloud bills.
-
-<br>
 
 Green software engineering treats sustainability as a non-functional requirement alongside performance, security, and reliability. This integrates environmental responsibility into the software development lifecycle rather than treating it as an afterthought.
