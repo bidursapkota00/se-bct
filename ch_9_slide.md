@@ -444,16 +444,16 @@ Instead of an operations engineer manually logging into a cloud console to creat
 
 # Benefits of IaC
 
-1. **Consistency:** Every environment (development, staging, production) is provisioned identically from the same code, eliminating configuration drift. This is the gradual divergence between environments that causes "works on my machine" problems.
-2. **Speed:** New environments can be provisioned in minutes rather than days or weeks.
-3. **Reproducibility:** Entire environments can be destroyed and recreated identically, enabling disaster recovery and cost optimization.
+5. **Consistency:** Every environment (development, staging, production) is provisioned identically from the same code, eliminating configuration drift. This is the gradual divergence between environments that causes "works on my machine" problems.
+6. **Speed:** New environments can be provisioned in minutes rather than days or weeks.
+7. **Reproducibility:** Entire environments can be destroyed and recreated identically, enabling disaster recovery and cost optimization.
 
 ---
 
 # Benefits of IaC
 
-4. **Auditability:** All infrastructure changes are recorded in version control with who made the change, when, and why.
-5. **Cost optimization:** Infrastructure can be provisioned and decommissioned on demand, avoiding the waste of idle resources.
+8. **Auditability:** All infrastructure changes are recorded in version control with who made the change, when, and why.
+9. **Cost optimization:** Infrastructure can be provisioned and decommissioned on demand, avoiding the waste of idle resources.
 
 ---
 
