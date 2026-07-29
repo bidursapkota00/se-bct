@@ -264,8 +264,8 @@ When a member of the team wants to modify a baselined SCI, it is copied from the
 SCM tasks can be viewed as concentric layers through which SCIs flow throughout their useful life:
 
 1. **Identification:** Uniquely naming and describing every SCI so it can be tracked and managed.
-2. **Version control:** Managing different versions and variants of configuration objects created during the software process.
-3. **Change control:** Combining human procedures and automated tools to provide a mechanism for controlling change requests, evaluating them, and implementing approved changes.
+2. **Change control:** Combining human procedures and automated tools to provide a mechanism for controlling change requests, evaluating them, and implementing approved changes.
+3. **Version control:** Managing different versions and variants of configuration objects created during the software process.
 
 ---
 
