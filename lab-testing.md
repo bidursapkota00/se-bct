@@ -425,6 +425,7 @@ Integration tests verify that all components work together: the API endpoints, d
 ### Create `tests/test_integration.py`
 
 ```python
+import os
 import pytest
 from fastapi.testclient import TestClient
 from sqlalchemy import create_engine
@@ -433,7 +434,10 @@ from app.database import Base, get_db
 from app.main import app
 
 # Use a separate test database
-TEST_DATABASE_URL = "postgresql://user:pass@localhost:5432/testdb"
+TEST_DATABASE_URL = os.environ.get(
+    "TEST_DATABASE_URL",
+    "postgresql://user:pass@localhost:5432/testdb",
+)
 test_engine = create_engine(TEST_DATABASE_URL)
 TestSession = sessionmaker(bind=test_engine)
 
@@ -521,7 +525,7 @@ class TestReadProducts:
 
 `TestClient` from FastAPI wraps the app and sends HTTP requests without starting a real server. `create_engine(TEST_DATABASE_URL)` connects to a separate test database so tests do not affect production data. `app.dependency_overrides[get_db]` replaces the real database dependency with the test database. `@pytest.fixture(autouse=True)` runs `setup_database` automatically before and after every test. `Base.metadata.create_all()` creates tables before each test and `drop_all()` removes them after, ensuring each test starts with a clean database. `client.post("/products", json={...})` sends a POST request with JSON data. `response.status_code` and `response.json()` verify the HTTP status and response body.
 
-### Run Integration Tests (Requires PostgreSQL)
+### Run Integration Tests
 
 The integration tests use a separate database called `testdb`. Create it inside the running PostgreSQL container:
 
@@ -595,3 +599,30 @@ pytest --cov=app --cov-report=html tests/
 ```
 
 This creates an `htmlcov/` directory. Open `htmlcov/index.html` in a browser to see a detailed, interactive coverage report with color-coded source files showing covered and uncovered lines.
+
+---
+
+## Running Tests with Docker
+
+The previous sections showed how to run tests locally using `pytest` directly. In a containerized setup, tests run inside the Docker containers where the application and database are already configured.
+
+Make sure a separate database called `testdb` has been created. This is required for integration tests.
+
+### compose.yaml: add the env var to the api service
+
+```yml
+- TEST_DATABASE_URL=postgresql://user:pass@db:5432/testdb
+```
+
+### Run services with new configuration
+
+```bash
+docker compose up -d
+```
+
+### Run Test and Test Coverage
+
+```bash
+docker compose exec api pytest -v
+docker compose exec api pytest --cov=app --cov-report=term-missing
+```
