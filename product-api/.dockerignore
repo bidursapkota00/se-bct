@@ -1,8 +1,8 @@
-*.html
-*.pdf
-*.pptx
-temp.md
 venv/
+.venv/
 __pycache__/
+*.pyc
+.git/
+.env
 htmlcov/
 .pytest_cache/
