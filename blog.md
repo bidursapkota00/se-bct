@@ -47,7 +47,7 @@ Software engineering is a layered technology built on four layers (bottom to top
 
 Modern software engineering emerged to address recurring problems: late delivery, cost overruns, unreliable software, and difficulty maintaining existing systems.
 
-![Software Engineering Layers](images/ch_1/software-engineering-layers.png)
+![Software Engineering Layers](images/ch_1/software-engineering-layers.webp)
 
 **Software Engineering vs. Computer Science**
 
@@ -79,7 +79,7 @@ Software is not manufactured in the classical sense. Although similarities exist
 
 Hardware follows a "bathtub curve" with a high early failure rate (infant mortality), then a steady-state, then increasing failures due to wear. Software has no physical wear. Its failure curve is idealized as a high initial failure rate (undiscovered defects) that drops and flattens as defects are corrected. However, software deteriorates because each change introduces new errors, causing failure rate spikes. Over time, the baseline failure rate rises.
 
-![Software Failure Curve](images/ch_1/software-failure-curve.png)
+![Software Failure Curve](images/ch_1/software-failure-curve.webp)
 
 **Software has no spare parts:**
 
@@ -346,11 +346,11 @@ Process flow describes how framework activities are organized with respect to se
 3. **Evolutionary process flow:** It executes activities in a "circular" manner. Each circuit leads to a more complete version of the software.
 4. **Parallel process flow:** It executes one or more activities concurrently with others (e.g., modeling for one aspect while constructing another).
 
-![Linear and Iterative process flow](images/ch_2/linear-and-iterative-process-flow.png)
+![Linear and Iterative process flow](images/ch_2/linear-and-iterative-process-flow.webp)
 
-![Evolutionary Process Flow](images/ch_2/evolutionary-process-flow.png)
+![Evolutionary Process Flow](images/ch_2/evolutionary-process-flow.webp)
 
-![Parallel Process Flow](images/ch_2/parallel-process-flow.png)
+![Parallel Process Flow](images/ch_2/parallel-process-flow.webp)
 
 ### Umbrella Activities
 
@@ -391,7 +391,7 @@ The **waterfall model** (also called the linear sequential model), originally pr
 
 Each phase must be completed before the next phase begins, and there is little opportunity to revisit earlier phases.
 
-![Waterfall Model](images/ch_2/waterfall-model.png)
+![Waterfall Model](images/ch_2/waterfall-model.webp)
 
 **Advantages:**
 
@@ -419,7 +419,7 @@ The waterfall model requires all phases to be completed sequentially. No working
 1. **V-Model:** It associates a testing phase with each development phase (e.g., unit testing validates construction, system testing validates design).
 2. **Waterfall with feedback:** It allows limited iteration between adjacent phases, partially addressing the rigidity of the pure waterfall.
 
-![V Model](images/ch_2/v-model.png)
+![V Model](images/ch_2/v-model.webp)
 
 Figure: V-Model
 
@@ -436,7 +436,7 @@ The incremental model combines elements of linear and iterative flows. It delive
 - Each increment delivers a working, usable product to the customer.
 - Customer feedback from each increment informs the planning of the next.
 
-![Incremental Model](images/ch_2/incremental-model.png)
+![Incremental Model](images/ch_2/incremental-model.webp)
 
 **Example of E-Commerce Site (Incremental Approach):**
 
@@ -487,7 +487,7 @@ All stakeholders should agree upfront that the prototype is built to define requ
 5. **Deployment and Feedback:** It involves delivering the prototype to stakeholders for evaluation and gathering feedback to refine requirements.
 6. **Iteration:** It involves tuning the prototype based on feedback and repeating until requirements are sufficiently understood.
 
-![Prototyping Model](images/ch_2/prototyping-model.png)
+![Prototyping Model](images/ch_2/prototyping-model.webp)
 
 **When to use prototyping:**
 
@@ -534,7 +534,7 @@ Software is developed in a series of evolutionary releases by traversing a spira
 
 Each circuit (loop) around the spiral produces a progressively more complete version of the software. The first circuit might produce a product specification or proof-of-concept prototype; subsequent circuits produce increasingly refined and complete versions.
 
-![Spiral Model](images/ch_2/spiral-model.png)
+![Spiral Model](images/ch_2/spiral-model.webp)
 
 **Accommodating waterfall and prototyping within the spiral:**
 
@@ -614,7 +614,7 @@ In plan-driven development, the cost of change increases exponentially as the pr
 
 In practice, many projects benefit from combining elements of both approaches, using agile principles for flexibility while retaining enough planning discipline for coordination and risk management.
 
-![Cost of Change](images/ch_2/cost-of-change.png)
+![Cost of Change](images/ch_2/cost-of-change.webp)
 
 ### 2.3.3 Scrum Framework (Roles, Artifacts, Ceremonies)
 
@@ -639,7 +639,7 @@ Scrum is the most widely used agile framework, conceived by Jeff Sutherland in t
 3. **Sprint Review:** It is held at the end of the sprint (typically 4 hours for a 4-week sprint). The team demonstrates the completed increment to the Product Owner and stakeholders. The Product Owner accepts or rejects the increment. Feedback may result in new backlog items or reprioritization.
 4. **Sprint Retrospective:** It is held after the Sprint Review and before the next Sprint Planning (typically 3 hours for a 4-week sprint). The team reflects on what went well, what could be improved, and commits to specific improvements for the next sprint. This drives continuous process improvement.
 
-![Scrum](images/ch_2/scrum.png)
+![Scrum](images/ch_2/scrum.webp)
 
 ### 2.3.4 Extreme Programming (XP) Practices
 
@@ -663,7 +663,7 @@ The five core values of XP are Communication, Simplicity, Feedback, Courage, and
 12. **On-Site Customer:** A customer representative is embedded with the team to answer questions, set priorities, and provide immediate feedback.
 13. **Project Velocity:** It is the number of user stories completed per iteration, and it is used to estimate delivery dates for subsequent releases.
 
-![XP](images/ch_2/xp.png)
+![XP](images/ch_2/xp.webp)
 
 ### 2.3.5 Lean Software Development
 
@@ -681,7 +681,7 @@ Lean Software Development, articulated by Mary and Tom Poppendieck, adapts princ
 
 Lean principles complement other agile methods. Kanban, a lean-originated method, visualizes workflow on a board, limits work in progress (WIP), manages flow, makes process policies explicit, creates feedback loops, and encourages collaborative process evolution.
 
-![Kanban](images/ch_2/kanban.png)
+![Kanban](images/ch_2/kanban.webp)
 
 ---
 
@@ -1062,29 +1062,29 @@ A formal use case includes: use case name, primary actor, secondary actor, preco
 
 Use case diagram is drawn with symbols: a rectangle for the system boundary (labeled with the system name), stick figures for actors (outside the boundary), ovals for use cases (inside the boundary), solid lines for associations, and dashed arrows with stereotypes for <<include>> and <<extend>> relationships.
 
-| ![Actor](images/ch_3/actor.png) | ![Use Case](images/ch_3/use-case.png) |
+| ![Actor](images/ch_3/actor.webp) | ![Use Case](images/ch_3/use-case.webp) |
 | ------------------------------- | ------------------------------------- |
 
-| ![Association](images/ch_3/line.png) | ![Boundary](images/ch_3/boundary.png) |
+| ![Association](images/ch_3/line.webp) | ![Boundary](images/ch_3/boundary.webp) |
 | ------------------------------------ | ------------------------------------- |
 
 ### Use Case Diagram Examples
 
 **Railway Reservation System:**
 
-![Railway Reservation System](images/ch_3/railway.png)
+![Railway Reservation System](images/ch_3/railway.webp)
 
 **Parking Management System:**
 
-![Parking Management System](images/ch_3/parking.png)
+![Parking Management System](images/ch_3/parking.webp)
 
 **Library Management System:**
 
-![Library Management System](images/ch_3/library.png)
+![Library Management System](images/ch_3/library.webp)
 
 **Event Management System:**
 
-![Event Management System](images/ch_3/event.png)
+![Event Management System](images/ch_3/event.webp)
 
 **Online Food Ordering System:**
 
@@ -1169,9 +1169,9 @@ User story mapping, popularized by Jeff Patton, is a visual technique for organi
 - **Ribs (vertical axis):** They are placed beneath each backbone activity. Specific user tasks and stories are stacked vertically in order of priority (most important at top).
 - **Release slices (horizontal lines):** They are drawn across the map to group stories into releases. The topmost slice forms the Minimum Viable Product (MVP) or "walking skeleton."
 
-![Story Map](images/ch_3/story-map.jpg)
+![Story Map](images/ch_3/story-map.webp)
 
-![Story Map](images/ch_3/story-map-2.jpg)
+![Story Map](images/ch_3/story-map-2.webp)
 
 **Steps to Create a Story Map:**
 
@@ -1314,7 +1314,7 @@ It can also be difficult to distribute across multiple machines.
 
 **Example:** A CASE (Computer-Aided Software Engineering) tool suite where all tools (editor, compiler, debugger, version control) access a shared project repository.
 
-![Repository Architecture](images/ch_4/repository.png)
+![Repository Architecture](images/ch_4/repository.webp)
 
 ### Data-Flow (Pipe-and-Filter) Architecture
 
@@ -1338,7 +1338,7 @@ Not well-suited for complex, branching control flows.
 
 **Example:** A Unix command pipeline: `cat file.txt | grep "error" | sort | uniq -c`. In this pipeline, each command is a filter connected by pipes.
 
-![Pipe and Filter Architecture](images/ch_4/pipe-and-filter.png)
+![Pipe and Filter Architecture](images/ch_4/pipe-and-filter.webp)
 
 ### Call-and-Return Architecture
 
@@ -1363,7 +1363,7 @@ Changes to the hierarchy may require restructuring.
 
 Tightly coupled control flow can reduce flexibility.
 
-![Call and Return Architecture](images/ch_4/call-and-return.png)
+![Call and Return Architecture](images/ch_4/call-and-return.webp)
 
 ### Object-Oriented Architecture
 
@@ -1385,7 +1385,7 @@ Performance overhead from message passing.
 
 Potential for complex interdependencies if not designed carefully.
 
-![Object Oriented Architecture](images/ch_4/object-oriented.png)
+![Object Oriented Architecture](images/ch_4/object-oriented.webp)
 
 ### Layered Architecture
 
@@ -1417,7 +1417,7 @@ Not all systems decompose cleanly into layers. Excessive layering can introduce 
 (3) Kernel layer (Core memory management and CPU scheduling), and
 (4) Hardware Abstraction layer (Device drivers communicating with physical hardware).
 
-![Layered Architecture](images/ch_4/layered.png)
+![Layered Architecture](images/ch_4/layered.webp)
 
 ### Client-Server Architecture
 
@@ -1447,7 +1447,7 @@ Higher infrastructure cost.
 
 **Example:** In an online banking system, the mobile app (client) sends transaction requests to the bank's application server, which processes business logic and communicates with the database server to fetch or update account information. The server returns results to the client for display.
 
-![Client Server Architecture](images/ch_4/client-server.png)
+![Client Server Architecture](images/ch_4/client-server.webp)
 
 ### Multi-Tier Architecture
 
@@ -1455,7 +1455,7 @@ An extension of client-server that separates functionality into distinct tiers, 
 
 **2-Tier Architecture:** The client communicates directly with the server. The client handles the UI and some application logic; the server handles data storage and remaining logic. Example: A desktop database application where the client application connects directly to a database server.
 
-![Two Tier Architecture](images/ch_4/two-tier.png)
+![Two Tier Architecture](images/ch_4/two-tier.webp)
 
 **3-Tier Architecture:** This style adds a middle tier between client and server. The three tiers are:  
 (1) the Presentation tier, which is the client UI,  
@@ -1466,7 +1466,7 @@ Each tier can be developed, deployed, and scaled independently.
 
 **Example:** In an e-commerce website, the browser (presentation tier) sends requests to a web/application server (logic tier) that processes orders, applies business rules, and queries the database server (data tier).
 
-![Three Tier Architecture](images/ch_4/three-tier.png)
+![Three Tier Architecture](images/ch_4/three-tier.webp)
 
 **Advantages of 3-tier over 2-tier:**
 
@@ -1500,7 +1500,7 @@ Can increase complexity for simple applications.
 
 Tight coupling between Controller and Model can emerge if not designed carefully.
 
-![MVC Architecture](images/ch_4/mvc.png)
+![MVC Architecture](images/ch_4/mvc.webp)
 
 | Repository Model                                                                                       | Layered Model                                                                                                       |
 | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -1528,7 +1528,7 @@ Modularity is the most common manifestation of the "separation of concerns" prin
 
 **The modularization trade-off:** As the number of modules increases, the cost per individual module decreases (smaller, simpler modules). However, the cost of integrating modules increases (more interfaces, more communication). There is an optimal number of modules (M) that minimizes total development cost. Too few modules means each is too complex; too many modules means excessive integration overhead.
 
-![Modularity Tradeoff](images/ch_4/modularity-tradeoff.png)
+![Modularity Tradeoff](images/ch_4/modularity-tradeoff.webp)
 
 ### Modular Decomposition Styles
 
@@ -1678,7 +1678,7 @@ A **Data Store** is represented as two parallel horizontal lines (Yourdon-DeMarc
 
 An **External Entity** is represented as a rectangle. It represents a source or destination of data that is outside the system boundary. External entities are people, organizations, devices, or other systems that interact with the system. They are named with nouns (e.g., "Customer," "Bank," "Sensor").
 
-![DFD Symbols](images/ch_5/dfd-symbols.png)
+![DFD Symbols](images/ch_5/dfd-symbols.webp)
 
 ### Levels of DFD
 
@@ -1699,11 +1699,11 @@ DFDs are organized hierarchically into levels, each providing progressively more
 - Each process, data flow, data store, and external entity must be named.
 - All data flows entering/leaving a parent process must also appear in its child (decomposed) diagram. The parent and child diagrams must be consistent.
 
-![DFD of Food Ordering System](images/ch_5/dfd-fos.png)
+![DFD of Food Ordering System](images/ch_5/dfd-fos.webp)
 
-![DFD-0 of Library Management System](images/ch_5/dfd-0-library.png)
+![DFD-0 of Library Management System](images/ch_5/dfd-0-library.webp)
 
-![DFD-1 of Library Management System](images/ch_5/dfd-1-library.png)
+![DFD-1 of Library Management System](images/ch_5/dfd-1-library.webp)
 
 ---
 
@@ -1739,9 +1739,9 @@ Covered in 3.4
 
 A UML activity diagram models the flow of control or data from one activity to another within a system or a specific use case. It is similar to a flowchart but with support for parallel (concurrent) behavior. Activity diagrams are particularly useful for modeling complex processing logic, workflows, and business processes.
 
-| ![Elements of an Activity Diagram](images/ch_5/elements-of-activity-diagram-1.png) |
+| ![Elements of an Activity Diagram](images/ch_5/elements-of-activity-diagram-1.webp) |
 | ---------------------------------------------------------------------------------- |
-| ![Elements of an Activity Diagram](images/ch_5/elements-of-activity-diagram-2.png) |
+| ![Elements of an Activity Diagram](images/ch_5/elements-of-activity-diagram-2.webp) |
 
 #### Elements of an Activity Diagram
 
@@ -1763,11 +1763,11 @@ The **final node** is a filled black circle inside a hollow circle (bullseye). I
 
 **Process Order - Acitvity Diagram**
 
-![Process Order Acitvity Diagram](images/ch_5/activity-order-process.png)
+![Process Order Acitvity Diagram](images/ch_5/activity-order-process.webp)
 
 **Activity Diagram for Emotion based music player**
 
-![Activity Diagram for Emotion based music player](images/ch_5/activity-music.png)
+![Activity Diagram for Emotion based music player](images/ch_5/activity-music.webp)
 
 ### Swimlane Diagrams (Activity Partitions)
 
@@ -1777,7 +1777,7 @@ Swimlane diagrams answer the question "who does what?" and are especially useful
 
 **Purchasing an Product from Ecommerce**
 
-![Purchasing an Product from Ecommerce - Acitvity Diagram](images/ch_5/swimlane-activity.png)
+![Purchasing an Product from Ecommerce - Acitvity Diagram](images/ch_5/swimlane-activity.webp)
 
 ### 5.4.2 Class-Based Modeling
 
@@ -1832,7 +1832,7 @@ class Student {
 }
 ```
 
-![Association](images/ch_5/association.png)
+![Association](images/ch_5/association.webp)
 
 **Aggregation** is a "whole-part" relationship where the part can exist independently of the whole. It is drawn as a solid line with a hollow diamond at the "whole" end. Example: A `Department` has `Employees`, but employees can exist without the department.
 
@@ -1842,7 +1842,7 @@ class Department {
 }
 ```
 
-![Aggregation](images/ch_5/aggregation.png)
+![Aggregation](images/ch_5/aggregation.webp)
 
 **Composition** is a stronger form of aggregation where the part cannot exist without the whole. If the whole is destroyed, its parts are also destroyed. It is drawn as a solid line with a filled (solid) diamond at the "whole" end. Example: A `House` is composed of `Rooms`. If the house is demolished, the rooms cease to exist.
 
@@ -1852,7 +1852,7 @@ class House {
 }
 ```
 
-![Composition](images/ch_5/composition.png)
+![Composition](images/ch_5/composition.webp)
 
 **Generalization (Inheritance)** is an "is-a" relationship where a subclass inherits attributes and operations from a superclass. The subclass is a specialized version of the superclass. It is drawn as a solid line with an unfilled (hollow) triangular arrowhead pointing from subclass to superclass. Example: `SavingsAccount` and `CheckingAccount` are subclasses of `BankAccount`.
 
@@ -1863,7 +1863,7 @@ class Dog extends Animal { } // Dog is an Animal
 
 **Generalization (Inheritance)**
 
-![Generalization](images/ch_5/generalization.png)
+![Generalization](images/ch_5/generalization.webp)
 
 **Dependency** is a weaker relationship where one class depends on another (e.g., uses it as a parameter in an operation). It is drawn as a dashed arrow from the dependent class to the class it depends on.
 
@@ -1876,7 +1876,7 @@ class OrderProcessor {
 }
 ```
 
-![Dependency](images/ch_5/dependency.png)
+![Dependency](images/ch_5/dependency.webp)
 
 #### Multiplicity
 
@@ -1889,9 +1889,9 @@ Multiplicity specifies how many instances of one class can be associated with a 
 
 Example: A `Customer` places `0..*` Orders (a customer may have no orders or many orders). Each `Order` belongs to exactly `1` Customer.
 
-![Relationship Syntax](images/ch_5/class-relationship.png)
+![Relationship Syntax](images/ch_5/class-relationship.webp)
 
-![Bank System - Class Diagram](images/ch_5/bank-class.png)
+![Bank System - Class Diagram](images/ch_5/bank-class.webp)
 
 #### Class-Responsibility-Collaborator (CRC) Modeling
 
@@ -2023,7 +2023,7 @@ CRC cards are useful for brainstorming classes and for role-playing reviews. In 
 
 ### Class collaboration diagram
 
-![Class Collaboration Diagram for Banking Application](images/ch_5/class-collaboration-diagram.png)
+![Class Collaboration Diagram for Banking Application](images/ch_5/class-collaboration-diagram.webp)
 
 ---
 
@@ -2164,7 +2164,7 @@ CRC cards are useful for brainstorming classes and for role-playing reviews. In 
 
 **Software testing** is the process of executing a program with the intent of finding errors. A good test is one that has a high probability of discovering an as-yet-undiscovered error. Testing cannot prove the absence of defects; it can only demonstrate their presence. Exhaustive testing (testing every possible input and path) is practically impossible for any non-trivial program.
 
-![Testing Strategy](images/ch_6/testing-strategy.png)
+![Testing Strategy](images/ch_6/testing-strategy.webp)
 
 ### 6.3.1 Verification and Validation
 
@@ -2212,7 +2212,7 @@ CRC cards are useful for brainstorming classes and for role-playing reviews. In 
 
 **Why unit testing alone is not sufficient:** Unit testing verifies individual components in isolation but cannot detect interface errors between components, integration problems, system-level performance issues, or defects that arise from the interaction of multiple units working together.
 
-![Unit Test Environment](images/ch_6/unit-test-env.png)
+![Unit Test Environment](images/ch_6/unit-test-env.webp)
 
 ### 6.3.3 Integration Testing
 
@@ -2234,13 +2234,13 @@ Even if every individual unit works correctly in isolation, combining them can p
 Advantage: major control and decision points are tested early.
 Disadvantage: stubs may need to be complex.
 
-![Top Down Integration](images/ch_6/top-down-integration.png)
+![Top Down Integration](images/ch_6/top-down-integration.webp)
 
 **Bottom-up integration:** Integration begins with the lowest-level (atomic) modules, which are combined into clusters. Drivers are used to coordinate testing of each cluster. As integration progresses upward, drivers are removed and clusters are combined. Advantage: eliminates the need for complex stubs. Disadvantage: the complete system is not visible until the last module is added.
 
 **Continuous integration:** Components are merged into the evolving software build one or more times per day. Each integration triggers automated tests. This is the standard practice in agile and DevOps environments. A variant called smoke testing involves rebuilding and testing the software daily to ensure the build is stable enough for further testing.
 
-![Bottom Up Integration](images/ch_6/bottom-up-integration.png)
+![Bottom Up Integration](images/ch_6/bottom-up-integration.webp)
 
 **Regression testing:** After each integration of a new component, a subset of previously passed tests is re-executed to ensure the new addition has not broken existing functionality. The regression test suite contains: (1) tests that exercise all software functions, (2) tests focusing on functions likely affected by the change, and (3) tests targeting the changed components.
 
@@ -2311,7 +2311,7 @@ Ensure that all internal operations are performed according to specifications an
 
 **A. Basis path testing:** A technique proposed by Tom McCabe that uses cyclomatic complexity to determine the number of independent paths through a program. This defines the minimum number of test cases needed to ensure every statement is executed at least once.
 
-![Path Testing](images/ch_6/path-testing.png)
+![Path Testing](images/ch_6/path-testing.webp)
 
 **Cyclomatic complexity V(G)** is computed in three ways:
 
@@ -2327,7 +2327,7 @@ The value of V(G) gives an upper bound on the number of independent paths and, t
 - **Data flow testing:** Selects test paths based on the locations of variable definitions and uses.
 - **Loop testing:** Tests loop constructs specifically. For simple loops (with max n iterations): skip the loop entirely; 1 pass; 2 passes; m passes (m < n); and n−1, n, n+1 passes. For nested loops: start at the innermost loop, test it while holding outer loops at minimum values, then work outward.
 
-![Loop Testing](images/ch_6/loop-testing.png)
+![Loop Testing](images/ch_6/loop-testing.webp)
 
 ### Black-Box Testing
 
@@ -2509,7 +2509,7 @@ The cost of quality includes all costs incurred in the pursuit of quality or in 
 
 The cost to find and repair an error increases dramatically as development progresses. According to Boehm and Basili, a defect costing ~$977 to fix during coding costs ~$7,136 during system testing and ~$14,102 during maintenance.
 
-![Software Failure Costs](images/ch_7/failure-costs.png)
+![Software Failure Costs](images/ch_7/failure-costs.webp)
 
 ---
 
@@ -2546,7 +2546,7 @@ McCall and Walters proposed a model that organizes 11 quality factors into three
 - **Reusability:** The extent to which a program (or parts of it) can be reused in other applications.
 - **Interoperability:** The effort required to couple one system to another.
 
-![McCall's Software Quality Factors](images/ch_7/quality-factors.png)
+![McCall's Software Quality Factors](images/ch_7/quality-factors.webp)
 
 **ISO 25010 Quality Model:**
 
@@ -2594,7 +2594,7 @@ Software Quality Assurance is a planned and systematic pattern of actions requir
 5. A procedure to ensure compliance with software development standards.
 6. Measurement and reporting mechanisms.
 
-![Software Quality Assurance Process](images/ch_7/sqa-process.png)
+![Software Quality Assurance Process](images/ch_7/sqa-process.webp)
 
 ## SQA Process
 
@@ -2624,7 +2624,7 @@ Based on the analysis, concrete actions are implemented to resolve the underlyin
 
 Once improvements are made, the process loops back. The team continues to monitor the indicators and look for new or recurring problem areas, ensuring that software quality steadily increases over time.
 
-![Software Quality Assurance](images/ch_7/sqa.png)
+![Software Quality Assurance](images/ch_7/sqa.webp)
 
 ### Elements of SQA:
 
@@ -2702,7 +2702,7 @@ Six Sigma is the most widely used strategy for statistical quality assurance. Th
 
 For developing a new process (rather than improving an existing one), Six Sigma uses the DMADV method (Define, Measure, Analyze, Design, Verify).
 
-![Six Sigma](images/ch_7/six-sigma.png)
+![Six Sigma](images/ch_7/six-sigma.webp)
 
 ---
 
@@ -2771,7 +2771,7 @@ CMMI is a process improvement framework developed by the Software Engineering In
 - The organization identifies weaknesses and strengthens the process proactively, preventing defects.
 - Key Process Areas: Causal Analysis and Resolution, Organizational Performance Management.
 
-![CMMI Levels](images/ch_7/cmmi-levels.png)
+![CMMI Levels](images/ch_7/cmmi-levels.webp)
 
 | ISO 9001:2015                                                                    | CMMI                                                                        |
 | -------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
@@ -2880,7 +2880,7 @@ Software reliability, unlike hardware reliability, is a function of design defec
 
 Software configuration management (SCM) is a set of activities designed to manage change throughout the life cycle of computer software. The output of the software process, which includes programs, documents, and data, collectively forms the software configuration. Because change can occur at any time during development and maintenance, SCM is an umbrella activity applied from the moment a project begins until the software is taken out of operation.
 
-![SCM](images/ch_8/scm.png)
+![SCM](images/ch_8/scm.webp)
 
 Software configuration management (SCM) is an umbrella activity that is applied throughout the software process. Typical SCM work flow is shown in Figure. Because change can occur at any time, SCM activities are developed to (1) identify change, (2) control change, (3) ensure that change is being properly implemented, and (4) report changes to others who may have an interest.
 
@@ -2921,7 +2921,7 @@ When a member of the team wants to modify a baselined SCI, it is copied from the
 3. **Construction elements:** A set of tools that automate the construction of software by ensuring that the proper set of validated components (correct version) have been assembled.
 4. **Human elements:** A set of tools and process features used by the software team to implement effective SCM.
 
-![Baseline and Project Database](images/ch_8/baseline_and_project_database.png)
+![Baseline and Project Database](images/ch_8/baseline_and_project_database.webp)
 
 **SCM Activities (Core Tasks):**
 
@@ -2933,7 +2933,7 @@ SCM tasks can be viewed as concentric layers through which SCIs flow throughout 
 4. **Configuration auditing:** Ensuring that changes have been properly implemented and that quality is maintained.
 5. **Status reporting (status accounting):** Recording and reporting information about each change, including what happened, who did it, when it happened, and what else will be affected.
 
-![Layers of SCM Process](images/ch_8/layers_of_scm_process.png)
+![Layers of SCM Process](images/ch_8/layers_of_scm_process.webp)
 
 ---
 
@@ -3139,7 +3139,7 @@ The DevOps lifecycle is often depicted as an infinity loop (∞) representing th
 
 The cycle then feeds back into the Plan phase, creating a continuous loop.
 
-![DevOps Lifecycle](images/ch_9/devops.png)
+![DevOps Lifecycle](images/ch_9/devops.webp)
 
 ### Continuous Deployment Pipeline
 
@@ -3252,7 +3252,7 @@ Microservices architecture is a design approach in which an application is struc
 4. **Technology heterogeneity:** Different services can be built using different programming languages, frameworks, or databases to use the best tool for each specific job.
 5. **Fault isolation:** A failure in one service does not bring down the entire application. Other services continue to function, and the failed service can be restarted independently.
 
-![Microservice Architecture](images/ch_9/microservices.png)
+![Microservice Architecture](images/ch_9/microservices.webp)
 
 ### Monolithic vs. Microservices Architecture
 
