@@ -2,7 +2,7 @@
 
 ![Bidur Sapkota](https://www.bidursapkota.com.np/images/gravatar.webp "Bidur Sapkota - Developer")&nbsp;[Bidur Sapkota](https://www.bidursapkota.com.np/)
 
-![Software Engineering by Bidur Sapkota](images/software-engineering-1200.webp "Software Engineering – Blog by Bidur Sapkota")
+![Software Engineering by Bidur Sapkota](images/se-1200.webp "Software Engineering – Blog by Bidur Sapkota")
 
 ## Table of Contents
 
@@ -1063,10 +1063,10 @@ A formal use case includes: use case name, primary actor, secondary actor, preco
 Use case diagram is drawn with symbols: a rectangle for the system boundary (labeled with the system name), stick figures for actors (outside the boundary), ovals for use cases (inside the boundary), solid lines for associations, and dashed arrows with stereotypes for <<include>> and <<extend>> relationships.
 
 | ![Actor](images/ch_3/actor.webp) | ![Use Case](images/ch_3/use-case.webp) |
-| ------------------------------- | ------------------------------------- |
+| -------------------------------- | -------------------------------------- |
 
 | ![Association](images/ch_3/line.webp) | ![Boundary](images/ch_3/boundary.webp) |
-| ------------------------------------ | ------------------------------------- |
+| ------------------------------------- | -------------------------------------- |
 
 ### Use Case Diagram Examples
 
@@ -1740,7 +1740,7 @@ Covered in 3.4
 A UML activity diagram models the flow of control or data from one activity to another within a system or a specific use case. It is similar to a flowchart but with support for parallel (concurrent) behavior. Activity diagrams are particularly useful for modeling complex processing logic, workflows, and business processes.
 
 | ![Elements of an Activity Diagram](images/ch_5/elements-of-activity-diagram-1.webp) |
-| ---------------------------------------------------------------------------------- |
+| ----------------------------------------------------------------------------------- |
 | ![Elements of an Activity Diagram](images/ch_5/elements-of-activity-diagram-2.webp) |
 
 #### Elements of an Activity Diagram
