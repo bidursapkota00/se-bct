@@ -51,11 +51,11 @@ Modern software engineering emerged to address recurring problems: late delivery
 
 **Software Engineering vs. Computer Science**
 
-1. **Computer Science:**
+**1. Computer Science:**
 
 Focuses on the theories, algorithms, and fundamentals of how computers and programming languages work, often independent of business constraints.
 
-2. **Software Engineering:**
+**2. Software Engineering:**
 
 Focuses on the practicalities of developing, delivering, and maintaining useful software systems within constraints (e.g., time, budget, customer needs).
 
@@ -150,11 +150,11 @@ If a legacy system meets users' needs and runs reliably, it does not need to be 
 
 When maintaining or evolving legacy systems (or any software), Lehman's laws describe how the system behaves:
 
-1. **Law of Continuing Change:**
+**1. Law of Continuing Change:**
 
 A system must be continually adapted, or it becomes progressively less useful.
 
-2. **Law of Increasing Complexity:**
+**2. Law of Increasing Complexity:**
 
 As a system evolves, its structure degrades and complexity increases unless work is done to maintain or simplify it.
 
@@ -216,36 +216,45 @@ Software myths are widely held but false beliefs that lead to mismanagement, unr
 ### 1. Management Myths
 
 **Myth:** "We already have a book full of standards and procedures for building software. Won't that provide my people with everything they need to know?"
+
 **Reality:** Standards may exist but are often incomplete, outdated, or not actually used. Having a book does not mean the practice is adequate or that practitioners follow it.
 
 **Myth:** "If we get behind schedule, we can add more programmers and catch up."
+
 **Reality:** Adding people to a late project makes it later (Brooks' Law). New staff need time to learn the system, and communication overhead increases quadratically with team size.
 
 **Myth:** "If I decide to outsource the software project, I can just relax and let the vendor build it."
+
 **Reality:** If an organization cannot manage and control software internally, it will invariably struggle when outsourcing. Oversight and involvement remain essential.
 
 ### 2. Customer Myths
 
 **Myth:** "A general statement of objectives is sufficient to begin writing programs. We can fill in the details later."
+
 **Reality:** Ambiguous requirements are the primary cause of failed projects. A formal and detailed requirements specification is essential to minimize rework and miscommunication.
 
 **Myth:** "Software requirements continually change, but changes can be easily accommodated because software is flexible."
+
 **Reality:** While software is inherently malleable, the cost of change increases dramatically as development progresses. A change made during design can be 1.5–6× more costly than during requirements; during testing, 60–100× more costly.
 
 ### Practitioner (Developer) Myths
 
 **Myth:** "Once we write the program and get it to work, our job is done."
+
 **Reality:** 60–80% of total effort is expended after the first delivery, during maintenance (bug fixing, enhancements, adaptation).
 
 **Myth:** "Until I get the program running, I have no way of assessing its quality."
+
 **Reality:** Quality can be assessed from inception through formal technical reviews, design analysis, and inspections, long before a single line of code is compiled.
 
 ### Practitioner (Developer) Myths
 
 **Myth:** "The only deliverable for a successful project is the working program."
+
 **Reality:** Documentation, models, test plans, and design specifications are equally critical deliverables for long-term maintainability and success.
 
 **Myth:** "Software engineering will make us create voluminous and unnecessary documentation and will slow us down."
+
 **Reality:** Software engineering is about creating quality; it often leads to reduced rework, which results in faster delivery.
 
 ---
@@ -343,14 +352,11 @@ Process flow describes how framework activities are organized with respect to se
 
 1. **Linear process flow:** It executes each activity in sequence.
 2. **Iterative process flow:** It repeats one or more activities before proceeding to the next.
+   ![Linear and Iterative process flow](images/ch_2/linear-and-iterative-process-flow.webp)
 3. **Evolutionary process flow:** It executes activities in a "circular" manner. Each circuit leads to a more complete version of the software.
+   ![Evolutionary Process Flow](images/ch_2/evolutionary-process-flow.webp)
 4. **Parallel process flow:** It executes one or more activities concurrently with others (e.g., modeling for one aspect while constructing another).
-
-![Linear and Iterative process flow](images/ch_2/linear-and-iterative-process-flow.webp)
-
-![Evolutionary Process Flow](images/ch_2/evolutionary-process-flow.webp)
-
-![Parallel Process Flow](images/ch_2/parallel-process-flow.webp)
+   ![Parallel Process Flow](images/ch_2/parallel-process-flow.webp)
 
 ### Umbrella Activities
 
@@ -417,11 +423,8 @@ The waterfall model requires all phases to be completed sequentially. No working
 **Extensions of the Waterfall Model:**
 
 1. **V-Model:** It associates a testing phase with each development phase (e.g., unit testing validates construction, system testing validates design).
+   ![V Model](images/ch_2/v-model.webp)
 2. **Waterfall with feedback:** It allows limited iteration between adjacent phases, partially addressing the rigidity of the pure waterfall.
-
-![V Model](images/ch_2/v-model.webp)
-
-Figure: V-Model
 
 ### 2.2.2 Incremental Process Model
 
